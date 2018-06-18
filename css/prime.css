@@ -1,0 +1,218 @@
+.prime-workarea{  width: 100%; float: left; height: auto;}
+.prime-banner{  width: 100%; float: left; height: auto; position: relative;}
+.prime-banner img{ width: 100%; float: left;}
+.banner-txt{ position: absolute;z-index: 1; width:auto; bottom: 45px; right:-7%;}
+.banner-txt p{ color: #fff;font-family: 'Lato Bold'; font-size: 32px; width: 100%; float: left;margin:0px 0px;}
+.banner-txt span{ color: #712156; font-size:22px; width:auto; float: left;margin: 10px 0px;}
+.banner-txt .prime-btn{ float: left; font-weight: bold;padding: 10px 40px;border-radius: 20px;}
+.banner-txt .prime-btn span{ margin: 0px; color: #712156; font-size: 16px;}
+.banner-txt .prime-btn:hover span{ color: #fff;}
+
+.anchorLink{ position: absolute;
+    z-index: 2;
+    color: #fff;
+    font-size: 30px;
+    left: 48%;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 2px 12px;
+}
+.anchorLink:hover,.anchorLink:focus{ color: #fff; text-decoration: none;outline: none;}
+.anchorLink span{position: relative;
+top: -3px;}
+.workarea{  width: 100%; float: left; height: auto;}
+.workarea .prime-currency{width: 100%; float: left; height: auto; position: relative; z-index: 2;}
+.workarea .prime-currency .cur-wrkarea{  width: 100%;float:left; background: #fff;padding: 35px; margin-top:50px;background: rgba(255,255,255,0.7);}
+.workarea .prime-currency .cur-wrkarea .prm-wrkarea{background: #fecd41;width: 100%; height: auto; float: left;border-radius: 7px;padding: 50px 40px;
+background-image: url("../images/img/backdrop_03.png");background-size: 102%;
+background-repeat: no-repeat;
+background-position: 23% 126%;
+}
+.workarea .prime-currency h2{ text-align: center; text-align: center; float: left; width: 100%; color: #712156; font-size: 20px;margin:0px;font-family: 'Lato Bold';margin-bottom: 15px;}
+.workarea .prime-currency p{ color: #282828; margin: 0px;font-size: 15px;float: left; width: 100%;text-align: center; padding-bottom: 20px;}
+.workarea .prime-currency .cur-wrkarea .prm-wrkarea .prm-currency{ width: 100%; float: left; height: auto;margin:20px 0px;}
+
+.workarea .prime-currency .cur-wrkarea .prm-wrkarea .prm-currency .curr-radio{ float: left;margin-right: 8px;
+margin-top: 5px;}
+.workarea .prime-currency .cur-wrkarea .prm-wrkarea .prm-currency  img{ float: left;}
+.workarea .prime-currency .cur-wrkarea .prm-wrkarea .prm-currency  span{ float: left; margin-left: 5px; margin-top: 2px;}
+.curr-backdrp{ width: 100%; float: left; height: auto; position: relative;z-index: 1;
+margin-top: -35px;}
+.curr-backdrp img{ width: 100%; float:left;}
+.advertise-workarea{ width: 100%; float: left; position: relative;
+z-index: 2;margin-bottom: 55px;}
+.advertise{  width:80%; height: auto; margin: 0px auto;}
+.advertise .advertise-area{float: left; width: 90%;background: rgba(255,255,255,0.7);padding-top: 30px;}
+.advertise .advertise-area:hover{ background: #fff;
+-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+box-shadow: 0 6px 12px rgba(0, 0, 0, .175);}
+.advertise .advertise-area img{ width: auto; float: left;position: relative;
+left: 50%;
+margin-left: -75px;height: 150px;}
+
+.advertse-banner{width: 100%; float: left; height: auto; position: relative;z-index: 1;}
+.advertse-banner img{width: 100%; float: left;}
+.advertse-banner .advertse-txt{ position: absolute;
+width: 50%;
+right: 10%;
+left: auto;
+top: 60px;
+text-shadow: none;}
+
+.prime-grupsites{float: left; width: 100%;padding:80px 0px;position: relative;
+z-index:2;}
+.grup-cntainer { width:90%; margin: 0px auto;}
+.prime-grupsites .grup-area{ width: 100%; float: left; }
+.prime-grupsites .grup-area:hover{background: #f1f1f1;
+border-radius: 4px;
+-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+box-shadow: 0 6px 12px rgba(0, 0, 0, .175);}
+.prime-grupsites .grup-area-dwn{ margin-top: 125px;}
+.prime-grupsites .grup-area img{ width: 100%; float: left;height: 260px; }
+.prime-grupsites .grup-area span{ text-align: center;float: left; width: 100%; font-size: 13px; background: rgba(255,255,255,0.7);
+padding: 15px;}
+@media screen and (max-width:1199px) and (min-width:992px){
+    .workarea .prime-currency .cur-wrkarea{ width: 100%;}
+    .workarea .prime-currency .cur-wrkarea .prm-wrkarea{padding:25px 12px;}
+    .banner-txt span{ margin: 7px 0px;}
+}
+
+@media screen and (max-width:1199px) and (min-width:992px){
+    .workarea .prime-currency .cur-wrkarea{ width: 100%;}
+    .workarea .prime-currency .cur-wrkarea .prm-wrkarea{padding:25px 12px;}
+    .curency-cntainer{ padding: 0px 7px;}
+    .workarea .prime-currency .cur-wrkarea .prm-wrkarea .prm-currency {
+   
+    padding-left: 20px;
+    position: relative;
+    left: 5px;
+}
+.advertise{ width: 85%;}
+.prime-grupsites .grup-area{ padding: 0px;}
+}
+
+@media screen and (max-width:991px) and (min-width:768px){
+    .banner-txt{ bottom: 13px;}
+   .workarea .prime-currency .cur-wrkarea .prm-wrkarea .prm-currency{padding: 0px 20px;} 
+   .banner-txt span{ font-size: 14px; margin: 10px 0px;}
+    .banner-txt p{ font-size: 20px;}
+    .anchorLink{ font-size: 20px;padding: 2px 9px;}
+    .advertise{ width: 95%;}
+    .advertise .advertise-area{ width: 200px;}
+    .advertise .advertise-area img{ height: 200px;}
+    .grup-cntainer{ width: 100%;}
+    .prime-grupsites .grup-area{ padding: 0px;}
+}
+@media screen and (max-width:767px) and (min-width:1px){
+    .banner-txt{    width: auto;
+    bottom: 10px;
+    right: 10px;}
+    .banner-txt p,.banner-txt span{ display: none;}
+    .anchorLink{ display: none;}
+    .banner-txt .prime-btn {
+    float: left;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 15px;
+}
+   .advertise .advertise-area{ margin: 0px;margin-bottom: 10px;} 
+   .advertise{ margin-top: 10px;}
+   .advertise .advertise-area img{ height: auto;}
+    .advertise{ width: 50%;}
+}
+@media screen and (max-width:480px) and (min-width:1px){
+    
+    .advertise{ width: 65%;}
+}
+
+.car-arrow{ width: 30px !important;margin: 0px 20px;}
+.carousel-control{ width: auto; bottom: auto;top: 45%;
+margin-top: -35px;}
+
+.adver-cnt{ width: 100%; float: left;}
+.adver-cnt h6{font-family: 'Lato Bold'; float: left; text-align: center; font-size: 17px; width: 100%;}
+.adver-cnt p{ background: #dedede;
+width: 100%;
+float: left;
+font-size: 13px;
+text-align: center;
+padding: 25px;
+ margin: 0px;}
+.adver-cnt-dwn p{background: #afb4ba;}
+.adver-cntainer{ padding:0px 5px; }
+.adver-area-dwn{ margin-top: 380px;margin-left: 18px;}
+
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+.advr_container{ position: relative;}
+
+.advertse-banner .advertse-txt h2{
+font-family: 'Lato Bold'; color: #fff !important;margin: 3px 0px;font-size: 35px;
+}
+.advertse-banner .advertse-txt h4{
+font-family: 'Lato Bold'; color: #194059 !important;; margin: 0px;font-size: 25px;margin-bottom: 20px;
+}
+.advertse-banner .advertse-txt a{ text-decoration:none;color: #194059;border: 1px solid #3369E8;
+padding: 5px 10px;width:100%;border-radius: 5px;font-size: 13px;}
+.advertse-banner .advertse-txt a:hover{ background: #eeb211; color: #fff;border: 1px solid #eeb211;}
+
+
+.abtus_content{ width: 100%; float: left; margin: 5px 0px !important; padding: 0px !important;color: #737373 !important;
+
+font-size: 14px !important;}
+.abt_wrkarea{ width:25%; margin: 0px auto;}
+.right_advr{ position: relative;left:35px;}
+.popup_heading{ color: #737373;
+font-size: 18px;
+margin-bottom: 15px;}
