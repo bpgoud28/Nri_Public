@@ -1706,17 +1706,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <script> 
 
 
-$(document).ready(function () {
-    $('.ind-time').click(function (e) {
-        $('.loc-time').stop(true).slideToggle();
-    });
-    $(document).click(function (e) {
-        if (!$(e.target).closest('.ind-time, .loc-time').length) {
-            $('.loc-time').stop(true).slideUp();
-        }
-    });
-});
-</script>
+
 <script type="text/javascript" src="js/Commonscript.js"></script>
 </body>
 </html>

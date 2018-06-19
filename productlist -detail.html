@@ -35,14 +35,16 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <script src="js/jquery.contact-buttons.js" type="text/javascript"></script>
 <link href="css/contact-buttons.css" rel="stylesheet" type="text/css"/>
 
-
+<!---Horizantal Tabs--->
+<script src="js/jquery.multipurpose_tabcontent.js" type="text/javascript"></script>
+<link href="css/horizantaltab.css" rel="stylesheet" type="text/css"/>
 <script src="js/owl.carousel.js" type="text/javascript"></script>
 <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/>
 <link href="css/owl.theme.default.css" rel="stylesheet" type="text/css"/>
 
 <script src="js/jquery.slimscroll.js"></script>
   <!----calender----->
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="js/calenstyle.js" type="text/javascript"></script>
   <link href="css/calenstyle-iconfont.css" rel="stylesheet" type="text/css"/>
   <link href="css/calenstyle-jquery-ui-override.css" rel="stylesheet" type="text/css"/>
@@ -52,7 +54,9 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   <link href="css/CalEventList.css" rel="stylesheet" type="text/css"/>
   <script src="js/CalJsonGenerator.js" type="text/javascript"></script>
   <!---Product comparision--->
-  
+  <link href="css/jquery.flipster.css" rel="stylesheet" type="text/css"/>
+  <script src="js/jquery.flipster.min.js" type="text/javascript"></script>
+ 
 </head>
 
 <body>
@@ -90,141 +94,161 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog large_mdel">
-        
-    
-      <!-- Modal content-->
-      <div class="modal-content large_mdel_cntent">
-           <button type="button" class="close popup_close" data-dismiss="modal"><img src="images/close.png"></button>
-        
-        <div class="modal-body currency-body large_mdel_body">
-             <p class="popup_heading">Your Preferred Currency</p>
-         <div class="header-curr">
-             <div class="row">
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                     <div class="selction prm-currency">
-                          <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/curreency_05.png" alt="" /><span>Kuwaiti Dinar</span> 
-                         
-                     </div>
-              
-          </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                     
-					 <div class="selction prm-currency">
-                     <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/currency_10.png" alt=""/><span>Chinese Yuan Renminbi</span> 
-                         
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                      
-					 <div class="selction prm-currency">
-                    <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/currency_22.png" alt=""/><span>Singapore Dollar</span> 
-                         
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                     <div class="selction prm-currency">
-                           <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/currency_06.png" alt=""/><span>Australian Dollar</span> 
-                         
-                     </div>
-					 
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                      <div class="selction prm-currency">
-                    <input name="a" type="radio" class="curr-radio" data-dismiss="modal" >  
-                         <img src="images/prime/currecncy_13.png" alt=""/><span>Japanese Yen</span>  
-                         
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       <div class="selction prm-currency">
-                     <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/curreency_19.png" alt=""/><span>South African Rand</span> 
-                         
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                      <div class="selction prm-currency">
-                     <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/curreency_05.png" alt=""/><span>Emirati Dirham</span> 
-                         
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                      <div class="selction prm-currency">
-                  <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/currency_06.png" alt=""/><span>New Zealand Dollar</span>  
-                         
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                      
-					 <div class="selction prm-currency">
-                   <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/curreency_12.png" alt=""/><span>Canadian Dollar</span> 
-                         
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       <div class="selction prm-currency">
-                   <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/curreency_13.png" alt=""/><span> Omani Rial</span> 
-                         
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       <div class="selction prm-currency">
-                  <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/currency_07.png" alt=""/><span>Indian Rupee</span> 
-                         
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       <div class="selction prm-currency">
-                   <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/currency_09.png" alt=""/><span>British Pound</span> 
-                     </div>
+                                    <div class="modal-dialog large_mdel">
 
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       
-					 <div class="selction prm-currency">
-                   <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/currency_16.png" alt=""/><span>United States Dollar</span> 
-                     </div>
-					
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       <div class="selction prm-currency">
-                  <input name="a" type="radio"  class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/curreency_18.png" alt=""/><span>French Euro</span> 
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       <div class="selction prm-currency">
-                   <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/currency_03.png" alt=""/><span>Malaysian Ringgit</span> 
-                     </div>
-                 </div> 
-             </div>
-		 </div>
-        </div>
-      </div>
 
-    </div>
-  </div>
+                                        <!-- Modal content-->
+                                        <div class="modal-content large_mdel_cntent">
+                                            <button type="button" class="close popup_close" data-dismiss="modal">
+                                                <img src="images/close.png">
+                                            </button>
+
+                                            <div class="modal-body currency-body large_mdel_body">
+                                                <p class="popup_heading">Your Preferred Currency</p>
+                                                <h6 class="currencychange">Currency Has changed</h6>
+                                                <div class="header-curr">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/curreency_05.png" alt="" />
+                                                                <span>Kuwaiti Dinar</span>
+
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/currency_10.png" alt="" />
+                                                                <span>Chinese Yuan Renminbi</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/currency_22.png" alt="" />
+                                                                <span>Singapore Dollar</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/currency_06.png" alt="" />
+                                                                <span>Australian Dollar</span>
+
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/currecncy_13.png" alt="" />
+                                                                <span>Japanese Yen</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/curreency_19.png" alt="" />
+                                                                <span>South African Rand</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/curreency_05.png" alt="" />
+                                                                <span>Emirati Dirham</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/currency_06.png" alt="" />
+                                                                <span>New Zealand Dollar</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/curreency_12.png" alt="" />
+                                                                <span>Canadian Dollar</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/curreency_13.png" alt="" />
+                                                                <span> Omani Rial</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/currency_07.png" alt="" />
+                                                                <span>Indian Rupee</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/currency_09.png" alt="" />
+                                                                <span>British Pound</span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/currency_16.png" alt="" />
+                                                                <span>United States Dollar</span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/curreency_18.png" alt="" />
+                                                                <span>French Euro</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/currency_03.png" alt="" />
+                                                                <span>Malaysian Ringgit</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
   
 </li>
 <li class="calender"><a href="#"> 
-<img src="images/calender.png" class="cal-img"></a>
+<img src="images/calender.png" class="cal-img"></a><!--<span class="tab-view-content clander-txt">Calender</span>-->
 </li>
 
-<li class="calender">
-<img src="images/wishlist.png">
+<li class="whishlist">
+    <a href="whislist.html"> 
+<img src="images/wishlist.png"></a><!--<span>Wish List</span> 
+<span class="wishlst">0</span>-->
 </li>
 <li class="cart">
 <img src="images/cart.png"><span class="badge">2</span>
@@ -296,37 +320,37 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                         <h6>Prime Video</h6>
                       
                         <div class="submenu-links">
-                            <a href="#">All Videos</a>
+                            <a href="productlist.html">All Videos</a>
                             <span>All TV shows, movies, and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Included with Prime</a>
+                            <a href="productlist.html">Included with Prime</a>
                             <span>Prime Originals, exclusives, and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">NRI Channels</a>
+                            <a href="productlist.html">NRI Channels</a>
                             <span>HBO, SHOWTIME, STARZ, and more</span>
                         </div>
                          <div class="submenu-links">
-                            <a href="#">Rent or Buy</a>
+                            <a href="productlist.html">Rent or Buy</a>
                             <span>New releases, latest seasons, and more</span>
                         </div>
                            
                         <div class="submenu-list">
                             <div class="submenu-links">
-                            <a href="#">Your Watchlist</a>
+                            <a href="productlist.html">Your Watchlist</a>
                            
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Your Video Library</a>
+                            <a href="productlist.html">Your Video Library</a>
                           
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Watch Anywhere</a>
+                            <a href="productlist.html">Watch Anywhere</a>
                            
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Getting Started</a>
+                            <a href="productlist.html">Getting Started</a>
                            
                         </div>
                         </div>
@@ -337,15 +361,15 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                         <h6>More to Explore</h6>
                       
                         <div class="submenu-links">
-                            <a href="#">More to Explore</a>
+                            <a href="productlist.html">More to Explore</a>
                             <span>Prime Original Series and Movies</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Kids</a>
+                            <a href="productlist.html">Kids</a>
                             <span>Top kids TV Shows, movies and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Coming to Prime</a>  
+                            <a href="productlist.html">Coming to Prime</a>  
                         </div>
                  </div>
                     <div class="link-img">
@@ -362,37 +386,37 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                         <h6>Amazon Music</h6>
                       
                         <div class="submenu-links">
-                            <a href="#">All Videos</a>
+                            <a href="productlist.html">All Videos</a>
                             <span>All TV shows, movies, and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Included with Prime</a>
+                            <a href="productlist.html">Included with Prime</a>
                             <span>Prime Originals, exclusives, and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">NRI Channels</a>
+                            <a href="productlist.html">NRI Channels</a>
                             <span>HBO, SHOWTIME, STARZ, and more</span>
                         </div>
                          <div class="submenu-links">
-                            <a href="#">Rent or Buy</a>
+                            <a href="productlist.html">Rent or Buy</a>
                             <span>New releases, latest seasons, and more</span>
                         </div>
                            
                         <div class="submenu-list">
                             <div class="submenu-links">
-                            <a href="#">Your Watchlist</a>
+                            <a href="productlist.html">Your Watchlist</a>
                            
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Your Video Library</a>
+                            <a href="productlist.html">Your Video Library</a>
                           
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Watch Anywhere</a>
+                            <a href="productlist.html">Watch Anywhere</a>
                            
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Getting Started</a>
+                            <a href="productlist.html">Getting Started</a>
                            
                         </div>
                         </div>
@@ -403,15 +427,15 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                         <h6>More to Explore</h6>
                       
                         <div class="submenu-links">
-                            <a href="#">More to Explore</a>
+                            <a href="productlist.html">More to Explore</a>
                             <span>Prime Original Series and Movies</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Kids</a>
+                            <a href="productlist.html">Kids</a>
                             <span>Top kids TV Shows, movies and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Coming to Prime</a>  
+                            <a href="productlist.html">Coming to Prime</a>  
                         </div>
                  </div>
                     <div class="link-img">
@@ -428,37 +452,37 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                         <h6>Appstore for Android</h6>
                       
                         <div class="submenu-links">
-                            <a href="#">All Videos</a>
+                            <a href="productlist.html">All Videos</a>
                             <span>All TV shows, movies, and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Included with Prime</a>
+                            <a href="productlist.html">Included with Prime</a>
                             <span>Prime Originals, exclusives, and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">NRI Channels</a>
+                            <a href="productlist.html">NRI Channels</a>
                             <span>HBO, SHOWTIME, STARZ, and more</span>
                         </div>
                          <div class="submenu-links">
-                            <a href="#">Rent or Buy</a>
+                            <a href="productlist.html">Rent or Buy</a>
                             <span>New releases, latest seasons, and more</span>
                         </div>
                            
                         <div class="submenu-list">
                             <div class="submenu-links">
-                            <a href="#">Your Watchlist</a>
+                            <a href="productlist.html">Your Watchlist</a>
                            
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Your Video Library</a>
+                            <a href="productlist.html">Your Video Library</a>
                           
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Watch Anywhere</a>
+                            <a href="productlist.html">Watch Anywhere</a>
                            
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Getting Started</a>
+                            <a href="productlist.html">Getting Started</a>
                            
                         </div>
                         </div>
@@ -469,15 +493,15 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                         <h6>More to Explore</h6>
                       
                         <div class="submenu-links">
-                            <a href="#">More to Explore</a>
+                            <a href="productlist.html">More to Explore</a>
                             <span>Prime Original Series and Movies</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Kids</a>
+                            <a href="productlist.html">Kids</a>
                             <span>Top kids TV Shows, movies and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Coming to Prime</a>  
+                            <a href="productlist.html">Coming to Prime</a>  
                         </div>
                  </div>
                     <div class="link-img">
@@ -495,37 +519,37 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                         <h6>Echo & Alexa</h6>
                       
                         <div class="submenu-links">
-                            <a href="#">All Videos</a>
+                            <a href="productlist.html">All Videos</a>
                             <span>All TV shows, movies, and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Included with Prime</a>
+                            <a href="productlist.html">Included with Prime</a>
                             <span>Prime Originals, exclusives, and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">NRI Channels</a>
+                            <a href="productlist.html">NRI Channels</a>
                             <span>HBO, SHOWTIME, STARZ, and more</span>
                         </div>
                          <div class="submenu-links">
-                            <a href="#">Rent or Buy</a>
+                            <a href="productlist.html">Rent or Buy</a>
                             <span>New releases, latest seasons, and more</span>
                         </div>
                            
                         <div class="submenu-list">
                             <div class="submenu-links">
-                            <a href="#">Your Watchlist</a>
+                            <a href="productlist.html">Your Watchlist</a>
                            
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Your Video Library</a>
+                            <a href="productlist.html">Your Video Library</a>
                           
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Watch Anywhere</a>
+                            <a href="productlist.html">Watch Anywhere</a>
                            
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Getting Started</a>
+                            <a href="productlist.html">Getting Started</a>
                            
                         </div>
                         </div>
@@ -936,7 +960,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
 <div class="logo">
     <img src="images/prime-logo.png" class="tab-logo">
-    <img src="images/logo.png"></div>
+    <img src="images/Nri Megamart-1.png"></div>
 </div>
 <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 prime-container">
 <ul class="signup prime">
@@ -1057,7 +1081,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                     <li><img src="images/memberhei.png"><span>Midnight Delivery Free</span></li>
                     <li><img src="images/memberhei.png"><span>Discounts in all orders</span></li>
                 </ul>
-                <a href="signup.html" class="rtr-butn"><button type="button" class="btn post-btn mem-btn pri_btn">Buy now</button></a>
+                <a href="cart.html" class="rtr-butn"><button type="button" class="btn post-btn mem-btn pri_btn">Buy now</button></a>
             </div>
             
         </div>
@@ -1131,612 +1155,35 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <button class="contact-button-link show-hide-contact-bar">
     <img src="images/slider.png" alt="" class="floter-tggle"/>
     <span class="fa fa-angle-left fa-icon"></span></button>
-<a href="#" class="contact-button-link cb-ancor nmart">
+<a href="cart.html" class="contact-button-link cb-ancor nmart">
 <span>NRI Mega Mart</span><img src="images/ncart.png" class="fa floater ncart_img"></a>
 
-<a href="#" class="contact-button-link cb-ancor nenquiry">
+<a href="enquiry.html" class="contact-button-link cb-ancor nenquiry">
 <span>Enquiries</span><img src="images/nenquiries.png" class="fa floater"></a>
 
-<a href="#" class="contact-button-link cb-ancor nprime">
+<a href="myprofile.html" class="contact-button-link cb-ancor nprime">
 <span>Credits</span><img src="images/monitor.png" class="fa floater ncre-img"></a>
 
-<a href="#" class="contact-button-link cb-ancor gcart">
+<a href="blog_1.html" class="contact-button-link cb-ancor gcart">
 <span>Prime Blog</span><img src="images/blog_n.png" class="fa floater ncart_img nblog_img"></a>
 
 
-<a href="#" class="contact-button-link cb-ancor nprofile" >
+<a href="groupsites.html" class="contact-button-link cb-ancor nprofile" >
 <span>Group Sites</span><img src="images/spec_07.png" class="fa floater"></a>
 
 </div>
 <!----------------Main menu ends here--------------------->
 
-    
-<div class="banner blog-banner">
-<div id="myCarousel" class="carousel slide advertse-banner carousel-fade" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-
-      <div class="item active">
-        <img src="images/advrbanner.jpg" alt="Los Angeles" style="width:100%;">
-        <div class="carousel-caption advertse-txt">
-         <h2>UP TO 75% OFF</h2>
-                <h4>Home Shopping Spree</h4>
-                <a href="#">Explore Winter Selection</a>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="images/advrbanner.jpg" alt="Los Angeles" style="width:100%;">
-        <div class="carousel-caption advertse-txt">
-         <h2>UP TO 75% OFF</h2>
-                <h4>Home Shopping Spree</h4>
-                <a href="#">Explore Winter Selection</a>
-        </div>
-      </div>
-  <div class="item">
-        <img src="images/advrbanner.jpg" alt="Los Angeles" style="width:100%;">
-        <div class="carousel-caption advertse-txt">
-         <h2>UP TO 75% OFF</h2>
-                <h4>Home Shopping Spree</h4>
-                <a href="#">Explore Winter Selection</a>
-        </div>
-      </div>
-    </div>
-
-    
-  </div>
-</div>
-
-
-<div class="productlist_page">
-    <div class="container product_container">
-        <div class="row">
-            <div class="product_wrkarea">
-                <div class="col-xs-12 col-sm-3 col-md-3 product_critiria_width">
-                    <div class="product_critiria">
-                        <h3>Shop by Category</h3>   
-                        <ul class="pro_cate">
-                            <li><a href="#">Cakes</a></li>
-                              <li><a href="#">Flowers</a></li>
-                                <li><a href="#">Mobile</a></li>
-                                 <li><a href="#">Gifting Items</a></li>
-                                  <li><a href="#">Mobile Accessories</a></li>
-                        </ul>
-                        <div class="product_type">
-                            <p>Product Type</p> 
-                            <div class="protype_lst">
-                             <div class="protype_check">
-                                 <input type="checkbox" value="" class="pro_checkbox"> <span>Option 1</span>
-                                 </div>
-                               <div class="protype_check">
-                                   <input type="checkbox" value="" class="pro_checkbox"><span>Option 2</span>
-                                </div>
-                               <div class="protype_check">
-                                <input type="checkbox" value="" class="pro_checkbox"><span>Option 3</span>
-                                </div>
-                               <div class="protype_check">
-                                    <input type="checkbox" value="" class="pro_checkbox"><span>Option 4</span>
-                                </div>
-                                <div class="protype_check">
-                                    <input type="checkbox" value="" class="pro_checkbox"><span>Option 5</span>
-                                </div>
-                                <div class="protype_check">
-                                    <input type="checkbox" value="" class="pro_checkbox"><span>Option 6</span>
-                                </div>
-                                <div class="protype_check">
-                                    <input type="checkbox" value="" class="pro_checkbox"><span>Option7</span>
-                                </div>
-                                <div class="protype_check">
-                                    <input type="checkbox" value="" class="pro_checkbox"><span>Option 8</span>
-                                </div>
-                                <div class="protype_check">
-                                    <input type="checkbox" value="" class="pro_checkbox"><span>Option 9</span>
-                                </div>
-                                <div class="protype_check">
-                                    <input type="checkbox" value="" class="pro_checkbox"><span>Option 10</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="sortpro">
-                             <p>Sort Products</p> 
-                            <div class="protype_srt">
-                             <div class="protype_radio">
-                                 <input type="radio" value="" class="pro_radio"> <span>Low to High</span>
-                                 </div>
-                               <div class="protype_radio">
-                                   <input type="radio" value="" class="pro_radio"><span>High to Low</span>
-                                </div>
-                               <div class="protype_radio">
-                                <input type="radio" value="" class="pro_radio"><span>Top Viewed</span>
-                                </div>
-                              
-                            </div>
-                        </div>
-                        
-                         <div class="product_brand">
-                            <p>Brand</p> 
-                            <input type="text" class="brand_srh" placeholder="search for brand">
-                            <div class="protype_brnd">
-                              
-                             <div class="probrnd_check">
-                                 <input type="checkbox" value="" class="probrnd_checkbox"> <span>Option 1</span>
-                                 </div>
-                               <div class="probrnd_check">
-                                   <input type="checkbox" value="" class="probrnd_checkbox"><span>Option 2</span>
-                                </div>
-                               <div class="probrnd_check">
-                                <input type="checkbox" value="" class="probrnd_checkbox"><span>Option 3</span>
-                                </div>
-                               <div class="probrnd_check">
-                                    <input type="checkbox" value="" class="probrnd_checkbox"><span>Option 4</span>
-                                </div>
-                                <div class="probrnd_check">
-                                    <input type="checkbox" value="" class="probrnd_checkbox"><span>Option 5</span>
-                                </div>
-                                <div class="probrnd_check">
-                                    <input type="checkbox" value="" class="probrnd_checkbox"><span>Option 6</span>
-                                </div>
-                                <div class="probrnd_check">
-                                    <input type="checkbox" value="" class="probrnd_checkbox"><span>Option7</span>
-                                </div>
-                                <div class="probrnd_check">
-                                    <input type="checkbox" value="" class="probrnd_checkbox"><span>Option 8</span>
-                                </div>
-                                <div class="probrnd_check">
-                                    <input type="checkbox" value="" class="probrnd_checkbox"><span>Option 9</span>
-                                </div>
-                                <div class="probrnd_check">
-                                    <input type="checkbox" value="" class="probrnd_checkbox"><span>Option 10</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                         <div class="product_dscunt">
-                            <p data-toggle="collapse" data-target="#demo">Discount <i class="fa fa-angle-down dscunt_dwn"></i></p> 
-                            
-                            <div class="protype_dscunt collapse" id="demo">
-                              
-                             <div class="prodscunt_check">
-                                 <input type="checkbox" value="" class="prodscunt_checkbox"> <span>Option 1</span>
-                                 </div>
-                               <div class="probrnd_check">
-                                   <input type="checkbox" value="" class="prodscunt_checkbox"><span>Option 2</span>
-                                </div>
-                               <div class="probrnd_check">
-                                <input type="checkbox" value="" class="prodscunt_checkbox"><span>Option 3</span>
-                                </div>
-                               
-                            </div>
-                        </div>
-      
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-9 col-md-9 product_list_width">
-                    <div class="product_list">
-                        <h6 class="pro_heading"> Product Heading</h6>
-                        <div class="row">
-                            <div class="pro_lst">
-                                <div class="col-xs-12 col-sm-3">
-                                    <div class="productlst_details">
-                                        <div class="prolst_img">
-                                            <img src="images/megamart/cake_03.png" alt="" class="pro_lstimg"/>
-                                             <div class="proquickview">
-                                                <div class="quicktext" data-toggle="modal" data-target="#quickview">Quick View</div>
-                                            </div>
-                                        </div>
-                                        <div class="product_list_details">
-                                        <p class="pro_titile">Lorem Ipsum is simply dummy text of the printing </p>  
-                                        <div class="pro_price">
-                                            <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
-                                        </div>
-                                         <div class="test_rating">
-                       <div class="rate pro_list_rating">
-        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
-        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
-        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
-        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
-        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
-    </div>
-               </div>
-                                        <div class="product_buttons">
-                                            <button type="button" class="btn hme_btn pro_btn">Buy Now</button>
-                                            <span class="pro_wish"></span>
-                                            <p class="product_compare"><img src="images/share-files.png" alt=""/></p>
-                                            
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-xs-12 col-sm-3">
-                                    <div class="productlst_details">
-                                        <div class="prolst_img">
-                                            <img src="images/nexus6a.jpg" alt="" class="pro_lstimg"/>
-                                             <div class="proquickview">
-                                                <div class="quicktext" data-toggle="modal" data-target="#quickview">Quick View</div>
-                                            </div>
-                                        </div>
-                                        <div class="product_list_details">
-                                        <p class="pro_titile">Lorem Ipsum is simply dummy text of the printing </p>  
-                                        <div class="pro_price">
-                                            <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
-                                        </div>
-                                         <div class="test_rating">
-                       <div class="rate pro_list_rating">
-        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
-        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
-        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
-        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
-        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
-    </div>
-               </div>
-                                        <div class="product_buttons">
-                                            <button type="button" class="btn hme_btn pro_btn">Buy Now</button>
-                                            <span class="pro_wish"></span>
-                                            <p class="product_compare"><img src="images/share-files.png" alt=""/></p>
-                                            
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                  <div class="col-xs-12 col-sm-3">
-                                    <div class="productlst_details">
-                                        <div class="prolst_img">
-                                            <img src="images/megamart/cake_03.png" alt="" class="pro_lstimg"/>
-                                             <div class="proquickview">
-                                                <div class="quicktext" data-toggle="modal" data-target="#quickview">Quick View</div>
-                                            </div>
-                                        </div>
-                                        <div class="product_list_details">
-                                        <p class="pro_titile">Lorem Ipsum is simply dummy text of the printing </p>  
-                                        <div class="pro_price">
-                                            <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
-                                        </div>
-                                         <div class="test_rating">
-                       <div class="rate pro_list_rating">
-        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
-        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
-        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
-        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
-        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
-    </div>
-               </div>
-                                        <div class="product_buttons">
-                                            <button type="button" class="btn hme_btn pro_btn">Buy Now</button>
-                                            <span class="pro_wish"></span>
-                                            <p class="product_compare"><img src="images/share-files.png" alt=""/></p>
-                                            
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-xs-12 col-sm-3">
-                                    <div class="productlst_details">
-                                        <div class="prolst_img">
-                                            <img src="images/nexus6a.jpg" alt="" class="pro_lstimg"/>
-                                             <div class="proquickview">
-                                                <div class="quicktext" data-toggle="modal" data-target="#quickview">Quick View</div>
-                                            </div>
-                                        </div>
-                                        <div class="product_list_details">
-                                        <p class="pro_titile">Lorem Ipsum is simply dummy text of the printing </p>  
-                                        <div class="pro_price">
-                                            <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
-                                        </div>
-                                         <div class="test_rating">
-                       <div class="rate pro_list_rating">
-        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
-        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
-        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
-        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
-        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
-    </div>
-               </div>
-                                        <div class="product_buttons">
-                                            <button type="button" class="btn hme_btn pro_btn">Buy Now</button>
-                                            <span class="pro_wish"></span>
-                                            <p class="product_compare"><img src="images/share-files.png" alt=""/></p>
-                                            
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                        </div>
-                        
-                        <div class="row">
-                            <div class="pro_lst">
-                                <div class="col-xs-12 col-sm-3">
-                                    <div class="productlst_details">
-                                        <div class="prolst_img">
-                                            <img src="images/megamart/cake_03.png" alt="" class="pro_lstimg"/>
-                                             <div class="proquickview">
-                                                <div class="quicktext" data-toggle="modal" data-target="#quickview">Quick View</div>
-                                            </div>
-                                        </div>
-                                        <div class="product_list_details">
-                                        <p class="pro_titile">Lorem Ipsum is simply dummy text of the printing </p>  
-                                        <div class="pro_price">
-                                            <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
-                                        </div>
-                                         <div class="test_rating">
-                       <div class="rate pro_list_rating">
-        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
-        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
-        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
-        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
-        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
-    </div>
-               </div>
-                                        <div class="product_buttons">
-                                            <button type="button" class="btn hme_btn pro_btn">Buy Now</button>
-                                            <span class="pro_wish"></span>
-                                            <p class="product_compare"><img src="images/share-files.png" alt=""/></p>
-                                            
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-xs-12 col-sm-3">
-                                    <div class="productlst_details">
-                                        <div class="prolst_img">
-                                            <img src="images/nexus6a.jpg" alt="" class="pro_lstimg"/>
-                                             <div class="proquickview">
-                                                <div class="quicktext" data-toggle="modal" data-target="#quickview">Quick View</div>
-                                            </div>
-                                        </div>
-                                        <div class="product_list_details">
-                                        <p class="pro_titile">Lorem Ipsum is simply dummy text of the printing </p>  
-                                        <div class="pro_price">
-                                            <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
-                                        </div>
-                                         <div class="test_rating">
-                       <div class="rate pro_list_rating">
-        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
-        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
-        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
-        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
-        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
-    </div>
-               </div>
-                                        <div class="product_buttons">
-                                            <button type="button" class="btn hme_btn pro_btn">Buy Now</button>
-                                            <span class="pro_wish"></span>
-                                            <p class="product_compare"><img src="images/share-files.png" alt=""/></p>
-                                            
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                  <div class="col-xs-12 col-sm-3">
-                                    <div class="productlst_details">
-                                        <div class="prolst_img">
-                                            <img src="images/megamart/cake_03.png" alt="" class="pro_lstimg"/>
-                                             <div class="proquickview">
-                                                <div class="quicktext" data-toggle="modal" data-target="#quickview">Quick View</div>
-                                            </div>
-                                        </div>
-                                        <div class="product_list_details">
-                                        <p class="pro_titile">Lorem Ipsum is simply dummy text of the printing </p>  
-                                        <div class="pro_price">
-                                            <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
-                                        </div>
-                                         <div class="test_rating">
-                       <div class="rate pro_list_rating">
-        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
-        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
-        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
-        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
-        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
-    </div>
-               </div>
-                                        <div class="product_buttons">
-                                            <button type="button" class="btn hme_btn pro_btn">Buy Now</button>
-                                            <span class="pro_wish"></span>
-                                            <p class="product_compare"><img src="images/share-files.png" alt=""/></p>
-                                            
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-xs-12 col-sm-3">
-                                    <div class="productlst_details">
-                                        <div class="prolst_img">
-                                            <img src="images/nexus6a.jpg" alt="" class="pro_lstimg"/>
-                                             <div class="proquickview">
-                                                <div class="quicktext" data-toggle="modal" data-target="#quickview">Quick View</div>
-                                            </div>
-                                        </div>
-                                        <div class="product_list_details">
-                                        <p class="pro_titile">Lorem Ipsum is simply dummy text of the printing </p>  
-                                        <div class="pro_price">
-                                            <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
-                                        </div>
-                                         <div class="test_rating">
-                       <div class="rate pro_list_rating">
-        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
-        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
-        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
-        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
-        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
-    </div>
-               </div>
-                                        <div class="product_buttons">
-                                            <button type="button" class="btn hme_btn pro_btn">Buy Now</button>
-                                            <span class="pro_wish"></span>
-                                            <p class="product_compare"><img src="images/share-files.png" alt=""/></p>
-                                            
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                        </div>
-                        
-                        <div class="row">
-                            <div class="pro_lst">
-                                <div class="col-xs-12 col-sm-3">
-                                    <div class="productlst_details">
-                                        <div class="prolst_img">
-                                            <img src="images/megamart/cake_03.png" alt="" class="pro_lstimg"/>
-                                             <div class="proquickview">
-                                                <div class="quicktext" data-toggle="modal" data-target="#quickview">Quick View</div>
-                                            </div>
-                                        </div>
-                                        <div class="product_list_details">
-                                        <p class="pro_titile">Lorem Ipsum is simply dummy text of the printing </p>  
-                                        <div class="pro_price">
-                                            <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
-                                        </div>
-                                         <div class="test_rating">
-                       <div class="rate pro_list_rating">
-        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
-        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
-        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
-        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
-        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
-    </div>
-               </div>
-                                        <div class="product_buttons">
-                                            <button type="button" class="btn hme_btn pro_btn">Buy Now</button>
-                                            <span class="pro_wish"></span>
-                                            <p class="product_compare"><img src="images/share-files.png" alt=""/></p>
-                                            
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-xs-12 col-sm-3">
-                                    <div class="productlst_details">
-                                        <div class="prolst_img">
-                                            <img src="images/nexus6a.jpg" alt="" class="pro_lstimg"/>
-                                             <div class="proquickview">
-                                                <div class="quicktext" data-toggle="modal" data-target="#quickview">Quick View</div>
-                                            </div>
-                                        </div>
-                                        <div class="product_list_details">
-                                        <p class="pro_titile">Lorem Ipsum is simply dummy text of the printing </p>  
-                                        <div class="pro_price">
-                                            <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
-                                        </div>
-                                         <div class="test_rating">
-                       <div class="rate pro_list_rating">
-        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
-        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
-        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
-        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
-        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
-    </div>
-               </div>
-                                        <div class="product_buttons">
-                                            <button type="button" class="btn hme_btn pro_btn">Buy Now</button>
-                                            <span class="pro_wish"></span>
-                                            <p class="product_compare"><img src="images/share-files.png" alt=""/></p>
-                                            
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                  <div class="col-xs-12 col-sm-3">
-                                    <div class="productlst_details">
-                                        <div class="prolst_img">
-                                            <img src="images/megamart/cake_03.png" alt="" class="pro_lstimg"/>
-                                             <div class="proquickview">
-                                                <div class="quicktext" data-toggle="modal" data-target="#quickview">Quick View</div>
-                                            </div>
-                                        </div>
-                                        <div class="product_list_details">
-                                        <p class="pro_titile">Lorem Ipsum is simply dummy text of the printing </p>  
-                                        <div class="pro_price">
-                                            <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
-                                        </div>
-                                         <div class="test_rating">
-                       <div class="rate pro_list_rating">
-        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
-        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
-        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
-        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
-        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
-    </div>
-               </div>
-                                        <div class="product_buttons">
-                                            <button type="button" class="btn hme_btn pro_btn">Buy Now</button>
-                                            <span class="pro_wish"></span>
-                                            <p class="product_compare"><img src="images/share-files.png" alt=""/></p>
-                                            
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-xs-12 col-sm-3">
-                                    <div class="productlst_details">
-                                        <div class="prolst_img">
-                                            <img src="images/nexus6a.jpg" alt="" class="pro_lstimg"/>
-                                             <div class="proquickview">
-                                                <div class="quicktext" data-toggle="modal" data-target="#quickview">Quick View</div>
-                                            </div>
-                                        </div>
-                                        <div class="product_list_details">
-                                        <p class="pro_titile">Lorem Ipsum is simply dummy text of the printing </p>  
-                                        <div class="pro_price">
-                                            <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
-                                        </div>
-                                         <div class="test_rating">
-                       <div class="rate pro_list_rating">
-        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
-        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
-        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
-        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
-        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
-    </div>
-               </div>
-                                        <div class="product_buttons">
-                                            <button type="button" class="btn hme_btn pro_btn">Buy Now</button>
-                                            <span class="pro_wish"></span>
-                                            <p class="product_compare"><img src="images/share-files.png" alt=""/></p>
-                                            
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="quickview" role="dialog">
-    <div class="modal-dialog large_mdel full_image_mdel">
-        
-      <!-- Modal content-->
-      <div class="modal-content large_mdel_cntent">
-
-        <div class="modal-body large_mdel_body full_image_mdel_bdy product_popup">
-           
-                <div class="prime_img product_cara_img">
-                <div id="myCarousel_pro" class="carousel slide " data-ride="carousel">
+<div class="cart_workarea">  
+<div class="container product_container">
+  <div class="row">
+  <div class="cart_data">
+    <div class="col-sm-9">
+        <div class="pro_details">
+            <div class="row">
+                <div class="col-xs-12 col-sm-5">
+            <div class="product_image">
+            <div id="myCarousel_product" class="carousel slide " data-ride="carousel">
     
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
@@ -1759,24 +1206,330 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                                         </div>
     </div>
 
-    <a class="left carousel-control" href="#myCarousel_pro" data-slide="prev">
+    <a class="left carousel-control" href="#myCarousel_product" data-slide="prev">
         <img src="images/left123.png">
     <span class="sr-only">Previous</span>
   </a>
-  <a class="right carousel-control" href="#myCarousel_pro" data-slide="next">
+  <a class="right carousel-control" href="#myCarousel_product" data-slide="next">
    <img src="images/right123.png">
     <span class="sr-only">Next</span>
   </a>
-  </div>
+  </div> </div>
                 </div>
-                        
-            <div class="mem-content prime_pop_content product_detail_cntnt">
-                 <p class="pro_titile_pop">Lorem Ipsum is simply dummy text of the printing </p>  
-                  <div class="pro_price pro_price_pop">
-                        <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
+                <div class="col-xs-12 col-sm-7">
+                    <div class="product_description">
+                        <h4>Product Description</h4> 
+                        <p class="pro_description">Envent LiveTune 500 Wireless Bluetooth Earphone with Magnetic Locking Design Earphone with Magnetic Locking Design...<a href="#moredetails" class="delete_addon pro_more">More Details</a> </p>
                     </div>
-                   <div class="test_rating">
+                    <div class="pro_price">
+                                            <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
+                                        </div>
+                    
+                    <div class="test_rating">
                        <div class="rate pro_list_rating">
+        <input id="star5" name="rate" value="5" type="radio" checked><label for="star5" title="text">5 stars</label>
+        <input id="star4" name="rate" value="4" type="radio" checked><label for="star4" title="text">4 stars</label>
+        <input id="star3" name="rate" value="3" type="radio" checked><label for="star3" title="text">3 stars</label>
+        <input id="star2" name="rate" value="2" type="radio" checked><label for="star2" title="text">2 stars</label>
+        <input id="star1" name="rate" value="1" type="radio" checked><label for="star1" title="text">1 star</label>
+    </div>
+               </div>
+                    <div class="weight_qaun">
+                        <div class="cake_wei">
+                            <span>Weight</span>
+                            <select class="delive_time del_wei">
+<option>1KG </option>
+<option>2KG</option>
+<option >3KG</option>
+<option >4KG</option>
+<option >5KG</option>
+<option >6KG</option>
+<option >7KG</option>
+</select>
+                        </div> 
+                        
+                          <div class="quantity_cake">
+                            <span>Quantity</span>
+                         <input type="number" name="quantity" min="1" max="100" class="quan_num">
+                        </div> 
+                    </div>
+                    <div class="shipping_availability">
+                      <span>Shipping Availability</span>  
+                      <div class="cake_wei">
+                   
+                            <select class="delive_time del_wei">
+<option>Select Country</option>
+<option>India</option>
+<option >US</option>
+<option >Australia</option>
+<option >Japan</option>
+<option >Germany</option>
+<option >UK</option>
+</select>
+                        </div> 
+                         <div class="cake_wei">
+                   
+                            <select class="delive_time del_wei">
+<option>Pin/Zip code</option>
+<option>12345</option>
+<option >456789</option>
+<option >765657</option>
+<option >987987</option>
+<option >234234</option>
+<option >5675675</option>
+</select>
+                        </div> 
+                    </div>   
+                    <div class="edit_del_address">
+        
+        <p class="delivery_addr">Delivery Address</p>
+        <div class="delivery_addr_detail">
+             <a href="#" class="edit_aadr_btn" data-toggle="modal" data-target="#editaddr">Edit Address</a>
+            <p class="delivery_name">Naveen Reddy</p>
+            <span class="delivery_address">Plot No 33,ABCD Colony</span>
+             <span class="delivery_address">ABCD Road</span>
+              <span class="delivery_address">Hyderabad, 5000032</span>
+        </div>
+    </div>
+                    <div class="order_date_picker">
+<div class="row">
+<div class="col-xs-12 col-sm-4">
+<div class="cart_date">
+<p>Delivery Date</p>
+<input name="cart" value="31-05-2018" class="cart_date_pick" type="date">
+</div>
+</div>
+<div class="col-xs-12 col-sm-8">
+<div class="cart_date">
+<p>Delivery Time</p>
+<div class="delivery_time">
+<div class="delivery_selection">
+<select id="getFname" onchange="admSelectCheck(this);" class="delive_time">
+<option>Delivery </option>
+<option>Midnight Delivery</option>
+<option id="admOption" value="Specifictime">Specific Time</option>
+</select>
+</div>
+
+<div id="admDivCheck" style="display: none;" class="specific_time">
+<select class="specific_del_time">
+<option value="1">00:01 to 01:00</option>
+<option value="1">01:01 to 02:00</option>
+<option value="1">02:01 to 03:00</option>
+<option value="1">03:01 to 04:00</option>
+<option value="1">04:01 to 05:00</option>
+<option value="1">05:01 to 06:00</option>
+<option value="1">06:01 to 07:00</option>
+<option value="1">07:01 to 08:00</option>
+<option value="1">08:01 to 09:00</option>
+<option value="1">09:01 to 10:00</option>
+<option value="1">10:01 to 11:00</option>
+<option value="1">11:01 to 12:00</option>
+<option value="1">12:01 to 13:00</option>
+<option value="1">13:01 to 14:00</option>
+<option value="1">14:01 to 15:00</option>
+<option value="1">15:01 to 16:00</option>
+<option value="1">16:01 to 17:00</option>
+<option value="1">17:01 to 18:00</option>
+<option value="1">18:01 to 19:00</option>
+<option value="1">19:01 to 20:00</option>
+<option value="1">20:01 to 21:00</option>
+<option value="1">21:01 to 22:00</option>
+<option value="1">22:01 to 23:00</option>
+<option value="1">23:01 to 00:00</option>
+
+</select>
+ </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+        <div class="greetiing_mess product_greting_card">
+                        <span class="mess_on_card"> Greeting Card Message</span>
+                        <textarea class="greating_txt_area gretting_product" readonly>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris, consectetur adipisicing minim veniam.Lorem ipsum dolor sit amet, consectetur </textarea>
+                <a class="change_mess">Change Message</a>
+                    </div>   
+                    <div class="greeting_select">
+                        <img src="images/purple-flowers.jpg" class="selected_card">
+                        <button type="button" class="btn cart-mre btn_color" data-toggle="modal" data-target="#greatingcard">Select Greeting Card</button>
+                    </div>
+                </div>
+                
+                </div>
+        </div>
+ </div>
+         <div class="col-sm-3 addon_pro_container">
+        <div class="product_detail_cart addon_producut">
+          <h3>Add ons List</h3>
+          <div class="addon_product" id="addon">
+              <div class="addon_list">
+                  <img src="images/autumn-leaves.jpg" class="addon_image">
+                  <div class="pro_addon_detail">
+                      <p class="addon_heading">Envent LiveTune 500 Wireless Bluetooth Earphone </p>
+                     <div class="pro_price addonlist_price">
+                                            <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
+                                        </div>
+                      <div class="test_rating addon_stars">
+                       <div class="rate pro_list_rating">
+        <input id="star5" name="rate" value="5" checked="" type="radio"><label for="star5" title="text">5 stars</label>
+        <input id="star4" name="rate" value="4" checked="" type="radio"><label for="star4" title="text">4 stars</label>
+        <input id="star3" name="rate" value="3" checked="" type="radio"><label for="star3" title="text">3 stars</label>
+        <input id="star2" name="rate" value="2" checked="" type="radio"><label for="star2" title="text">2 stars</label>
+        <input id="star1" name="rate" value="1" checked="" type="radio"><label for="star1" title="text">1 star</label>
+    </div>
+               </div>
+                    <a href="cart.html" class="change_mess addon_change">Add to Cart</a>
+                  </div>
+              </div>
+              
+              <div class="addon_list">
+                  <img src="images/autumn-leaves.jpg" class="addon_image">
+                  <div class="pro_addon_detail">
+                      <p class="addon_heading">Envent LiveTune 500 Wireless Bluetooth Earphone </p>
+                     <div class="pro_price addonlist_price">
+                                            <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
+                                        </div>
+                      <div class="test_rating addon_stars">
+                       <div class="rate pro_list_rating">
+        <input id="star5" name="rate" value="5" checked="" type="radio"><label for="star5" title="text">5 stars</label>
+        <input id="star4" name="rate" value="4" checked="" type="radio"><label for="star4" title="text">4 stars</label>
+        <input id="star3" name="rate" value="3" checked="" type="radio"><label for="star3" title="text">3 stars</label>
+        <input id="star2" name="rate" value="2" checked="" type="radio"><label for="star2" title="text">2 stars</label>
+        <input id="star1" name="rate" value="1" checked="" type="radio"><label for="star1" title="text">1 star</label>
+    </div>
+               </div>
+                    <a href="cart.html" class="change_mess addon_change">Add to Cart</a>
+                  </div>
+              </div>
+              
+              <div class="addon_list">
+                  <img src="images/autumn-leaves.jpg" class="addon_image">
+                  <div class="pro_addon_detail">
+                      <p class="addon_heading">Envent LiveTune 500 Wireless Bluetooth Earphone </p>
+                     <div class="pro_price addonlist_price">
+                                            <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
+                                        </div>
+                      <div class="test_rating addon_stars">
+                       <div class="rate pro_list_rating">
+        <input id="star5" name="rate" value="5" checked="" type="radio"><label for="star5" title="text">5 stars</label>
+        <input id="star4" name="rate" value="4" checked="" type="radio"><label for="star4" title="text">4 stars</label>
+        <input id="star3" name="rate" value="3" checked="" type="radio"><label for="star3" title="text">3 stars</label>
+        <input id="star2" name="rate" value="2" checked="" type="radio"><label for="star2" title="text">2 stars</label>
+        <input id="star1" name="rate" value="1" checked="" type="radio"><label for="star1" title="text">1 star</label>
+    </div>
+               </div>
+                    <a href="cart.html" class="change_mess addon_change">Add to Cart</a>
+                  </div>
+              </div>
+                 <div class="addon_list">
+                  <img src="images/autumn-leaves.jpg" class="addon_image">
+                  <div class="pro_addon_detail">
+                      <p class="addon_heading">Envent LiveTune 500 Wireless Bluetooth Earphone </p>
+                     <div class="pro_price addonlist_price">
+                                            <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
+                                        </div>
+                      <div class="test_rating addon_stars">
+                       <div class="rate pro_list_rating">
+        <input id="star5" name="rate" value="5" checked="" type="radio"><label for="star5" title="text">5 stars</label>
+        <input id="star4" name="rate" value="4" checked="" type="radio"><label for="star4" title="text">4 stars</label>
+        <input id="star3" name="rate" value="3" checked="" type="radio"><label for="star3" title="text">3 stars</label>
+        <input id="star2" name="rate" value="2" checked="" type="radio"><label for="star2" title="text">2 stars</label>
+        <input id="star1" name="rate" value="1" checked="" type="radio"><label for="star1" title="text">1 star</label>
+    </div>
+               </div>
+                    <a href="cart.html" class="change_mess addon_change">Add to Cart</a>
+                  </div>
+              </div>
+                 <div class="addon_list">
+                  <img src="images/autumn-leaves.jpg" class="addon_image">
+                  <div class="pro_addon_detail">
+                      <p class="addon_heading">Envent LiveTune 500 Wireless Bluetooth Earphone </p>
+                     <div class="pro_price addonlist_price">
+                                            <p>INR <span class="origial_price">3000</span> <span class="price_strike">3500</span></p>
+                                        </div>
+                      <div class="test_rating addon_stars">
+                       <div class="rate pro_list_rating">
+        <input id="star5" name="rate" value="5" checked="" type="radio"><label for="star5" title="text">5 stars</label>
+        <input id="star4" name="rate" value="4" checked="" type="radio"><label for="star4" title="text">4 stars</label>
+        <input id="star3" name="rate" value="3" checked="" type="radio"><label for="star3" title="text">3 stars</label>
+        <input id="star2" name="rate" value="2" checked="" type="radio"><label for="star2" title="text">2 stars</label>
+        <input id="star1" name="rate" value="1" checked="" type="radio"><label for="star1" title="text">1 star</label>
+    </div>
+               </div>
+                    <a href="cart.html" class="change_mess addon_change">Add to Cart</a>
+                  </div>
+              </div>
+              
+          </div>
+          
+          
+            <a href="addon.html"  class="btn cart-mre addon_btn">View all</a>
+        </div>
+    </div>
+   
+            <div class="cart_tab" id="moredetails">
+              <div class="tab_wrapper first_tab cart_tab_wrapper">
+			<ul class="tab_list">
+                            <span class="line"></span>
+				<li class="active">Details</li>
+				<li>Instructions</li>
+				<li>Product Testimonial</li>
+                                <li>More for your order</li>
+                                <li>Customize</li>
+                                <li>Make an enquiry</li>
+                   </ul>
+
+			<div class="content_wrapper">
+                            <!----Existing Promocode tab start here---->
+				<div class="tab_content active pro_tab" >
+                                   <div class="courier_wrkarea">
+                                       <div class="product_detail_tab">
+                                           <p class="pro_detail_heading">Specification</p>
+                                           <span>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris, consectetur adipisicing minim veniam.Lorem ipsum dolor sit ame</span>
+                                           <ul>
+                                               <li>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris</li>
+                                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris</li>
+                                             <li>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris</li> <li>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris</li>
+                                             
+                                           </ul>
+                                       </div>
+                                       
+                                </div> 
+				</div>
+                           
+				<div class="tab_content pro_tab">
+                                   <div class="courier_wrkarea">
+                                <div class="product_detail_tab">
+                                           <p class="pro_detail_heading">Instructions</p>
+                                           <span>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris, consectetur adipisicing minim veniam.Lorem ipsum dolor sit ame</span>
+                                           <ul>
+                                               <li>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris</li>
+                                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris</li>
+                                             <li>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris</li> <li>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris</li>
+                                             
+                                           </ul>
+                                       </div>
+                                       
+                                </div> 
+				</div>
+                                 
+                                 <div class="tab_content pro_tab">
+                                   <div class="courier_wrkarea">
+                                       <span class="plant_plant_heading">Customer Testimonial</span> 
+                                       <div class="row">
+                                           <div class="product_row">
+                                           <div class="col-xs-12 col-sm-3">
+            <div class="testi_cntnt">
+               
+                <div class="testimonial_data pro_testimonial_data">
+                    <h5>Naveen</h5>
+                    <div class="test_rating testimon_rating product_testi_rating">
+                 
+                       <div class="rate testimonial_rating">
         <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
         <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
         <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
@@ -1784,20 +1537,600 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
         <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
     </div>
                </div>
-                 <div class="pro_seller">
-                     <p>Seller Details : <span>Sold By NRI Prime</span></p>
-                 </div>
-                <a href="signup.html" class="rtr-butn"><button type="button" class="btn post-btn mem-btn pri_btn">Buy now</button></a>
+ 
+                    <span>text texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext</span>
+                <a href="#" class="change_mess product_testi_mess" data-toggle="modal" data-target="#testimonial">Read More</a>
+                </div>
             </div>
-            
+        </div>
+                                           <div class="col-xs-12 col-sm-3">
+            <div class="testi_cntnt">
+               
+                <div class="testimonial_data pro_testimonial_data">
+                    <h5>Naveen</h5>
+                    <div class="test_rating testimon_rating product_testi_rating">
+                 
+                       <div class="rate testimonial_rating">
+        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
+    </div>
+               </div>
+ 
+                    <span>text texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext</span>
+                <a href="#" class="change_mess product_testi_mess" data-toggle="modal" data-target="#testimonial">Read More</a>
+                </div>
+            </div>
+        </div>
+                                           <div class="col-xs-12 col-sm-3">
+            <div class="testi_cntnt">
+               
+                <div class="testimonial_data pro_testimonial_data">
+                    <h5>Naveen</h5>
+                    <div class="test_rating testimon_rating product_testi_rating">
+                 
+                       <div class="rate testimonial_rating">
+        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
+    </div>
+               </div>
+ 
+                    <span>text texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext</span>
+                <a href="#" class="change_mess product_testi_mess" data-toggle="modal" data-target="#testimonial">Read More</a>
+                </div>
+            </div>
+        </div>
+                                           <div class="col-xs-12 col-sm-3">
+            <div class="testi_cntnt">
+               
+                <div class="testimonial_data pro_testimonial_data">
+                    <h5>Naveen</h5>
+                    <div class="test_rating testimon_rating product_testi_rating">
+                 
+                       <div class="rate testimonial_rating">
+        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
+    </div>
+               </div>
+ 
+                    <span>text texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext</span>
+                <a href="#" class="change_mess product_testi_mess" data-toggle="modal" data-target="#testimonial">Read More</a>
+                </div>
+            </div>
+        </div>
+                                       </div>
+                                           <div class="product_row">
+                                           <div class="col-xs-12 col-sm-3">
+            <div class="testi_cntnt">
+               
+                <div class="testimonial_data pro_testimonial_data">
+                    <h5>Naveen</h5>
+                    <div class="test_rating testimon_rating product_testi_rating">
+                 
+                       <div class="rate testimonial_rating">
+        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
+    </div>
+               </div>
+ 
+                    <span>text texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext</span>
+                <a href="#" class="change_mess product_testi_mess" data-toggle="modal" data-target="#testimonial">Read More</a>
+                </div>
+            </div>
+        </div>
+                                           <div class="col-xs-12 col-sm-3">
+            <div class="testi_cntnt">
+               
+                <div class="testimonial_data pro_testimonial_data">
+                    <h5>Naveen</h5>
+                    <div class="test_rating testimon_rating product_testi_rating">
+                 
+                       <div class="rate testimonial_rating">
+        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
+    </div>
+               </div>
+ 
+                    <span>text texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext</span>
+                <a href="#" class="change_mess product_testi_mess" data-toggle="modal" data-target="#testimonial">Read More</a>
+                </div>
+            </div>
+        </div>
+                                           <div class="col-xs-12 col-sm-3">
+            <div class="testi_cntnt">
+               
+                <div class="testimonial_data pro_testimonial_data">
+                    <h5>Naveen</h5>
+                    <div class="test_rating testimon_rating product_testi_rating">
+                 
+                       <div class="rate testimonial_rating">
+        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
+    </div>
+               </div>
+ 
+                    <span>text texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext</span>
+                <a href="#" class="change_mess product_testi_mess" data-toggle="modal" data-target="#testimonial">Read More</a>
+                </div>
+            </div>
+        </div>
+                                           <div class="col-xs-12 col-sm-3">
+            <div class="testi_cntnt">
+               
+                <div class="testimonial_data pro_testimonial_data">
+                    <h5>Naveen</h5>
+                    <div class="test_rating testimon_rating product_testi_rating">
+                 
+                       <div class="rate testimonial_rating">
+        <input type="radio" id="star5" name="rate" value="5" /><label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" /><label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" /><label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" /><label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" /><label for="star1" title="text">1 star</label>
+    </div>
+               </div>
+ 
+                    <span>text texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext texttext</span>
+                <a href="#" class="change_mess product_testi_mess" data-toggle="modal" data-target="#testimonial">Read More</a>
+                </div>
+            </div>
+        </div>
+                                       </div>
+                                      </div> 
+                                       <a href="myprofile.html" class="btn cart-mre propay_btn btn_color">View all</a>
+                                   </div> 
+				</div>
+                            
+                            <div class="tab_content pro_tab">
+                                   <div class="courier_wrkarea">
+                                <span class="plant_plant_heading">More information about order</span> 
+                                <div class="moreorder_tab">
+                                    <div class="relation_tab">
+                                        <select class="product_relation" onchange="gender(this);">
+<option>Sender Relation</option>
+<option>Father</option>
+<option>Mother</option>
+<option>Brother</option>
+<option>Sister</option>
+<option>Son</option>
+<option>Daughter</option>
+<option>Spouse</option>
+<option id="otherrelation">Other</option>
+</select>
+                                        <input type="text" id="realtion" style="display: none;" placeholder="If Other please specify">
+                                    </div>
+                                    <div class="specify_instruction">
+                                        <textarea class="spec_ins" placeholder="Special instructions about your order"></textarea>
+                                    </div>
+                                    <div class="moreabout_order">
+                                        <div class="checkbox thisgift">
+  <label><input type="checkbox" value="">This is a gift</label>
+</div>
+<div class="checkbox thisgift">
+  <label><input type="checkbox" value="">Spread the good</label>
+</div>
+                                    </div>
+                                </div>
+                                <div class="moreorder_buttons">
+                                     <a href="cart.html" class="btn cart-mre moreorder_color" >Go to Cart</a>
+                                   
+                                     <a href="addon.html" class="btn cart-mre moreorder_color" >Select add ons</a>
+                                    <a href="shopmore.html" class="btn cart-mre moreorder_color">Shop more</a>
+                                </div>
+                                </div> 
+				</div>
+                        <div class="tab_content pro_tab">
+                                   <div class="courier_wrkarea">
+                                <div class="product_detail_tab">
+                                           <p class="pro_detail_heading">Instructions</p>
+                                           <span>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris, consectetur adipisicing minim veniam.Lorem ipsum dolor sit ame</span>
+                                           <ul>
+                                               <li>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris</li>
+                                           <li>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris</li>
+                                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris</li>
+                                             <li>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris</li> <li>Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris</li>
+                                             
+                                           </ul>
+                                       </div>
+                                       
+                                </div> 
+				</div>
+                            <div class="tab_content pro_tab">
+                                   <div class="courier_wrkarea">
+                                <div class="product_detail_tab">
+                                          <span class="plant_plant_heading">Make an Enquiry</span> 
+                                           <span class="makeenq_txt">Lorem ipsum dolor sit amet, consectetur adipisicing minim veniam, quis nostrud exercitation ullamco laboris, consectetur adipisicing minim veniam.Lorem ipsum dolor sit ame</span>
+                                           <div class="pro_enq_form">
+                                               <div class="form-group addr-grp enquiry_form_grp">
+    <label for="f-name" class="sign-name enqu_name">Name</label>
+    <div class="product_enq_form">
+        <input class="form-control enquiry_txt" id="title" type="text"></div>
+  </div>
+                                               <div class="form-group addr-grp enquiry_form_grp">
+    <label for="f-name" class="sign-name enqu_name">Phone Number</label>
+    <div class="product_enq_form">
+        <input class="form-control enquiry_txt" id="title" type="text"></div>
+  </div>
+                                               <div class="form-group addr-grp enquiry_form_grp">
+    <label for="f-name" class="sign-name enqu_name">Address</label>
+    <div class="product_enq_form">
+        <textarea class="form-control enquiry_txt" id="title" type="text"></textarea>
+    </div>
+  </div>
+                                               <div class="form-group addr-grp enquiry_form_grp">
+    <label for="f-name" class="sign-name enqu_name">Description</label>
+    <div class="product_enq_form">
+        <textarea class="form-control enquiry_txt" id="title" type="text"></textarea>
+    </div>
+  </div>
+               <button class="btn cart-mre enq_pro">Submit</button>                
+                                           </div>
+                                       </div>
+                                       
+                                </div> 
+				</div>
+</div>
+</div>
+          </div>
+	</div>
+    
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="testimonial" role="dialog">
+    <div class="modal-dialog large_mdel">
+        
+    
+      <!-- Modal content-->
+      <div class="modal-content large_mdel_cntent">
+           <button type="button" class="close popup_close" data-dismiss="modal"><img src="images/close.png"></button>
+        
+        <div class="modal-body currency-body large_mdel_body">
+            <ul class="usr-testi test_del_status">
+                      <span class="deli-txt tsti_del_txt">Delivery Status :</span>
+                      <li><b>On Time :</b><span>Yes</span></li>  
+                  
+                     <li><b>Intact : </b><span>Yes</span></li> 
+                   
+                      <li><b>Courtesy : </b><span>Yes</span></li> 
+                   
+                 </ul>
+         <div class="usercomments">
+                                 <div class="receiver">
+                                     <p>Reciever Comments :</p>
+                                     <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</span>
+                                 </div> 
+                                   <div class="receiver">
+                                     <p>Sender Comments :</p>
+                                     <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</span>
+                                 </div>  
+                                 <div class="receiver nri_cmnts">
+                                     <p>NRI Comments :</p>
+                                     <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</span>
+                                 </div> 
+                             </div>
         </div>
       </div>
+
+    </div>
+  </div>
+<div class="modal fade" id="greatingcard" role="dialog">
+    <div class="modal-dialog large_mdel">
+      <div class="modal-content large_mdel_cntent">
+      <button type="button" class="close popup_close" data-dismiss="modal"><img src="images/close.png"></button>
+        <div class="modal-body large_mdel_body small_model_return" ng-app>
+          
+ <div id="carousel1">
+        <ul class="flip-items">
+            <li data-flip-title="Red">
+                <img src="images/img/text1.gif" alt=""/>
+            </li>
+            <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+             
+                <img src="images/img/text2.gif" alt=""/>
+             </li>
+            <li data-flip-title="Deep Lilac" data-flip-category="Purples">
+                <img src="images/img/text1.gif" alt=""/>
+            </li>
+            <li data-flip-title="Daisy Bush" data-flip-category="Purples">
+                <img src="images/img/text3.gif" alt=""/>
+            </li>
+            <li data-flip-title="Cerulean Blue" data-flip-category="Blues">
+                <img src="images/img/text4.gif" alt=""/>
+            </li>
+            <li data-flip-title="Dodger Blue" data-flip-category="Blues">
+               <img src="images/img/text5.gif" alt=""/>
+            </li>
+            <li data-flip-title="Cyan" data-flip-category="Blues">
+             <img src="images/img/text6.gif" alt=""/>
+            </li>
+            <li data-flip-title="Robin's Egg" data-flip-category="Blues">
+               <img src="images/img/text7.gif" alt=""/>
+            </li>
+            <li data-flip-title="Deep Sea" data-flip-category="Greens">
+                <img src="images/img/text8.gif" alt=""/>
+            </li>
+            
+        </ul>
+    </div>
+            <p class="carasoul_txt">{{name}}</p>
+            <textarea class="gretting_pop_txt" ng-model="name" placeholder="enter text on greeting card"> </textarea>
+            <button type="button" class="btn cart-mre">Save & Continue</button>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+   
+      <div class="modal fade" id="editaddr" role="dialog">
+    <div class="modal-dialog large_mdel">
+      <div class="modal-content large_mdel_cntent">
+      <button type="button" class="close popup_close" data-dismiss="modal"><img src="images/close.png"></button>
+        <div class="modal-body large_mdel_body small_model_return">
+          
+                <div class="add_addr_delivery">
+                  <div class="add_address share_wish add_addr_wish">
+               <a href="" data-toggle="modal" data-target="#addaddress" class="addaddr_txt" data-dismiss="modal">Add Address <i class="fa btn_arow fa-angle-right"></i></a>
+               </div>  
+            </div>
+              <div class="addr_delivery">
+<div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="addr_area addr_block">
+                        <div class="addr_head">
+                            <input type="radio" name="address" class="addr_radio" data-toggle="tooltip" data-placement="top" title="Billing address"> <span>Naveen Reddy</span>
+                            <div class="addr_selection">
+                                <div class="food_prefer">
+                                   
+                         <span class="food_type non_veg">Non-Vegiterion</span> 
+                                </div>    
+                               
+                            </div>
+                        </div>  
+                        <div class="addr_bdy">
+                            <div class="addr_line">
+                             <img src="images/addruser.png" alt=""/>
+                             <p>Naveen Reddy</p>
+                            </div>
+                             <div class="addr_line">
+                             <img src="images/phone-book.png" alt=""/>
+                             <p>12346567895</p>
+                            </div>
+                              <div class="addr_line">
+                             <img src="images/addruser.png" alt=""/>
+                             <p>Address</p>
+                             <span class="addr_detail">addr line 1</span>
+                             <span class="addr_detail">addr line 1</span>
+                             <span class="addr_detail">addr line 1</span>
+                            </div>
+                              <div class="addr_line">
+                             <img src="images/phone-book.png" alt=""/>
+                             <p><span>Land Mark:</span>Near address line</p>
+                            </div>
+				
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-xs-12 col-sm-6">
+                    <div class="addr_area addr_block">
+                        <div class="addr_head">
+                            <input type="radio" name="address" class="addr_radio"  data-toggle="tooltip" data-placement="top" title="Billing address"> <span>Naveen Reddy</span>
+                            <div class="addr_selection">
+                               <div class="food_prefer">
+                                     
+                         <span class="food_type veg">Vegiterion</span> 
+                                </div> 
+                               
+                            </div>
+                        </div>  
+                        <div class="addr_bdy">
+                            <div class="addr_line">
+                             <img src="images/addruser.png" alt=""/>
+                             <p>Naveen Reddy</p>
+                            </div>
+                             <div class="addr_line">
+                             <img src="images/phone-book.png" alt=""/>
+                             <p>12346567895</p>
+                            </div>
+                              <div class="addr_line">
+                             <img src="images/addruser.png" alt=""/>
+                             <p>Address</p>
+                             <span class="addr_detail">addr line 1</span>
+                             <span class="addr_detail">addr line 1</span>
+                             <span class="addr_detail">addr line 1</span>
+                            </div>
+                              <div class="addr_line">
+                             <img src="images/phone-book.png" alt=""/>
+                             <p><span>Land Mark:</span>Near address line</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            
+            <div class="addr_delivery">
+<div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="addr_area addr_block">
+                        <div class="addr_head">
+                            <input type="radio" name="address" class="addr_radio" data-toggle="tooltip" data-placement="top" title="Billing address"> <span>Naveen Reddy</span>
+                            <div class="addr_selection">
+                                <div class="food_prefer">
+                                   
+                         <span class="food_type non_veg">Non-Vegiterion</span> 
+                                </div>    
+                               
+                            </div>
+                        </div>  
+                        <div class="addr_bdy">
+                            <div class="addr_line">
+                             <img src="images/addruser.png" alt=""/>
+                             <p>Naveen Reddy</p>
+                            </div>
+                             <div class="addr_line">
+                             <img src="images/phone-book.png" alt=""/>
+                             <p>12346567895</p>
+                            </div>
+                              <div class="addr_line">
+                             <img src="images/addruser.png" alt=""/>
+                             <p>Address</p>
+                             <span class="addr_detail">addr line 1</span>
+                             <span class="addr_detail">addr line 1</span>
+                             <span class="addr_detail">addr line 1</span>
+                            </div>
+                              <div class="addr_line">
+                             <img src="images/phone-book.png" alt=""/>
+                             <p><span>Land Mark:</span>Near address line</p>
+                            </div>
+				
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-xs-12 col-sm-6">
+                    <div class="addr_area addr_block">
+                        <div class="addr_head">
+                            <input type="radio" name="address" class="addr_radio"  data-toggle="tooltip" data-placement="top" title="Billing address"> <span>Naveen Reddy</span>
+                            <div class="addr_selection">
+                               <div class="food_prefer">
+                                     
+                         <span class="food_type veg">Vegiterion</span> 
+                                </div> 
+                               
+                            </div>
+                        </div>  
+                        <div class="addr_bdy">
+                            <div class="addr_line">
+                             <img src="images/addruser.png" alt=""/>
+                             <p>Naveen Reddy</p>
+                            </div>
+                             <div class="addr_line">
+                             <img src="images/phone-book.png" alt=""/>
+                             <p>12346567895</p>
+                            </div>
+                              <div class="addr_line">
+                             <img src="images/addruser.png" alt=""/>
+                             <p>Address</p>
+                             <span class="addr_detail">addr line 1</span>
+                             <span class="addr_detail">addr line 1</span>
+                             <span class="addr_detail">addr line 1</span>
+                            </div>
+                              <div class="addr_line">
+                             <img src="images/phone-book.png" alt=""/>
+                             <p><span>Land Mark:</span>Near address line</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            <button type="button" class="btn cart-mre">Save & Continue</button>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="addaddress" role="dialog">
+    <div class="modal-dialog large_mdel">
+        
+      <!-- Modal content-->
+      <div class="modal-content large_mdel_cntent">
+	  <button type="button" class="close popup_close" data-dismiss="modal"><img src="images/close.png"></button>
+        
+        <div class="modal-body large_mdel_body small_model_return">
+            <p class="popup_heading">Add New Address</p>
+            <!--<img src="images/Currency-icon.png" >	-->
+            <div class="login form_padding">
+       
+         <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">First Name</label>
+    <input class="form-control" id="title" type="text">
+  </div>  
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">Last Name</label>
+    <input class="form-control" id="title" type="text">
+  </div>
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">Nick Name</label>
+    <input class="form-control" id="title" type="text">
+  </div>
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">Phone Number</label>
+    <input class="form-control" id="title" type="text">
+  </div>
+               <div class="form-group addr-grp  address_field">
+    <label for="f-name" class="sign-name addr_name">Address Line1</label>
+    <input class="form-control" id="title" type="text">
+  </div>
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">Address Line2</label>
+    <input class="form-control" id="title" type="text">
+  </div>
+         
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">City</label>
+    <input class="form-control" id="title" type="text">
+  </div>
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">State</label>
+    <input class="form-control" id="title" type="text">
+  </div>
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">pincode</label>
+    <input class="form-control" id="title" type="text">
+  </div>
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">Country</label>
+    <input class="form-control" id="title" type="text">
+  </div>
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">LandMark</label>
+    <input class="form-control" id="title" type="text">
+  </div>   
+                <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">LandMark</label>
+    <input class="form-control" id="title" type="text">
+  </div>  
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">Food Habit</label>
+    <div class="food_selection">  <input name="a" type="radio" class="food_radio">  
+                         <span>Vegiterion</span> </div>
+  <div class="food_selection">  <input name="a" type="radio" class="food_radio">  
+                         <span>Non-Vegiterion</span> </div>
+             <div class="food_selection">  <input name="a" type="radio" class="food_radio">  
+                         <span>Non-Vegiterion</span> </div>
+  </div>
+          <button type="button" class="btn btn_color wish_pop_btn" >Save & Continue</button>  
+               
+                
+            </div>
+        </div>
+      </div>
+      
     </div>
   </div>
 
 
 
-<!-Footer starts here ----->
+<!----- Footer starts here ----->
 <div class="footer">
 <div class="container">
 <div class="row">
@@ -1807,35 +2140,37 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <div class="footer-links">
     <p class="abtus">About Us</p>
 <span>NRImegamart.com and VRNRI.com are owned by 'VR NRI Solutions Private Limited' and is committed to serve the clients all across the globe with utmost dedication and value proposition.</span>
-<a href="#">Show More...</a>
+<a href="groupsites.html">Show More...</a>
 </div>
 </div>
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ftrlnks-container ftr-acc">
 <div class="footer-links">
 <p>Your Accounts</p>
 <ul>
-<li><a href="#">Order Status</a></li>
-<li><a href="#">Testimonials</a></li>
-<li><a href="#">My Orders</a></li>
-<li><a href="#">My Profile</a></li>
-<li><a href="#">My Promocodes</a></li>
-<li><a href="#">My Events</a></li>
-<li><a href="#">Photo Print</a></li>
+<li><a href="myprofile.html">Order Status</a></li>
+<li><a href="testimonial.html">Testimonials</a></li>
+<li><a href="myprofile.html">My Orders</a></li>
+<li><a href="myprofile.html">My Profile</a></li>
+<li><a href="myprofile.html">My Promocodes</a></li>
+<li><a href="myprofile.html">My Events</a></li>
+<li><a href="myprofile.html">Photo Print</a></li>
+<li><a href="myprofile.html">My Airline Enquiry</a></li>
 </ul>
 </div>
 
 </div>
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ftrlnks-container ftr-rr">
 <div class="footer-links">
-<p>Rewards & Referrals</p>
+<p>Policies</p>
 <ul>
-<li><a href="#">Purchase Credits</a></li>
-<li><a href="#">Plant a Plant</a></li>
-<li><a href="#">Rewards for Reservation</a></li>
-<li><a href="#">Ten for Talent</a></li>
-<li><a href="#">Deals and Discounts</a></li>
-<li><a href="#">Students Special</a></li>
-<li><a href="#">Cash for Creation</a></li>
+<li><a href="privacypolicy.html">Privacy Policy</a></li>
+<li><a href="deliverypolicy.html">Delivery Policy</a></li>
+<li><a href="shippingpolicy.html">Shipping policy</a></li>
+<li><a href="refundreturn.html">Refunds & Returns</a></li>
+<li><a href="warantee.html">Guarantee & Warrantee</a></li>
+<li><a href="termsofuse.html">Terms of use</a></li>
+<li><a href="termsconditions.html">Terms and Conditions</a></li>
+<li><a href="testimonial.html">Testimonial Guidelines</a></li>
 </ul>
 </div>
 
@@ -1846,42 +2181,43 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <div class="row">
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ftrlnks-container">
 <div class="footer-links">
+<p>Vendor </p>
+<ul>
+<li><a href="infringement.html">Infringement Policy</a></li>
+<li><a href="codeofconduct.html">Code of conduct</a></li>
+<li><a href="sellprocess.html">Selling Process</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="myprofile.html">Manage your account</a></li>
+
+</ul>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ftrlnks-container">
+<div class="footer-links">
+<p>Rewards & Referrals</p>
+<ul>
+<li><a href="cashfrcreation.html">Cash for Creation</a></li>
+<li><a href="studentspec.html">Students Special</a></li>
+<li><a href="dealsnddiscount.html">Deals and Discounts</a></li>
+<li><a href="tenfrtalent.html">Ten for Talent</a></li>
+<li><a href="rewardandreservation.html">Rewards for Reservation</a></li>
+<li><a href="plantaplant.html">Plant a Plant</a></li>
+<li><a href="purchasecre.html">Purchase Credits</a></li>
+<li><a href="hero.html">Hail a Hero</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ftrlnks-container">
+<div class="footer-links">
 <p>References & Resources</p>
 <ul>
-<li><a href="#">Group website link</a></li>
-<li><a href="#">V|N Foundation</a></li>
-<li><a href="#">Rewards for Reservation</a></li>
-<li><a href="#">Our Team</a></li>
-<li><a href="#">Purchase Enquiry</a></li>
-<li><a href="#">Enquiry's</a></li>
-<li><a href="#">Courier Product Enquiry</a></li>
-</ul>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ftrlnks-container">
-<div class="footer-links">
-<p>Terms & Conditions</p>
-<ul>
-<li><a href="#">About Us</a></li>
-<li><a href="#">Privacy Policy</a></li>
-<li><a href="#">Delivery Policy</a></li>
-<li><a href="#">Shipping policy</a></li>
-<li><a href="#">Refunds & Returns</a></li>
-<li><a href="#">Guarantee & Warrantee</a></li>
-<li><a href="#">Terms of use</a></li>
-</ul>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ftrlnks-container">
-<div class="footer-links">
-<p>Support</p>
-<ul>
-<li><a href="#">Modus Operand</a></li>
-<li><a href="#">Our Services</a></li>
-<li><a href="#">Delivery Policy</a></li>
-<li><a href="#">Purchase Process</a></li>
-<li><a href="#">Advertisement Page</a></li>
-<li><a href="#">Testimonial Guidelines</a></li>
+<li><a href="groupsites.html">Group website link</a></li>
+<li><a href="ourteam.html">Our Team</a></li>
+<li><a href="purchasenquiry.html">Purchase Enquiry</a></li>
+<li><a href="modusoperand.html">Modus Operandi</a></li>
+<li><a href="purchaseprocess.html">Purchase Process</a></li>
+<li><a href="sitemap.html">Sitemap</a></li>
+<li><a href="soppinghelp.html">Shopping Help</a></li>
 </ul>
 </div>
 </div>
@@ -1916,6 +2252,63 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
     
 </div>
 </div>
+<script>
+    var carousel = $("#carousel1").flipster({
+        style: 'carousel',
+        spacing: -0.5,
+        nav: false,
+        buttons:   true,
+          loop: true,
+    });
+</script>
+<script>
+            $(document).ready(function() {
+              $('.owl-carousel').owlCarousel({
+                 //rewindNav : true,
+                margin: 0,
+		//rewindSpeed : 1000,
+		dots:false,
+		slideBy:2,
+                responsiveClass: true,
+		autoplay:true,
+		slideSpeed :3000,
+                nav:true,
+                loop: true,
+                stopOnHover : false,
+                responsive: {
+                  0: {
+                    items: 2
+                   
+					
+                  },
+                  480: {
+                    items: 3
+                   
+					
+                  },
+				   767: {
+                    items: 2
+                   
+					
+                  },
+				  
+                  991: {
+                    items: 3,
+                   
+                    
+                    margin: 0
+                  },
+				  1200: {
+                    items: 6,
+                   
+                     
+                    margin: 0
+                  }
+                }
+              })
+            })
+          </script>
+<script type="text/javascript">
 
 <script type="text/javascript" src="js/Commonscript.js"></script>
 </body>

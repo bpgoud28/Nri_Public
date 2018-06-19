@@ -37,7 +37,20 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <!--- blog page---->
 
 <link rel="stylesheet" type="text/css" href="css/component.css" />
-		<script src="js/modernizr.custom.js"></script>
+<script src="js/modernizr.custom.js"></script>
+
+<script src="js/jquery.slimscroll.js"></script>
+  <!----calender----->
+  
+<script src="js/calenstyle.js" type="text/javascript"></script>
+  <link href="css/calenstyle-iconfont.css" rel="stylesheet" type="text/css"/>
+  <link href="css/calenstyle-jquery-ui-override.css" rel="stylesheet" type="text/css"/>
+  <link href="css/calenstyle.css" rel="stylesheet" type="text/css"/>
+  <script src="js/jquery-ui-custom-1.11.2.min.js" type="text/javascript"></script>
+  <link href="css/jquery-ui-custom-1.11.2.min.css" rel="stylesheet" type="text/css"/>
+  <link href="css/CalEventList.css" rel="stylesheet" type="text/css"/>
+  <script src="js/CalJsonGenerator.js" type="text/javascript"></script>
+  <!---Product comparision--->
 </head>
 	
 <body>
@@ -75,156 +88,193 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog curency-mdel">
-        
-    <button type="button" class="close curency-close" data-dismiss="modal"><img src="images/close.png"/></button>
-      <!-- Modal content-->
-      <div class="modal-content currency">
-          
-        <div class="modal-header currency-header">
-            <p>Your Preferred Currency</p>
-          
-        </div>
-        <div class="modal-body currency-body">
-         <div class="header-curr">
-             <div class="row">
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                     <div class="selction prm-currency">
-                          <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/curreency_05.png" alt="" /><span>Kuwaiti Dinar</span> 
-                         
-                     </div>
-              
-          </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                     
-					 <div class="selction prm-currency">
-                     <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/currency_10.png" alt=""/><span>Chinese Yuan Renminbi</span> 
-                         
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                      
-					 <div class="selction prm-currency">
-                    <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/currency_22.png" alt=""/><span>Singapore Dollar</span> 
-                         
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                     <div class="selction prm-currency">
-                           <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/currency_06.png" alt=""/><span>Australian Dollar</span> 
-                         
-                     </div>
-					 
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                      <div class="selction prm-currency">
-                    <input name="a" type="radio" class="curr-radio" data-dismiss="modal" >  
-                         <img src="images/prime/currecncy_13.png" alt=""/><span>Japanese Yen</span>  
-                         
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       <div class="selction prm-currency">
-                     <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/curreency_19.png" alt=""/><span>South African Rand</span> 
-                         
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                      <div class="selction prm-currency">
-                     <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/curreency_05.png" alt=""/><span>Emirati Dirham</span> 
-                         
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                      <div class="selction prm-currency">
-                  <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/currency_06.png" alt=""/><span>New Zealand Dollar</span>  
-                         
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                      
-					 <div class="selction prm-currency">
-                   <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/curreency_12.png" alt=""/><span>Canadian Dollar</span> 
-                         
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       <div class="selction prm-currency">
-                   <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/curreency_13.png" alt=""/><span> Omani Rial</span> 
-                         
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       <div class="selction prm-currency">
-                  <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/currency_07.png" alt=""/><span>Indian Rupee</span> 
-                         
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       <div class="selction prm-currency">
-                   <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/currency_09.png" alt=""/><span>British Pound</span> 
-                     </div>
+                                    <div class="modal-dialog large_mdel">
 
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       
-					 <div class="selction prm-currency">
-                   <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/currency_16.png" alt=""/><span>United States Dollar</span> 
-                     </div>
-					
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       <div class="selction prm-currency">
-                  <input name="a" type="radio"  class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/curreency_18.png" alt=""/><span>French Euro</span> 
-                     </div>
-                 </div> 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                       <div class="selction prm-currency">
-                   <input name="a" type="radio" class="curr-radio" data-dismiss="modal">  
-                         <img src="images/prime/currency_03.png" alt=""/><span>Malaysian Ringgit</span> 
-                     </div>
-                 </div> 
-             </div>
-		 </div>
-        </div>
-      </div>
-     <img src="images/Preferred-Currency.png" class="curecny-backgrund">
-    </div>
-  </div>
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content large_mdel_cntent">
+                                            <button type="button" class="close popup_close" data-dismiss="modal">
+                                                <img src="images/close.png">
+                                            </button>
+
+                                            <div class="modal-body currency-body large_mdel_body">
+                                                <p class="popup_heading">Your Preferred Currency</p>
+                                                <h6 class="currencychange">Currency Has changed</h6>
+                                                <div class="header-curr">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/curreency_05.png" alt="" />
+                                                                <span>Kuwaiti Dinar</span>
+
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/currency_10.png" alt="" />
+                                                                <span>Chinese Yuan Renminbi</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/currency_22.png" alt="" />
+                                                                <span>Singapore Dollar</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/currency_06.png" alt="" />
+                                                                <span>Australian Dollar</span>
+
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/currecncy_13.png" alt="" />
+                                                                <span>Japanese Yen</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/curreency_19.png" alt="" />
+                                                                <span>South African Rand</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/curreency_05.png" alt="" />
+                                                                <span>Emirati Dirham</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/currency_06.png" alt="" />
+                                                                <span>New Zealand Dollar</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/curreency_12.png" alt="" />
+                                                                <span>Canadian Dollar</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/curreency_13.png" alt="" />
+                                                                <span> Omani Rial</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/currency_07.png" alt="" />
+                                                                <span>Indian Rupee</span>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/currency_09.png" alt="" />
+                                                                <span>British Pound</span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/currency_16.png" alt="" />
+                                                                <span>United States Dollar</span>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/curreency_18.png" alt="" />
+                                                                <span>French Euro</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="selction prm-currency">
+                                                                <input name="a" type="radio" class="curr-radio">
+                                                                <img src="images/prime/currency_03.png" alt="" />
+                                                                <span>Malaysian Ringgit</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
   
 </li>
-<li class="calender"><a href="coming.html">
+<li class="calender"><a href="#"> 
 <img src="images/calender.png" class="cal-img"></a><!--<span class="tab-view-content clander-txt">Calender</span>-->
 </li>
-<li class="calender">
-<img src="images/wishlist.png"><!--<span>Wish List</span> 
+
+<li class="whishlist">
+    <a href="whislist.html"> 
+<img src="images/wishlist.png"></a><!--<span>Wish List</span> 
 <span class="wishlst">0</span>-->
 </li>
 <li class="cart">
-<img src="images/cart.png"><!--<span class="badge">2</span>-->
+<img src="images/cart.png"><span class="badge">2</span>
 
     <div class="cart-info">
          <img src="images/pointer.png" alt="" class="cart-pointer"/>
         <div class="cart-deatls">
-            <div class="cart-heding">
-                <img src="images/img/e-commerce1.png" class="cart-image"><p>Your Shopping Cart</p>
-            </div>  
+            
+            <div id="cartdiv">
             <div class="cart-data">
-                <span>Currently No Items In Cart</span>
-                <div class="form-group">                    
+                <img src="images/prime/currency.jpg" alt="" class="cart_image"/>
+                <div class="cart_cont">
+                    <p>Pinapple cake </p> 
+                    <b class="cart_price">INR 840</b>
+                </div>
+            </div>  
+                 <div class="cart-data">
+                <img src="images/prime/currency.jpg" alt="" class="cart_image"/>
+                <div class="cart_cont">
+                    <p>Pinapple cake </p> 
+                    <b class="cart_price">INR 840</b>
+                </div>
+            </div> 
+                 <div class="cart-data">
+                <img src="images/prime/currency.jpg" alt="" class="cart_image"/>
+                <div class="cart_cont">
+                    <p>Pinapple cake </p> 
+                    <b class="cart_price">INR 840</b>
+                </div>
+            </div> 
+              
+               <div class="form-group">                    
                    <button type="button" onclick="location.href='cart.html'" class="btn post-btn crt-btn">Go to Cart</button>
                 </div>
             </div>
@@ -236,8 +286,15 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 </div>
 </div>
 </div>
+        <div class="calendarContOuter"></div>
 </div><!--top-menu ends----->
+<div class="ground">
 
+</div>
+
+<div class="groundcalender">
+    <img src="images/close.png" class="calclose">
+</div>
 <div class="main-menu">
 <div class="container">
 <div class="row">
@@ -246,7 +303,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <ul class="signup sign-lnk">
   
 
-<li class="shopmore-lnk dropdown"><a href="#" id="dLabel" data-toggle="dropdown" data-target="#">Shop More<i class="fa fa-angle-down shop_down"></i></a>
+<li class="shopmore-lnk dropdown grp-drp"><a href="#" id="dLabel" data-toggle="dropdown" data-target="#">Shop More<i class="fa fa-angle-down shop_down"></i></a>
 <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
                <img src="images/pointer.png" alt="" class="shop-pointer"/>
              <li class="dropdown-submenu subme">
@@ -256,37 +313,37 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                         <h6>Prime Video</h6>
                       
                         <div class="submenu-links">
-                            <a href="#">All Videos</a>
+                            <a href="productlist.html">All Videos</a>
                             <span>All TV shows, movies, and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Included with Prime</a>
+                            <a href="productlist.html">Included with Prime</a>
                             <span>Prime Originals, exclusives, and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">NRI Channels</a>
+                            <a href="productlist.html">NRI Channels</a>
                             <span>HBO, SHOWTIME, STARZ, and more</span>
                         </div>
                          <div class="submenu-links">
-                            <a href="#">Rent or Buy</a>
+                            <a href="productlist.html">Rent or Buy</a>
                             <span>New releases, latest seasons, and more</span>
                         </div>
                            
                         <div class="submenu-list">
                             <div class="submenu-links">
-                            <a href="#">Your Watchlist</a>
+                            <a href="productlist.html">Your Watchlist</a>
                            
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Your Video Library</a>
+                            <a href="productlist.html">Your Video Library</a>
                           
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Watch Anywhere</a>
+                            <a href="productlist.html">Watch Anywhere</a>
                            
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Getting Started</a>
+                            <a href="productlist.html">Getting Started</a>
                            
                         </div>
                         </div>
@@ -297,15 +354,15 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                         <h6>More to Explore</h6>
                       
                         <div class="submenu-links">
-                            <a href="#">More to Explore</a>
+                            <a href="productlist.html">More to Explore</a>
                             <span>Prime Original Series and Movies</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Kids</a>
+                            <a href="productlist.html">Kids</a>
                             <span>Top kids TV Shows, movies and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Coming to Prime</a>  
+                            <a href="productlist.html">Coming to Prime</a>  
                         </div>
                  </div>
                     <div class="link-img">
@@ -322,37 +379,37 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                         <h6>Amazon Music</h6>
                       
                         <div class="submenu-links">
-                            <a href="#">All Videos</a>
+                            <a href="productlist.html">All Videos</a>
                             <span>All TV shows, movies, and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Included with Prime</a>
+                            <a href="productlist.html">Included with Prime</a>
                             <span>Prime Originals, exclusives, and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">NRI Channels</a>
+                            <a href="productlist.html">NRI Channels</a>
                             <span>HBO, SHOWTIME, STARZ, and more</span>
                         </div>
                          <div class="submenu-links">
-                            <a href="#">Rent or Buy</a>
+                            <a href="productlist.html">Rent or Buy</a>
                             <span>New releases, latest seasons, and more</span>
                         </div>
                            
                         <div class="submenu-list">
                             <div class="submenu-links">
-                            <a href="#">Your Watchlist</a>
+                            <a href="productlist.html">Your Watchlist</a>
                            
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Your Video Library</a>
+                            <a href="productlist.html">Your Video Library</a>
                           
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Watch Anywhere</a>
+                            <a href="productlist.html">Watch Anywhere</a>
                            
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Getting Started</a>
+                            <a href="productlist.html">Getting Started</a>
                            
                         </div>
                         </div>
@@ -363,15 +420,15 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                         <h6>More to Explore</h6>
                       
                         <div class="submenu-links">
-                            <a href="#">More to Explore</a>
+                            <a href="productlist.html">More to Explore</a>
                             <span>Prime Original Series and Movies</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Kids</a>
+                            <a href="productlist.html">Kids</a>
                             <span>Top kids TV Shows, movies and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Coming to Prime</a>  
+                            <a href="productlist.html">Coming to Prime</a>  
                         </div>
                  </div>
                     <div class="link-img">
@@ -388,37 +445,37 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                         <h6>Appstore for Android</h6>
                       
                         <div class="submenu-links">
-                            <a href="#">All Videos</a>
+                            <a href="productlist.html">All Videos</a>
                             <span>All TV shows, movies, and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Included with Prime</a>
+                            <a href="productlist.html">Included with Prime</a>
                             <span>Prime Originals, exclusives, and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">NRI Channels</a>
+                            <a href="productlist.html">NRI Channels</a>
                             <span>HBO, SHOWTIME, STARZ, and more</span>
                         </div>
                          <div class="submenu-links">
-                            <a href="#">Rent or Buy</a>
+                            <a href="productlist.html">Rent or Buy</a>
                             <span>New releases, latest seasons, and more</span>
                         </div>
                            
                         <div class="submenu-list">
                             <div class="submenu-links">
-                            <a href="#">Your Watchlist</a>
+                            <a href="productlist.html">Your Watchlist</a>
                            
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Your Video Library</a>
+                            <a href="productlist.html">Your Video Library</a>
                           
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Watch Anywhere</a>
+                            <a href="productlist.html">Watch Anywhere</a>
                            
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Getting Started</a>
+                            <a href="productlist.html">Getting Started</a>
                            
                         </div>
                         </div>
@@ -429,15 +486,15 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                         <h6>More to Explore</h6>
                       
                         <div class="submenu-links">
-                            <a href="#">More to Explore</a>
+                            <a href="productlist.html">More to Explore</a>
                             <span>Prime Original Series and Movies</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Kids</a>
+                            <a href="productlist.html">Kids</a>
                             <span>Top kids TV Shows, movies and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Coming to Prime</a>  
+                            <a href="productlist.html">Coming to Prime</a>  
                         </div>
                  </div>
                     <div class="link-img">
@@ -455,37 +512,37 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                         <h6>Echo & Alexa</h6>
                       
                         <div class="submenu-links">
-                            <a href="#">All Videos</a>
+                            <a href="productlist.html">All Videos</a>
                             <span>All TV shows, movies, and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">Included with Prime</a>
+                            <a href="productlist.html">Included with Prime</a>
                             <span>Prime Originals, exclusives, and more</span>
                         </div>
                         <div class="submenu-links">
-                            <a href="#">NRI Channels</a>
+                            <a href="productlist.html">NRI Channels</a>
                             <span>HBO, SHOWTIME, STARZ, and more</span>
                         </div>
                          <div class="submenu-links">
-                            <a href="#">Rent or Buy</a>
+                            <a href="productlist.html">Rent or Buy</a>
                             <span>New releases, latest seasons, and more</span>
                         </div>
                            
                         <div class="submenu-list">
                             <div class="submenu-links">
-                            <a href="#">Your Watchlist</a>
+                            <a href="productlist.html">Your Watchlist</a>
                            
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Your Video Library</a>
+                            <a href="productlist.html">Your Video Library</a>
                           
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Watch Anywhere</a>
+                            <a href="productlist.html">Watch Anywhere</a>
                            
                         </div>
                             <div class="submenu-links">
-                            <a href="#">Getting Started</a>
+                            <a href="productlist.html">Getting Started</a>
                            
                         </div>
                         </div>
@@ -890,76 +947,13 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
     <button class="prmsrh-btn"><img src="images/img/search_03.png" alt="" class="prm-srccon"/></button>
 </li>
 
-
-
-<div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
-   
-<div class="modal-dialog">
-<button type="button" class="close login-close" data-dismiss="modal"><img src="images/close.png"></button>
-<span aria-hidden="true">        </span>
-<span class="sr-only">Close</span></button>
-   
-<div class="modal-content">
-
-
-
-<div class="modal-body">
-    <div class="signupdetails">
-<h1>Login</h1>
-</div><!--signupdetails-->
-<div class="signup">
-
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-7" id="signupdetailspadding">
-<div class="description">
-<div class="form-group">
- <label for="Student-Name" class="col-sm-2" id="e-mail-padding">E-mail</label>
-       <div class="col-sm-10 col-xs-12 " id="password-padding">
-            <input type="text" class="form-control" id="email" style="border-radius: 4px;" name="email" placeholder="E-mail">
-          </div>
-               </div>
-<div class="form-group">
- <label for="Password" class="col-sm-2" id="e-mail-padding">Password</label>
-       <div class="col-sm-10 col-xs-12 " id="password-padding" >
-            <input type="text" class="form-control" id="password" style="border-radius: 4px;" name="password" placeholder="Password">
-          </div>
-               </div>
-               
-               <div class="new-user">
-               <span> <a href="register.html">New User ?</a></span>
-               <span><a href="#">Forgot Password ?</a></span>
-        <button class="btn user-btn " >Login</button>  
-        </div><!--new-user-->
-              
-</div><!--description-->
-<div class="or">
-<img src="images/divider.png" />
-</div>
-</div><!--col-xs-12 col-sm-6 col-md-6 col-lg-6-->
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5" id="signupdetailspadding">
-<div class="account">
-<p>Use your Facebook or</p>
-<p>Google Plus accounts to log in</p>
-<ul>
-<li><a href="#"><img src="images/img/fb.png" class="login_fb"/>Login with Facebook</a></li>
-<li><a href="#"><img src="images/img/gplus.png" class="login_google"/>Login with Google+</a></li>
-</ul>
-
-</div><!--description-->
-</div><!--col-xs-12 col-sm-6 col-md-6 col-lg-6-->
-</div><!--signup-->
-                    
-</div>
-</div>
-</div>
-</div>
-
 </ul>
 </div>
 <div class="col-lg-3 col-md-3 col-sm-1 col-xs-12 inner-logo">
 
 <div class="logo">
     <img src="images/prime-logo.png" class="tab-logo">
-    <img src="images/logo.png"></div>
+    <img src="images/Nriprime.png" class="prome_logo"></div>
 </div>
 <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 prime-container">
 <ul class="signup prime">
@@ -1002,25 +996,30 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
              
         </li>
 
+</div>
+</div>
+</div>
 
+  </div>
 <!--- NRI Students------>
 <div class="modal fade" id="nristudents" role="dialog">
-    <div class="modal-dialog curency-mdel mem-mdel">
+    <div class="modal-dialog large_mdel full_image_mdel">
         
       <!-- Modal content-->
-      <div class="modal-content currency">
-        <div class="modal-header membership-header currency-header">
-            <p>Student Membership</p>
-          <button type="button" class="close" data-dismiss="modal"><img src="images/close.png"></button>
-        </div>
-        <div class="modal-body membership-body prime_mem">
+      <div class="modal-content large_mdel_cntent">
+     
+        <div class="modal-body large_mdel_body full_image_mdel_bdy">
             
                 <div class="prime_img">
                 <img src="images/membership.png" class="img-responsive prime_image"></div>
                         
             <div class="mem-content prime_pop_content">
+                 <p class="popup_heading">Student Membership</p>
                 <ul>
                     <li><img src="images/memberhei.png"><span>No Delivery Chagres</span></li>
+                    <li><img src="images/memberhei.png"><span>Midnight Delivery Free</span></li>
+                    <li><img src="images/memberhei.png"><span>Discounts in all orders</span></li>
+                        <li><img src="images/memberhei.png"><span>No Delivery Chagres</span></li>
                     <li><img src="images/memberhei.png"><span>Midnight Delivery Free</span></li>
                     <li><img src="images/memberhei.png"><span>Discounts in all orders</span></li>
                 </ul>
@@ -1033,20 +1032,18 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   </div>
 
 <div class="modal fade" id="citizenmod" role="dialog">
-    <div class="modal-dialog curency-mdel mem-mdel">
+    <div class="modal-dialog large_mdel full_image_mdel">
         
       <!-- Modal content-->
-      <div class="modal-content currency">
-        <div class="modal-header membership-header currency-header">
-            <p>Senior Citizen</p>
-          <button type="button" class="close" data-dismiss="modal"><img src="images/close.png"></button>
-        </div>
-        <div class="modal-body membership-body prime_mem">
-            
+        <div class="modal-content large_mdel_cntent">
+       
+        <div class="modal-body  large_mdel_body full_image_mdel_bdy">
+           
                 <div class="prime_img">
                 <img src="images/membership.png" class="img-responsive prime_image"></div>
                         
             <div class="mem-content prime_pop_content">
+                 <p class="popup_heading">Senior Citizen</p>
                 <ul>
                     <li><img src="images/memberhei.png"><span>No Delivery Chagres</span></li>
                     <li><img src="images/memberhei.png"><span>Midnight Delivery Free</span></li>
@@ -1058,32 +1055,26 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
       </div>
     </div>
   </div>
-
-  </div>
-
-
 <!--- NRI Citizens------>
 <div class="modal fade" id="primemod" role="dialog">
-    <div class="modal-dialog curency-mdel mem-mdel">
+    <div class="modal-dialog large_mdel full_image_mdel">
         
       <!-- Modal content-->
-      <div class="modal-content currency">
-        <div class="modal-header membership-header currency-header">
-            <p>NRI Prime Membership</p>
-          <button type="button" class="close" data-dismiss="modal"><img src="images/close.png"></button>
-        </div>
-        <div class="modal-body membership-body prime_mem">
-            
+      <div class="modal-content large_mdel_cntent">
+
+        <div class="modal-body large_mdel_body full_image_mdel_bdy">
+           
                 <div class="prime_img">
                 <img src="images/membership.png" class="img-responsive prime_image"></div>
                         
             <div class="mem-content prime_pop_content">
+                 <p class="popup_heading">NRI Prime Membership</p>
                 <ul>
                     <li><img src="images/memberhei.png"><span>No Delivery Chagres</span></li>
                     <li><img src="images/memberhei.png"><span>Midnight Delivery Free</span></li>
                     <li><img src="images/memberhei.png"><span>Discounts in all orders</span></li>
                 </ul>
-                <a href="signup.html" class="rtr-butn"><button type="button" class="btn post-btn mem-btn pri_btn">Buy now</button></a>
+                <a href="cart.html" class="rtr-butn"><button type="button" class="btn post-btn mem-btn pri_btn">Buy now</button></a>
             </div>
             
         </div>
@@ -1091,30 +1082,87 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
     </div>
   </div>
 
-</ul>
-</div>
-</div>
-</div>
+<div class="modal fade" id="Login" role="dialog">
+    <div class="modal-dialog large_mdel">
+        
+    
+      <!-- Modal content-->
+      <div class="modal-content large_mdel_cntent">
+           <button type="button" class="close popup_close" data-dismiss="modal"><img src="images/close.png"></button>
+        
+        <div class="modal-body currency-body large_mdel_body">
+             <p class="popup_heading">Login</p>
+         <div class="header-curr">
+             <div class="row">
+                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                 <div class="form-group login_grp">
+ <label for="Student-Name" class="col-sm-2" id="e-mail-padding">E-mail</label>
+       <div class="col-sm-10 col-xs-12 " id="password-padding">
+            <input type="text" class="form-control" id="email" style="border-radius: 4px;" name="email" placeholder="E-mail">
+          </div>
+               </div>
+              <div class="form-group login_grp">
+ <label for="Password" class="col-sm-2" id="e-mail-padding">Password</label>
+       <div class="col-sm-10 col-xs-12 " id="password-padding" >
+            <input type="text" class="form-control" id="password" style="border-radius: 4px;" name="password" placeholder="Password">
+          </div>
+               </div>
+                       <div class="form-group login_grp user_register">
+                           <div class="col-sm-8">
+                                 <div class="new-user">
+               <span> <a href="register.html">New User ?</a></span>
+               <span><a href="#">Forgot Password ?</a></span>
+      
+        </div><!--new-user-->
+                           </div>
+       <div class="col-sm-4 col-xs-12 " id="password-padding">
+             <button class="btn login-btn " >Login</button>  
+          </div>
+               </div>
+          </div> 
+        
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="login_social">
+                    <p>Use below social media to login</p>
+                    <ul>
+                    <li><a href="#"> <img src="img/facebook.png" alt=""/>  </a></li>
+                            <li><a href="#"> <img src="img/google-plus.png" alt=""/>  </a></li>
+                            <li><a href="#">  <img src="img/instagram.png" alt=""/> </a></li>
+                            <li><a href="#"> <img src="img/linkedin.png" alt=""/>  </a></li>
+                            <li><a href="#">   <img src="img/twitter.png" alt=""/> </a></li>
+                          
+                    </ul>
+                </div> 
+            </div>
+         
+             </div>
+		 </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<!---login--->
 
 <div id="contact-buttons-bar" class="slide-on-scroll">
 <button class="contact-button-link show-hide-contact-bar">
     <img src="images/slider.png" alt="" class="floter-tggle"/>
     <span class="fa fa-angle-left fa-icon"></span></button>
+<a href="cart.html" class="contact-button-link cb-ancor nmart">
+<span>NRI Mega Mart</span><img src="images/ncart.png" class="fa floater ncart_img"></a>
 
-<a href="#" class="contact-button-link cb-ancor nprime">
-<span>NRI Prime</span><img src="images/nprime.png" class="fa floater"></a>
-
-<a href="#" class="contact-button-link cb-ancor gcart">
-<span>Shopping Cart</span><img src="images/ncart.png" class="fa floater ncart_img"></a>
-
-<a href="#" class="contact-button-link cb-ancor nmart">
-<span>NRI Mega Mart</span><img src="images/nmart.png" class="fa floater"></a>
-
-<a href="#" class="contact-button-link cb-ancor nenquiry">
+<a href="enquiry.html" class="contact-button-link cb-ancor nenquiry">
 <span>Enquiries</span><img src="images/nenquiries.png" class="fa floater"></a>
 
-<a href="#" class="contact-button-link cb-ancor nprofile" >
-<span>My Profile</span><img src="images/nprofile.png" class="fa floater"></a>
+<a href="myprofile.html" class="contact-button-link cb-ancor nprime">
+<span>Credits</span><img src="images/monitor.png" class="fa floater ncre-img"></a>
+
+<a href="blog_1.html" class="contact-button-link cb-ancor gcart">
+<span>Prime Blog</span><img src="images/blog_n.png" class="fa floater ncart_img nblog_img"></a>
+
+
+<a href="groupsites.html" class="contact-button-link cb-ancor nprofile" >
+<span>Group Sites</span><img src="images/spec_07.png" class="fa floater"></a>
 
 </div>
 <!----------------Main menu ends here--------------------->
@@ -1122,14 +1170,14 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <div class="banner blog-banner">
 <img src="images/bog-banner.jpg" class="img-responsive">
 </div>
-<div class="blog-body">
+<div class="blog-body main_blog">
 
 <div class="container blg-container">
 <div class="blog-search">
 <div class="row">
 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 <div class="current-page">
-<ul class="breadcrumb">
+<ul class="breadcrumb blog_breadcrumb">
     <li><a href="#">Home</a></li>
     <li class="active">Blog</li>
 </ul>
@@ -1145,7 +1193,9 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 <div class="container blg-container">
     
         <div id="container-01">
-        <div class="pinto"><div class="blog-wrkarea revealator-slideup">
+        <div class="pinto">
+            <a href="blog-inner.html">
+            <div class="blog-wrkarea revealator-slideup">
 <div class="bolg-header">
 <span class="blog-char">Haleem</span>
 <span class="blog-date">27/10/2017</span>
@@ -1159,11 +1209,11 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 Best haleem in Hyderabad?</h6>
 
 </div>
-</div>
+            </div></a>
   </div>
        
         <div class="pinto">
-            
+             <a href="blog-inner.html">
          <div class="blog-wrkarea revealator-slideup">
 <div class="bolg-header">
 <span class="blog-char">Haleem</span>
@@ -1179,11 +1229,11 @@ Best haleem in Hyderabad?</h6>
 
 </div>
 </div>
-        
+             </a>   
         </div>
             
              <div class="pinto">
-            
+             <a href="blog-inner.html">
          <div class="blog-wrkarea revealator-slideup">
 <div class="bolg-header">
 <span class="blog-char">Haleem</span>
@@ -1199,12 +1249,12 @@ Best haleem in Hyderabad?</h6>
 
 </div>
 </div>
-        
+             </a>    
         </div>
             
             
              <div class="pinto">
-            
+             <a href="blog-inner.html">
          <div class="blog-wrkarea revealator-slideup">
 <div class="bolg-header">
 <span class="blog-char">Haleem</span>
@@ -1220,12 +1270,12 @@ Best haleem in Hyderabad?</h6>
 
 </div>
 </div>
-        
+             </a>   
         </div>
         
         <div class="pinto"><img src="images/thumb-01.png"><div class="info"><h2>Project 5</h2><p>Lorem ipsum dolor sit amet, consectetur.</p></div></div>
             <div class="pinto">
-            
+            <a href="blog-inner.html"> 
          <div class="blog-wrkarea revealator-slideup">
 <div class="bolg-header">
 <span class="blog-char">Haleem</span>
@@ -1241,13 +1291,13 @@ Best haleem in Hyderabad?</h6>
 
 </div>
 </div>
-        
+            </a>   
         </div>
         <div class="pinto"><img src="images/thumb-01.png"><div class="info"><h2>Project 6</h2><p>Lorem ipsum dolor sit amet, consectetur.</p></div></div>
         <div class="pinto"><img src="images/thumb-03.png"><div class="info"><h2>Project 7</h2><p>Lorem ipsum dolor sit amet, consectetur.</p></div></div>
         
          <div class="pinto">
-            
+             <a href="blog-inner.html">
          <div class="blog-wrkarea revealator-slideup">
 <div class="bolg-header">
 <span class="blog-char">Haleem</span>
@@ -1263,12 +1313,12 @@ Best haleem in Hyderabad?</h6>
 
 </div>
 </div>
-        
+             </a>    
         </div>
         <div class="pinto"><img src="images/thumb-03.png"><div class="info"><h2>Project 3</h2><p>Lorem ipsum dolor sit amet, consectetur.</p></div></div>
         <div class="pinto"><img src="images/thumb-02.png"><div class="info"><h2>Project 8</h2><p>Lorem ipsum dolor sit amet, consectetur.</p></div></div>
             <div class="pinto">
-            
+             <a href="blog-inner.html">
          <div class="blog-wrkarea revealator-slideup">
 <div class="bolg-header">
 <span class="blog-char">Haleem</span>
@@ -1284,12 +1334,12 @@ Best haleem in Hyderabad?</h6>
 
 </div>
 </div>
-        
+             </a>   
         </div>
         <div class="pinto"><img src="images/thumb-01.png"><div class="info"><h2>Project 6</h2><p>Lorem ipsum dolor sit amet, consectetur.</p></div></div>
         <div class="pinto"><img src="images/thumb-01.png"><div class="info"><h2>Project 9</h2><p>Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur.</p></div></div>
             <div class="pinto">
-            
+             <a href="blog-inner.html">
          <div class="blog-wrkarea revealator-slideup">
 <div class="bolg-header">
 <span class="blog-char">Haleem</span>
@@ -1305,7 +1355,7 @@ Best haleem in Hyderabad?</h6>
 
 </div>
 </div>
-        
+             </a>   
         </div>
 		 <div class="pinto"><img src="images/thumb-02.png"><div class="info"><h2>Project 2</h2><p>Lorem ipsum dolor sit amet, consectetur.</p></div></div>
 		  
@@ -1344,30 +1394,7 @@ Best haleem in Hyderabad?</h6>
         
     </ul>
 </div>-->
-  <div class="pagination-content" >
-        <ul class="pagination">
-            <li class="left-etc arrow"><a href="#">&laquo;</a></li>
-            <li><a href="">1</a></li>
-            <li class="active">
-                <a href="">2</a>
-                   
-                
-            </li>
-            <li><a href="">3</a></li>
-            <li><a href="">4</a></li>
-            <li><a href="">5</a></li>
-            <li><a href="">6</a></li>
-            <li><a href="">7</a></li>
-            <li><a href="">8</a></li>
-            <li><a href="">9</a></li>
-            <li><a href="">10</a></li>
-            <li><a href="">11</a></li>
-            <li><a href="">12</a></li>
-            <li><a href="">13</a></li>
-            
-            <li class="arrow"><a href="#">&raquo;</a></li>
-        </ul>
-    </div>
+
 </div>
 </div>
 <!----- Footer starts here ----->
@@ -1380,35 +1407,37 @@ Best haleem in Hyderabad?</h6>
 <div class="footer-links">
     <p class="abtus">About Us</p>
 <span>NRImegamart.com and VRNRI.com are owned by 'VR NRI Solutions Private Limited' and is committed to serve the clients all across the globe with utmost dedication and value proposition.</span>
-<a href="#">Show More...</a>
+<a href="groupsites.html">Show More...</a>
 </div>
 </div>
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ftrlnks-container ftr-acc">
 <div class="footer-links">
 <p>Your Accounts</p>
 <ul>
-<li><a href="#">Order Status</a></li>
-<li><a href="#">Testimonials</a></li>
-<li><a href="#">My Orders</a></li>
-<li><a href="#">My Profile</a></li>
-<li><a href="#">My Promocodes</a></li>
-<li><a href="#">My Events</a></li>
-<li><a href="#">Photo Print</a></li>
+<li><a href="myprofile.html">Order Status</a></li>
+<li><a href="testimonial.html">Testimonials</a></li>
+<li><a href="myprofile.html">My Orders</a></li>
+<li><a href="myprofile.html">My Profile</a></li>
+<li><a href="myprofile.html">My Promocodes</a></li>
+<li><a href="myprofile.html">My Events</a></li>
+<li><a href="myprofile.html">Photo Print</a></li>
+<li><a href="myprofile.html">My Airline Enquiry</a></li>
 </ul>
 </div>
 
 </div>
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ftrlnks-container ftr-rr">
 <div class="footer-links">
-<p>Rewards & Referrals</p>
+<p>Policies</p>
 <ul>
-<li><a href="#">Purchase Credits</a></li>
-<li><a href="#">Plant a Plant</a></li>
-<li><a href="#">Rewards for Reservation</a></li>
-<li><a href="#">Ten for Talent</a></li>
-<li><a href="#">Deals and Discounts</a></li>
-<li><a href="#">Students Special</a></li>
-<li><a href="#">Cash for Creation</a></li>
+<li><a href="privacypolicy.html">Privacy Policy</a></li>
+<li><a href="deliverypolicy.html">Delivery Policy</a></li>
+<li><a href="shippingpolicy.html">Shipping policy</a></li>
+<li><a href="refundreturn.html">Refunds & Returns</a></li>
+<li><a href="warantee.html">Guarantee & Warrantee</a></li>
+<li><a href="termsofuse.html">Terms of use</a></li>
+<li><a href="termsconditions.html">Terms and Conditions</a></li>
+<li><a href="testimonial.html">Testimonial Guidelines</a></li>
 </ul>
 </div>
 
@@ -1419,42 +1448,43 @@ Best haleem in Hyderabad?</h6>
 <div class="row">
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ftrlnks-container">
 <div class="footer-links">
+<p>Vendor </p>
+<ul>
+<li><a href="infringement.html">Infringement Policy</a></li>
+<li><a href="codeofconduct.html">Code of conduct</a></li>
+<li><a href="sellprocess.html">Selling Process</a></li>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="myprofile.html">Manage your account</a></li>
+
+</ul>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ftrlnks-container">
+<div class="footer-links">
+<p>Rewards & Referrals</p>
+<ul>
+<li><a href="cashfrcreation.html">Cash for Creation</a></li>
+<li><a href="studentspec.html">Students Special</a></li>
+<li><a href="dealsnddiscount.html">Deals and Discounts</a></li>
+<li><a href="tenfrtalent.html">Ten for Talent</a></li>
+<li><a href="rewardandreservation.html">Rewards for Reservation</a></li>
+<li><a href="plantaplant.html">Plant a Plant</a></li>
+<li><a href="purchasecre.html">Purchase Credits</a></li>
+<li><a href="hero.html">Hail a Hero</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ftrlnks-container">
+<div class="footer-links">
 <p>References & Resources</p>
 <ul>
-<li><a href="#">Group website link</a></li>
-<li><a href="#">V|N Foundation</a></li>
-<li><a href="#">Rewards for Reservation</a></li>
-<li><a href="#">Our Team</a></li>
-<li><a href="#">Purchase Enquiry</a></li>
-<li><a href="#">Enquiry's</a></li>
-<li><a href="#">Courier Product Enquiry</a></li>
-</ul>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ftrlnks-container">
-<div class="footer-links">
-<p>Terms & Conditions</p>
-<ul>
-<li><a href="#">About Us</a></li>
-<li><a href="#">Privacy Policy</a></li>
-<li><a href="#">Delivery Policy</a></li>
-<li><a href="#">Shipping policy</a></li>
-<li><a href="#">Refunds & Returns</a></li>
-<li><a href="#">Guarantee & Warrantee</a></li>
-<li><a href="#">Terms of use</a></li>
-</ul>
-</div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ftrlnks-container">
-<div class="footer-links">
-<p>Support</p>
-<ul>
-<li><a href="#">Modus Operand</a></li>
-<li><a href="#">Our Services</a></li>
-<li><a href="#">Delivery Policy</a></li>
-<li><a href="#">Purchase Process</a></li>
-<li><a href="#">Advertisement Page</a></li>
-<li><a href="#">Testimonial Guidelines</a></li>
+<li><a href="groupsites.html">Group website link</a></li>
+<li><a href="ourteam.html">Our Team</a></li>
+<li><a href="purchasenquiry.html">Purchase Enquiry</a></li>
+<li><a href="modusoperand.html">Modus Operandi</a></li>
+<li><a href="purchaseprocess.html">Purchase Process</a></li>
+<li><a href="sitemap.html">Sitemap</a></li>
+<li><a href="soppinghelp.html">Shopping Help</a></li>
 </ul>
 </div>
 </div>
@@ -1527,22 +1557,26 @@ $(window).scroll(function() {
 
 
 
-<script> 
 
+ <script>    
 
-$(document).ready(function () {
-  
-    $('.ind-time').click(function (e) {
-        $('.loc-time').stop(true).slideToggle();
-    });
-    $(document).click(function (e) {
-        if (!$(e.target).closest('.ind-time, .loc-time').length) {
-            $('.loc-time').stop(true).slideUp();
-        }
-    });
-});
-</script>
+   
+        $('input[name="a"]').change(function () {
+            if ($(this).is(':checked')) {
+                $(".currencychange").css('display', 'block');
+                setTimeout(function () {
+                    $('#myModal').modal('hide');
+                    $(".currencychange").css('display', 'none');
+                }, 2000)
 
+            }
+        });
+    </script>
+ <script>
+        $(document).ready(function () {
+            $(".pagination-content").rPage();
+        });
+    </script>
    
     <script type="text/javascript" src="js/Commonscript.js"></script>
 </body>
