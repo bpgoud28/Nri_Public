@@ -881,8 +881,10 @@ top: 1px;}
 .pro_seller{ width: 100%; float: left;margin-top: -10px;}
 .pro_seller p{ color: #737373; font-size: 13px;}
 .pro_seller p span{ font-size: 14px; color: #333; }
-.product_buttons_pop{ position: absolute; bottom:3px; background: rgba( 255,255,255,0.7);padding: 0px 25%;}
-.globe{ float: left;}
+.product_buttons_pop{ position: absolute; bottom:2px; background: rgba( 255,255,255,0.7);padding: 0px 25%;}
+.globe{ float: left;
+position: relative;
+top: 5px;}
 .pro_wish_pop{ left:30%;}
 .pro_heading{ margin: 0px ; float: left; width: 100%; color: #737373; font-size: 20px;margin-bottom: 25px;}
 
@@ -950,7 +952,7 @@ float: right;font-size: 12px;color: #3369E8;}
  .greting_txt_edit{border: 1px solid #f1f1f1; height: 100px;}
  .mess_on_card{ width: 100%; float:left; color: #737373; font-size: 14px; margin-bottom: 15px;}
  .change_mess{ float: right; width: 100%;text-align: right;margin-bottom: 20px;
-font-size: 12px;color: #3369E8; margin-top: 10px;}
+font-size: 12px;color: #3369E8; margin-top: 10px;cursor: pointer;}
   .change_mess:hover{color:#eeb211;}
   .cart-mre{ float: right;}
   
@@ -970,7 +972,7 @@ font-size: 12px;color: #3369E8; margin-top: 10px;}
 top: -20px;
 margin-top: -10px;}
 .add_addr_wish{ float: right;}
-.order_date_picker{width:100%; float:left;margin-top: 20px;}
+.order_date_picker{width:100%; float:left;margin-top: 15px;}
   .cart_date{width:100%; float:left;}
   .cart_date p{width:100%; float:left; margin:0px; color: #5b5b5b; font-size:13px;font-family: 'Lato Bold';margin-bottom: 10px;}
 .cart_date_pick{ width:100%; float:left;border: 1px solid #f1f1f1;padding: 5px 5px;}
@@ -1026,3 +1028,228 @@ width: auto;}
 font-size: 14px !important;
 margin: 0px !important;margin-top: 15px !important;}
 .propay_btn{ margin:25px 0px 10px !important;}
+
+/*----- Product Details Page -----*/
+
+.pro_details{ width: 100%; float: left; }
+.product_image{ width: 100%; float: left;}
+.product_description{width: 100%; float: left;}
+.product_description h4{ color: #737373; float: left;width: 100%; margin: 0px; }
+.pro_description{ width: 100%; margin:10px 0px ; float: left;}
+
+.static_page_heading{ width: 100%; float: left;color: #737373;
+font-size: 24px !important;
+text-align: center;
+margin: 15px 0px;}
+.static_cntnt{ float: left; width: 100%; }
+.static_cntnt ul{ width: 100%; float: left; padding: 0px 40px;}
+.static_cntnt ul h6{ float: left;margin: 10px 0px !important; font-size:16px; color: #737373; margin: 0px;font-family: 'Lato Bold' !important; width: 100%;}
+.static_cntnt ul li{ font-size: 13px; width: 100%; float: left;margin-bottom: 10px; }
+.static_cntnt ul li b{ color: #737373;font-family: 'Lato Bold' !important; margin-right: 10px; }
+.static_page p{ font-size: 13px !important;}
+.static_page{padding-bottom: 15px;}
+.faq{ width: 100%; float: left; height: auto;}
+.faq ol{ width: 100%; float: left; padding: 0px 40px;margin: 30px 0px 15px; padding-left: 60px;}
+.faq ol li{ width: 100%; float: left; margin-bottom: 15px;padding-left: 10px;
+font-size: 14px;}
+.faq ol li .faq_ques{ width: 100%; float: left;padding: 0px !important;
+margin: 0px;font-family: 'Lato Bold' !important; color: #737373; font-size: 14px !important; }
+.faq ol li .faq_ans{ width: 100%; float: left; font-size: 13px !important; margin-top: 6px;}
+
+.enquiry_form{ background: #f1f1f1; width: 100%; float: left;}
+.enquiry_wrkarea{ background: #fff; width: 100%; float: left;padding:30px;}
+.enquiry_header{ width: 100%; float: left;}
+.enquiry_form_heading{ color: #737373;font-family: 'Lato Bold' !important;font-size: 18px;margin: 0px; float: left; width: auto;}
+.enquiry_area{ cursor: pointer;background: #f1f1f1; width: 100%; float: left;padding: 10px 30px;margin:70px 0px 0px;}
+.enquiry_img { width: auto; float: left; position: relative;left: 50%; background: #fff; border-radius: 50%;margin-top: -50px;
+margin-left: -50px;border: 1px solid #e8e8e8;}
+.enquiry_img  img{ width:auto; float:left; padding:15px;}
+.enquiry_cntnt{width: 100%; float: left; }
+.enquiry_cntnt p{ font-family: 'Lato Bold' !important; color: #737373; font-size: 14px;width: 100%; float: left; margin: 10px 0px; }
+.enquiry_cntnt span{width: 100%; float: left; margin-bottom: 15px;}
+.womencloting:hover{ background: linear-gradient(to bottom, #006600 0%, #00ff99 100%); }
+.womencloting:hover p{ color: #fff;}
+.mencloting:hover{background:#eeb211}
+.automobile:hover{ background: #3369E8}
+.bulkproduct:hover{background:#009925}
+.autorepair:hover{ background: #3369E8}
+.cashforcreation:hover{background:#009925}
+.corporatepurchase:hover{ background: #3369E8}
+.customproduct:hover{background:#eeb211}
+.eventmanagement:hover{ background: #3369E8}
+.financialadvice:hover{ background: #009925}
+.goldjewelery:hover{background:#eeb211}
+.helpinhyd:hover{background:#eeb211}
+.htelstay:hover{ background: #009925}
+.itservice:hover{background:#eeb211}
+.localtour:hover{ background: #3369E8}
+.printingenq:hover{background:#009925}
+.purchaseenq:hover{ background: #3369E8}
+.realestate:hover{background:#eeb211}
+.secondopinion:hover{ background: #3369E8}
+.templeenquiry:hover{background:#eeb211}
+.ustax:hover{ background: #009925}
+.printvrnri:hover{background:#eeb211}
+.advertiseenquiry:hover{ background: #3369E8}
+.generalenquiry:hover{background:#eeb211}
+.courierenquiry:hover{ background: #3369E8}
+.airlinernquiry:hover{background:#009925}
+.women_tailor{ width: 100%;}
+.women_tailor_form{ width:100%;}
+
+.mesur_image{ width: 375px;float: right;position: absolute;display: none; z-index: 1;}
+.tailor_group{ width: 100%;float: left;}
+.garments{ width: 50%; float: left;}
+.garment_selection{ width: 50%;padding: 5px; float: left;}
+.garment_delivery{ width:45%; float: right;margin-top: 2px;}
+.garment_delivery p{ color: #737373; width: auto; float: left; font-size: 13px;margin-bottom:0px;margin-top: 5px;
+margin-right: 10px;}
+.garment_deldate{ width: 55%;
+float: left;}
+.garment_other{ width:45% !important;margin-top: 0px !important;
+padding: 4px !important;float: left;margin-left: 15px;}
+.mesurment{ color: #737373; color: #737373;font-family: 'Lato Bold'; margin-bottom: 5px;}
+.tailor_inche{width: 100%;float: left;}
+.tailor_inche span{ font-size: 12px; width: 100%;}
+.frnt_neck:focus + .front_neckimg{display: block;left: 435px;top: -110px;}
+.back_neck:focus + .back_neckimg{display: block; left: 290px;top: -110px;}
+.shoulder_neck:focus + .shoulder_neckimg{display: block; left: 145px;top: -110px;}
+.bust:focus + .bust_neckimg{display: block;left: 435px;top: -110px;}
+.apex:focus + .apex_neckimg{display: block; left: 290px;top: -110px;}
+.bluse_lnght:focus + .blouse_lenghtimg{display: block; left: 145px;top: -110px;}
+
+.waist_abve:focus + .waist_abve_img{display: block;left: 435px;top: -110px;}
+.arundwaist:focus + .arundwaistimg{display: block; left: 290px;top: -110px;}
+.arund_hips:focus + .arundhips_img{display: block; left: 145px;top: -110px;}
+
+.kurtha:focus + .kurtha_img{display: block;left: 435px;top: -110px;}
+.lehenga:focus + .lehengaimg{display: block; left: 290px;top: -110px;}
+.tightsall:focus + .tightsall_img{display: block; left: 145px;top: -110px;}
+
+.knee:focus + .knee_img{display: block;left: 435px;top: -110px;}
+.calf:focus + .calfimg{display: block; left: 290px;top: -110px;}
+.ankle:focus + .ankle_img{display: block; left: 145px;top: -110px;}
+
+.enquiry_srh{ float: right;}
+.pro_more{ float: none; margin-left: 20px;}
+.weight_qaun{ float: left; width: 100%;}
+.cake_wei{float: left; width: 45%;}
+.cake_wei span{ width: 100%; float: left;margin-bottom: 5px;color: #737373;}
+.quantity_cake{float: left; width: 45%;}
+.quantity_cake span{ width: 100%; float: left;margin-bottom: 5px;color: #737373;}
+.quan_num{width:100px; float: left;font-size: 13px;
+border: 1px solid #f1f1f1;
+padding: 5px 5px;}
+.del_wei{ width: 150px;}
+.shipping_availability{ width: 100%; float: left;margin-top: 15px;}
+.shipping_availability span{width: 100%; float: left; color: #737373;margin-bottom: 5px;}
+.admDivCheck{ display: none;}
+.product_greting_card{ margin-top: 15px;float: left; width: 60%;}
+.product_greting_card .mess_on_card{ margin-bottom: 10px;}
+.greeting_select{ width: 40%; float: left;margin-top: 20px;}
+.selected_card{width: 75%;
+position: relative;
+left: 50%;
+margin-left: -50px;
+padding: 10px 10px;}
+.gretting_product{overflow: auto;
+height: 85px;}
+.carasoul_txt{position: absolute;
+top: 65%;
+left: 30%;
+width: 250px;
+float: left;
+text-align: center;
+color: #fff;}
+.gretting_pop_txt{ width: 65%; float: left;}
+#moredetails{ width: 100%; float: left;}
+.pro_testimonial_data{ padding: 10px;}
+.pro_testimonial_data h5{ width: auto;}
+.product_testi_rating{ width: auto; float: right;margin-top: -5px;}
+.product_testi_mess{ margin: 0px;}
+.product_row{ margin-top: 15px; float: left; width: 100%;}
+.product_detail_tab{ width: 100%; float: left;padding: 0px 40px;}
+.pro_detail_heading{font-family: 'Lato Bold' !important; color: #737373; font-size: 14px;width: 100%; float: left; }
+.product_detail_tab span{ width: 100%; float: left;margin-bottom: 10px;}
+.product_detail_tab ul{ width: 100%; float: left;padding-left: 30px;}
+.product_detail_tab ul li{ width: 100%; float: left;margin-bottom: 5px;
+padding-left: 10px;}
+.moreorder_tab{width: 100%; float: left;padding: 0px 5%;margin-top: 30px;}
+.relation_tab{width: 30%; float: left;}
+.product_relation{ width: 70%; float: left;padding: 5px 5px;}
+#realtion{width: 70%;
+float: left;
+border: 1px solid #d1cfcf;
+padding: 5px;
+margin-top: 10px;}
+.specify_instruction{ width: 50%; float: left;}
+.spec_ins{ float: left;min-height: 100px;width:70%; border: 1px solid #d1cfcf; padding: 5px;}
+.moreabout_order{ width:20%; float: left;}
+.thisgift{ float: left; width: 100%;}
+.thisgift label{ float: left;}
+.moreorder_buttons{width: 100%;
+float: left;
+margin-top: 20px;}
+.moreorder_color{ margin-left: 10px;}
+.makeenq_txt{ padding: 0px 30px; text-align: center;margin-bottom: 30px !important;}
+.pro_enq_form{ width: 50%; margin: 0px auto;}
+.enqu_name{ position: absolute; width: 100px !important; float: left; left: 0px;}
+.enquiry_txt{ width: 100%; float: left;}
+.product_enq_form{padding-left: 120px; float: left; width: 100%;}
+.enquiry_form_grp{ position: relative;float: left;width: 100%;}
+.enq_pro{ margin-top: 20px;}
+.alert-success{display: none;}
+.addon_producut{width: 100%; float: left; padding: 0px;padding-bottom: 15px;}
+.addon_producut h3{background: #3369E8;
+color: #fff !important;
+font-size:16px;
+float: left;
+width: 100%;
+margin: 0px;
+padding: 10px 15px;}
+.addon_product{float: left; width: 100%;}
+.addon_list{float: left; width: 100%; position: relative;border-bottom: 1px solid #f9f9f9;
+padding: 10px;}
+.addon_list:last-child{ border: 0px;}
+.addon_list .addon_image{ width:85px;float: left; position: absolute; left: 10px;}
+.addon_pro_container{ padding-left: 0px !important;}
+.pro_addon_detail{ width: 100%;float: left; padding-left:95px;}
+.addon_heading{margin-bottom:5px !important;font-family: 'Lato' !important; font-size: 13px !important;}
+.addonlist_price p{margin-bottom:5px !important;}
+.addon_stars{ margin-bottom: 0px; margin-top: -9px;}
+.addon_change{ margin: 0px;}
+.addon_btn{ margin: 15px;}
+
+.snake{
+    		position: relative;
+    		overflow: hidden;margin-bottom: 20px;
+margin-right: 20px;
+width: 23%;
+    	}
+    	.overlay_grp{
+    		position: absolute;
+    		opacity: 0.9;
+
+    		text-align: center;
+    		padding-top: 60px;
+    		background-color: #222;
+        color:#fff;
+    	}
+    	.overlay_grp .title{
+    		font-size: 15px;
+    		font-weight: bold;
+    		display: block;
+    		width: 100%;
+    	}
+        .main{
+			display: inline-block;
+			padding: 0;
+		
+		}
+		.main img{
+			width: 100%;
+			height: 100%;
+		}
+                
+                .grp_btn{ float: none;}
+                .grp_description{width: 100%; float: left; margin: 5px 0px;}

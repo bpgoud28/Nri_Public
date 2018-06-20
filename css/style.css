@@ -1644,3 +1644,11 @@ color: #fff !important;}
     margin: 0px !important;
     padding: 5px 0;
 }
+.noscroll {
+    overflow: hidden;
+}
+.nestedchildtab {
+    display: none;
+    margin-left: 0;
+    padding-left: 0;
+}

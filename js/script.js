@@ -59,3 +59,21 @@ function admSelectCheck(nameSelect)
     }
 }
 
+
+function gender(nameSelect)
+{
+    if(nameSelect){
+        admOptionValue = document.getElementById("otherrelation").value;
+		
+        if(admOptionValue == nameSelect.value){       
+		document.getElementById("realtion").style.display = "block";
+        }
+        else{
+            document.getElementById("realtion").style.display = "none";
+        }
+    }
+    else{
+        document.getElementById("realtion").style.display = "none";
+    }
+}
+

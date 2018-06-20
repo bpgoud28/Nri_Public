@@ -1,6 +1,20 @@
+/* -----------------------------------------------------------------------------
+
+  CalenStyle - Responsive Event Calendar
+  Version 2.0.8
+  Copyright (c)2017 Lajpat Shah
+  Contributors : https://github.com/nehakadam/CalenStyle/contributors
+  Repository : https://github.com/nehakadam/CalenStyle
+  Homepage : https://nehakadam.github.io/CalenStyle
+
+ ----------------------------------------------------------------------------- */
+
 (function () {
 
     "use strict";
+
+//"use strict";
+
 function CalEvent(ceId, ceAllDay, ceStartDate, ceEndDate, ceType, ceTitle, ceDesc, ceUrl)
 {
 	this.id = ceId;
