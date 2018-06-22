@@ -1502,7 +1502,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
       <div class="modal-content large_mdel_cntent">
 	  <button type="button" class="close popup_close" data-dismiss="modal"><img src="images/close.png"></button>
         
-        <div class="modal-body large_mdel_body small_model_return">
+        <div class="modal-body large_mdel_body">
             <p class="popup_heading">Women Tailoring</p>
             <!--<img src="images/Currency-icon.png" >	-->
             <div class="row">
@@ -1661,29 +1661,68 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                         
   </div> 
                     <div class="tailor_group">
-    <label for="f-name" class="del-name">Padding</label>
-    <div class="del-buton">
-    <input name="a" type="radio"> <span class="sign-radio del-radio"> Yes</span>
-    <input name="a" type="radio"> <span class="sign-radio del-radio">No</span></div>
+    <label for="f-name" class="del-name formheading">Padding</label>
+    <div class="del-buton tailor_form_button">
+    <input name="a" type="radio"> <span class="sign-radio del-radio form_buttons"> Yes</span>
+    <input name="a" type="radio"> <span class="sign-radio del-radio form_buttons">No</span></div>
   </div>
                     <div class="tailor_group">
-    <label for="f-name" class="del-name">Blouse opening</label>
-    <div class="del-buton">
-    <input name="a" type="radio"> <span class="sign-radio del-radio"> Zip</span>
-    <input name="a" type="radio"> <span class="sign-radio del-radio">Hook</span></div>
+    <label for="f-name" class="del-name formheading">Blouse opening</label>
+    <div class="del-buton tailor_form_button">
+    <input name="a" type="radio"> <span class="sign-radio del-radio form_buttons"> Zip</span>
+    <input name="a" type="radio"> <span class="sign-radio del-radio form_buttons">Hook</span></div>
   </div>
                     <div class="tailor_group">
-    <label for="f-name" class="del-name">Hook style</label>
-    <div class="del-buton">
-    <input name="a" type="radio"> <span class="sign-radio del-radio"> Back End</span>
-    <input name="a" type="radio"> <span class="sign-radio del-radio"> Front End</span>
-       <input name="a" type="radio"> <span class="sign-radio del-radio">Side End</span></div>
+    <label for="f-name" class="del-name formheading">Hook style</label>
+    <div class="del-buton tailor_form_button">
+    <input name="a" type="radio"> <span class="sign-radio del-radio form_buttons"> Back End</span>
+    <input name="a" type="radio"> <span class="sign-radio del-radio form_buttons"> Front End</span>
+       <input name="a" type="radio"> <span class="sign-radio del-radio form_buttons">Side End</span></div>
   </div>
                     
                 </div> 
                   
            
                      </div>
+                <div class="tailor_group">
+                    <div class="col-xs-12 col-sm-4">
+                    <div class="enquiry_contact">
+                        <input class="form-control contact_prsn_name" type="text" placeholder="Contact Person Name">
+                    </div>
+                        </div>
+                     <div class="col-xs-12 col-sm-4">
+                      <div class="enquiry_phone">
+                        <input class="form-control contact_prsn_name" type="text" placeholder="Phone Number">
+                    </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4">
+                      <div class="enquiry_email">
+                        <input class="form-control contact_prsn_name" type="text" placeholder="Email Address">
+                    </div>
+                               </div>
+  </div>
+                 <div class="tailor_group">
+                       <div class="col-xs-12 col-sm-6">
+                              <div class="spec_instruc">
+                                  <span>Special Instructions</span>
+                                  <textarea class="form-control tailor_instruction"></textarea>
+                              </div>
+                          </div>
+                    <div class="col-xs-12 col-sm-6">
+                <div class="edit_del_address">
+        
+        <p class="pickup_enquiry_addr">Delivery Address</p>
+        <div class="delivery_addr_detail enquiry_delivery_addr">
+             <a href="#" class="edit_aadr_btn" data-toggle="modal" data-target="#editaddr">Pick Address</a>
+            <p class="delivery_name">Naveen Reddy</p>
+            <span class="delivery_address">Plot No 33,ABCD Colony</span>
+             <span class="delivery_address">ABCD Road</span>
+              <span class="delivery_address">Hyderabad, 5000032</span>
+        </div>
+    </div>
+       </div>
+    </div>    
+                <button type="button" class="btn cart-mre enquiry_btn">Save &amp; Continue</button>
             </div>
                 </div>
         </div>
@@ -1692,6 +1731,254 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
     </div>
   </div>
 
+<!---add address Modal-->
+<div class="modal fade" id="editaddr" role="dialog">
+    <div class="modal-dialog large_mdel">
+      <div class="modal-content large_mdel_cntent">
+      <button type="button" class="close popup_close" data-dismiss="modal"><img src="images/close.png"></button>
+        <div class="modal-body large_mdel_body small_model_return">
+          
+                <div class="add_addr_delivery">
+                  <div class="add_address share_wish add_addr_wish">
+               <a href="" data-toggle="modal" data-target="#addaddress" class="addaddr_txt" data-dismiss="modal">Add Address <i class="fa btn_arow fa-angle-right"></i></a>
+               </div>  
+            </div>
+              <div class="addr_delivery">
+<div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="addr_area addr_block">
+                        <div class="addr_head">
+                            <input type="radio" name="address" class="addr_radio" data-toggle="tooltip" data-placement="top" title="Billing address"> <span>Naveen Reddy</span>
+                            <div class="addr_selection">
+                                <div class="food_prefer">
+                                   
+                         <span class="food_type non_veg">Non-Vegiterion</span> 
+                                </div>    
+                               
+                            </div>
+                        </div>  
+                        <div class="addr_bdy">
+                            <div class="addr_line">
+                             <img src="images/addruser.png" alt=""/>
+                             <p>Naveen Reddy</p>
+                            </div>
+                             <div class="addr_line">
+                             <img src="images/phone-book.png" alt=""/>
+                             <p>12346567895</p>
+                            </div>
+                              <div class="addr_line">
+                             <img src="images/addruser.png" alt=""/>
+                             <p>Address</p>
+                             <span class="addr_detail">addr line 1</span>
+                             <span class="addr_detail">addr line 1</span>
+                             <span class="addr_detail">addr line 1</span>
+                            </div>
+                              <div class="addr_line">
+                             <img src="images/phone-book.png" alt=""/>
+                             <p><span>Land Mark:</span>Near address line</p>
+                            </div>
+				
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-xs-12 col-sm-6">
+                    <div class="addr_area addr_block">
+                        <div class="addr_head">
+                            <input type="radio" name="address" class="addr_radio"  data-toggle="tooltip" data-placement="top" title="Billing address"> <span>Naveen Reddy</span>
+                            <div class="addr_selection">
+                               <div class="food_prefer">
+                                     
+                         <span class="food_type veg">Vegiterion</span> 
+                                </div> 
+                               
+                            </div>
+                        </div>  
+                        <div class="addr_bdy">
+                            <div class="addr_line">
+                             <img src="images/addruser.png" alt=""/>
+                             <p>Naveen Reddy</p>
+                            </div>
+                             <div class="addr_line">
+                             <img src="images/phone-book.png" alt=""/>
+                             <p>12346567895</p>
+                            </div>
+                              <div class="addr_line">
+                             <img src="images/addruser.png" alt=""/>
+                             <p>Address</p>
+                             <span class="addr_detail">addr line 1</span>
+                             <span class="addr_detail">addr line 1</span>
+                             <span class="addr_detail">addr line 1</span>
+                            </div>
+                              <div class="addr_line">
+                             <img src="images/phone-book.png" alt=""/>
+                             <p><span>Land Mark:</span>Near address line</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            
+            <div class="addr_delivery">
+<div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="addr_area addr_block">
+                        <div class="addr_head">
+                            <input type="radio" name="address" class="addr_radio" data-toggle="tooltip" data-placement="top" title="Billing address"> <span>Naveen Reddy</span>
+                            <div class="addr_selection">
+                                <div class="food_prefer">
+                                   
+                         <span class="food_type non_veg">Non-Vegiterion</span> 
+                                </div>    
+                               
+                            </div>
+                        </div>  
+                        <div class="addr_bdy">
+                            <div class="addr_line">
+                             <img src="images/addruser.png" alt=""/>
+                             <p>Naveen Reddy</p>
+                            </div>
+                             <div class="addr_line">
+                             <img src="images/phone-book.png" alt=""/>
+                             <p>12346567895</p>
+                            </div>
+                              <div class="addr_line">
+                             <img src="images/addruser.png" alt=""/>
+                             <p>Address</p>
+                             <span class="addr_detail">addr line 1</span>
+                             <span class="addr_detail">addr line 1</span>
+                             <span class="addr_detail">addr line 1</span>
+                            </div>
+                              <div class="addr_line">
+                             <img src="images/phone-book.png" alt=""/>
+                             <p><span>Land Mark:</span>Near address line</p>
+                            </div>
+				
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-xs-12 col-sm-6">
+                    <div class="addr_area addr_block">
+                        <div class="addr_head">
+                            <input type="radio" name="address" class="addr_radio"  data-toggle="tooltip" data-placement="top" title="Billing address"> <span>Naveen Reddy</span>
+                            <div class="addr_selection">
+                               <div class="food_prefer">
+                                     
+                         <span class="food_type veg">Vegiterion</span> 
+                                </div> 
+                               
+                            </div>
+                        </div>  
+                        <div class="addr_bdy">
+                            <div class="addr_line">
+                             <img src="images/addruser.png" alt=""/>
+                             <p>Naveen Reddy</p>
+                            </div>
+                             <div class="addr_line">
+                             <img src="images/phone-book.png" alt=""/>
+                             <p>12346567895</p>
+                            </div>
+                              <div class="addr_line">
+                             <img src="images/addruser.png" alt=""/>
+                             <p>Address</p>
+                             <span class="addr_detail">addr line 1</span>
+                             <span class="addr_detail">addr line 1</span>
+                             <span class="addr_detail">addr line 1</span>
+                            </div>
+                              <div class="addr_line">
+                             <img src="images/phone-book.png" alt=""/>
+                             <p><span>Land Mark:</span>Near address line</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            <button type="button" class="btn cart-mre">Save & Continue</button>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+<div class="modal fade" id="addaddress" role="dialog">
+    <div class="modal-dialog large_mdel">
+        
+      <!-- Modal content-->
+      <div class="modal-content large_mdel_cntent">
+	  <button type="button" class="close popup_close" data-dismiss="modal"><img src="images/close.png"></button>
+        
+        <div class="modal-body large_mdel_body small_model_return">
+            <p class="popup_heading">Add New Address</p>
+            <!--<img src="images/Currency-icon.png" >	-->
+            <div class="login form_padding">
+       
+         <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">First Name</label>
+    <input class="form-control" id="title" type="text">
+  </div>  
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">Last Name</label>
+    <input class="form-control" id="title" type="text">
+  </div>
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">Nick Name</label>
+    <input class="form-control" id="title" type="text">
+  </div>
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">Phone Number</label>
+    <input class="form-control" id="title" type="text">
+  </div>
+               <div class="form-group addr-grp  address_field">
+    <label for="f-name" class="sign-name addr_name">Address Line1</label>
+    <input class="form-control" id="title" type="text">
+  </div>
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">Address Line2</label>
+    <input class="form-control" id="title" type="text">
+  </div>
+         
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">City</label>
+    <input class="form-control" id="title" type="text">
+  </div>
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">State</label>
+    <input class="form-control" id="title" type="text">
+  </div>
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">pincode</label>
+    <input class="form-control" id="title" type="text">
+  </div>
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">Country</label>
+    <input class="form-control" id="title" type="text">
+  </div>
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">LandMark</label>
+    <input class="form-control" id="title" type="text">
+  </div>   
+                <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">LandMark</label>
+    <input class="form-control" id="title" type="text">
+  </div>  
+               <div class="form-group addr-grp">
+    <label for="f-name" class="sign-name addr_name">Food Habit</label>
+    <div class="food_selection">  <input name="a" type="radio" class="food_radio">  
+                         <span>Vegiterion</span> </div>
+  <div class="food_selection">  <input name="a" type="radio" class="food_radio">  
+                         <span>Non-Vegiterion</span> </div>
+             <div class="food_selection">  <input name="a" type="radio" class="food_radio">  
+                         <span>Non-Vegiterion</span> </div>
+  </div>
+          <button type="button" class="btn btn_color wish_pop_btn" >Save & Continue</button>  
+               
+                
+            </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 
 <!-Footer starts here -->
 <div class="footer">

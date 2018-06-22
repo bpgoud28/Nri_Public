@@ -1066,8 +1066,9 @@ margin-left: -50px;border: 1px solid #e8e8e8;}
 .enquiry_img  img{ width:auto; float:left; padding:15px;}
 .enquiry_cntnt{width: 100%; float: left; }
 .enquiry_cntnt p{ font-family: 'Lato Bold' !important; color: #737373; font-size: 14px;width: 100%; float: left; margin: 10px 0px; }
-.enquiry_cntnt span{width: 100%; float: left; margin-bottom: 15px;}
-.womencloting:hover{ background: linear-gradient(to bottom, #006600 0%, #00ff99 100%); }
+.enquiry_cntnt span{width: 100%; float: left; margin-bottom: 15px;font-size: 13px;
+color: #c0c0c0;}
+.womencloting:hover{ background: linear-gradient(to bottom, #15e490 0%, #006600 100%); }
 .womencloting:hover p{ color: #fff;}
 .mencloting:hover{background:#eeb211}
 .automobile:hover{ background: #3369E8}
@@ -1098,37 +1099,53 @@ margin-left: -50px;border: 1px solid #e8e8e8;}
 .women_tailor_form{ width:100%;}
 
 .mesur_image{ width: 375px;float: right;position: absolute;display: none; z-index: 1;}
-.tailor_group{ width: 100%;float: left;}
-.garments{ width: 50%; float: left;}
+.tailor_group{ width: 100%;float: left; margin-bottom: 15px;}
+.garments{ width: 50%; float: left;padding-left: 15px;}
 .garment_selection{ width: 50%;padding: 5px; float: left;}
-.garment_delivery{ width:45%; float: right;margin-top: 2px;}
+.garment_delivery{ width:45%; float: right;margin-top: 2px;padding-right: 15px;}
 .garment_delivery p{ color: #737373; width: auto; float: left; font-size: 13px;margin-bottom:0px;margin-top: 5px;
 margin-right: 10px;}
 .garment_deldate{ width: 55%;
 float: left;}
 .garment_other{ width:45% !important;margin-top: 0px !important;
 padding: 4px !important;float: left;margin-left: 15px;}
-.mesurment{ color: #737373; color: #737373;font-family: 'Lato Bold'; margin-bottom: 5px;}
+.mesurment{ color: #737373;font-family: 'Lato Bold'; margin-bottom: 20px;
+float: left;font-size: 14px;}
 .tailor_inche{width: 100%;float: left;}
 .tailor_inche span{ font-size: 12px; width: 100%;}
-.frnt_neck:focus + .front_neckimg{display: block;left: 435px;top: -110px;}
-.back_neck:focus + .back_neckimg{display: block; left: 290px;top: -110px;}
-.shoulder_neck:focus + .shoulder_neckimg{display: block; left: 145px;top: -110px;}
-.bust:focus + .bust_neckimg{display: block;left: 435px;top: -110px;}
-.apex:focus + .apex_neckimg{display: block; left: 290px;top: -110px;}
-.bluse_lnght:focus + .blouse_lenghtimg{display: block; left: 145px;top: -110px;}
+.frnt_neck:focus + .front_neckimg{display: block;left: 435px;top: 0px;}
+.back_neck:focus + .back_neckimg{display: block; left: 290px;top: 0px;}
+.shoulder_neck:focus + .shoulder_neckimg{display: block; left: 145px;top:0px;}
+.bust:focus + .bust_neckimg{display: block;left: 435px;top: -40px;}
+.apex:focus + .apex_neckimg{display: block; left: 290px;top: -40px;}
+.bluse_lnght:focus + .blouse_lenghtimg{display: block; left: 145px;top: -40px;}
 
-.waist_abve:focus + .waist_abve_img{display: block;left: 435px;top: -110px;}
-.arundwaist:focus + .arundwaistimg{display: block; left: 290px;top: -110px;}
-.arund_hips:focus + .arundhips_img{display: block; left: 145px;top: -110px;}
+.waist_abve:focus + .waist_abve_img{display: block;left: 435px;top: -90px;}
+.arundwaist:focus + .arundwaistimg{display: block; left: 290px;top: -90px;}
+.arund_hips:focus + .arundhips_img{display: block; left: 145px;top: -90px;}
 
 .kurtha:focus + .kurtha_img{display: block;left: 435px;top: -110px;}
 .lehenga:focus + .lehengaimg{display: block; left: 290px;top: -110px;}
 .tightsall:focus + .tightsall_img{display: block; left: 145px;top: -110px;}
 
-.knee:focus + .knee_img{display: block;left: 435px;top: -110px;}
-.calf:focus + .calfimg{display: block; left: 290px;top: -110px;}
-.ankle:focus + .ankle_img{display: block; left: 145px;top: -110px;}
+.knee:focus + .knee_img{display: block;left: 435px;top: -160px;}
+.calf:focus + .calfimg{display: block; left: 290px;top: -160px;}
+.ankle:focus + .ankle_img{display: block; left: 145px;top: -160px;}
+.formheading{ color: #333;
+font-size: 13px;}
+.tailor_form_button{margin: 0px !important;}
+.form_buttons{font-size: 13px !important;margin-right: 15px !important;}
+.enquiry_contact{ width:100%; float: left;}
+.enquiry_phone{width: 100%; float: left;}
+.enquiry_email{width: 100%; float: left;}
+.form-control{box-shadow: none !important;font-size: 13px !important;}
+.tailor_instruction{ width: 100%; float: left; min-height: 110px;}
+.enquiry_delivery_addr{ width: 100%; float: left;}
+.spec_instruc span{color: #737373;font-size: 13px;
+margin-bottom: 10px;
+float: left; width: 100%;}
+.pickup_enquiry_addr{ color: #737373;}
+.enquiry_btn{ margin-top: 20px;}
 
 .enquiry_srh{ float: right;}
 .pro_more{ float: none; margin-left: 20px;}
@@ -1222,9 +1239,9 @@ padding: 10px;}
 
 .snake{
     		position: relative;
-    		overflow: hidden;margin-bottom: 20px;
-margin-right: 20px;
-width: 23%;
+    		overflow: hidden;margin-bottom: 35px;
+margin-right: 30px;
+width: 22%;
     	}
     	.overlay_grp{
     		position: absolute;
@@ -1251,5 +1268,6 @@ width: 23%;
 			height: 100%;
 		}
                 
-                .grp_btn{ float: none;}
-                .grp_description{width: 100%; float: left; margin: 5px 0px;}
+.grp_btn{ float: none;}
+.grp_description{width: 100%; float: left; margin: 5px 0px;}
+.group_site_heading{margin: 20px 0px 40px;}
