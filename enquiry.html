@@ -1221,10 +1221,11 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                 <div class="enquiry_header">
                 <p class="enquiry_form_heading"> Enquiry Form </p>
                 <div class="enquiry_srh" id="demo-2">
-                    <input class="srh-prm" type="search" placeholder="search for enquiry">
+                    <input class="srh-prm" type="search" placeholder="search for enquiry" id="myInput">
     <button class="prmsrh-btn"><img src="images/img/search_03.png" alt="" class="prm-srccon"></button>
                 </div>
                 </div>
+                <div id="list">
                  <div class="row">
                 <div class="col-xs-12 col-sm-4">
                     <div class="enquiry_area womencloting" data-toggle="modal" data-target="#womencloting">
@@ -1488,6 +1489,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                 </div>
                   
             </div>
+            </div>
         </div>
     </div>
 </div>
@@ -1691,7 +1693,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   </div>
 
 
-<!----- Footer starts here ----->
+<!-Footer starts here -->
 <div class="footer">
 <div class="container">
 <div class="row">
@@ -1814,5 +1816,17 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 </div>
 </div>
 <script type="text/javascript" src="js/Commonscript.js"></script>
+
+<script type="text/javascript">
+$("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#list .enquiry_area").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+
+</script>
+
+
 </body>
 </html>

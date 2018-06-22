@@ -119,25 +119,66 @@ if($(window).scrollTop() > elementCart.top){
 });
 
 //Header fixed to top on scroll
-var fixmeTop = $('.main-menu').offset().top;
-$(window).scroll(function() {
-    var currentScroll = $(window).scrollTop();
-    if (currentScroll >= fixmeTop) {
-        $('.main-menu').css({
-            position: 'fixed',
-            top: '0',
-            left: '0'
-        }).addClass('menu_stick');
-         $('.ground').addClass('ground_down');	
+// var fixmeTop = $('.main-menu').offset().top;
+// $(window).scroll(function() {
+//     var currentScroll = $(window).scrollTop();
+//     if (currentScroll >= fixmeTop) {
+//         $('.main-menu').css({
+//             position: 'fixed',
+//             top: '0',
+//             left: '0'
+//         }).addClass('menu_stick');
+//          $('.ground').addClass('ground_down');	
       
-    } else {
-        $('.main-menu').css({
-            position: 'relative'
-        }).removeClass('menu_stick');
+//     } else {
+//         $('.main-menu').css({
+//             position: 'relative'
+//         }).removeClass('menu_stick');
         
-         $('.ground').removeClass('ground_down');	
-    }
+//          $('.ground').removeClass('ground_down');	
+//     }
+// });
+
+
+
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
 });
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
 //Modal popup grayout issue fixes
 $('.modal').on('hidden.bs.modal', function () {
 	if ($(".modal:visible").length > 0) {

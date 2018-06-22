@@ -123,7 +123,7 @@ left: -35px;}
 .main-menu .logo img{ float:left;width:145px;}
 .main-menu .prime{ float:right;}
 /*------------------Banner---------------*/
-.banner{ width:100%; float:left; position:relative;z-index:1;}
+.banner{ width:100%; float:left; position:relative;z-index:1;margin-top: 63px}
 .banner .updates{ width:92%; float:left; position:absolute; background:#712156; z-index:2;bottom:3px;}
 .units{
 background-color: #fff;
@@ -1651,4 +1651,17 @@ color: #fff !important;}
     display: none;
     margin-left: 0;
     padding-left: 0;
+}
+header {
+    background: #fff;
+    height: 63px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-up {
+    top: -63px;
 }
