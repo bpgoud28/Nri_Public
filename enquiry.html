@@ -1237,7 +1237,7 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                     </div>
                 </div>
                       <div class="col-xs-12 col-sm-4">
-                    <div class="enquiry_area mencloting">
+                    <div class="enquiry_area mencloting" data-toggle="modal" data-target="#mencloting">
                         <div class="enquiry_img"> <img src="images/enquiry/vest.png" alt=""/></div>
                         <div class="enquiry_cntnt">
                             <p>Mens Custom Tailoring</p>
@@ -1684,6 +1684,263 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
                   
            
                      </div>
+                <div class="tailor_group">
+                    <div class="col-xs-12 col-sm-4">
+                    <div class="enquiry_contact">
+                        <input class="form-control contact_prsn_name" type="text" placeholder="Contact Person Name">
+                    </div>
+                        </div>
+                     <div class="col-xs-12 col-sm-4">
+                      <div class="enquiry_phone">
+                        <input class="form-control contact_prsn_name" type="text" placeholder="Phone Number">
+                    </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4">
+                      <div class="enquiry_email">
+                        <input class="form-control contact_prsn_name" type="text" placeholder="Email Address">
+                    </div>
+                               </div>
+  </div>
+                 <div class="tailor_group">
+                       <div class="col-xs-12 col-sm-6">
+                              <div class="spec_instruc">
+                                  <span>Special Instructions</span>
+                                  <textarea class="form-control tailor_instruction"></textarea>
+                              </div>
+                          </div>
+                    <div class="col-xs-12 col-sm-6">
+                <div class="edit_del_address">
+        
+        <p class="pickup_enquiry_addr">Delivery Address</p>
+        <div class="delivery_addr_detail enquiry_delivery_addr">
+             <a href="#" class="edit_aadr_btn" data-toggle="modal" data-target="#editaddr">Pick Address</a>
+            <p class="delivery_name">Naveen Reddy</p>
+            <span class="delivery_address">Plot No 33,ABCD Colony</span>
+             <span class="delivery_address">ABCD Road</span>
+              <span class="delivery_address">Hyderabad, 5000032</span>
+        </div>
+    </div>
+       </div>
+    </div>    
+                <button type="button" class="btn cart-mre enquiry_btn">Save &amp; Continue</button>
+            </div>
+                </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<!------ men tailor enquiry--->
+<div class="modal fade" id="mencloting" role="dialog">
+    <div class="modal-dialog large_mdel">
+        
+      <!-- Modal content-->
+      <div class="modal-content large_mdel_cntent">
+	  <button type="button" class="close popup_close" data-dismiss="modal"><img src="images/close.png"></button>
+        
+        <div class="modal-body large_mdel_body">
+            <p class="popup_heading">Men Tailoring</p>
+            <!--<img src="images/Currency-icon.png" >	-->
+            <div class="row">
+            <div class="women_tailor">
+                 <div class="tailor_group">
+                        <div class="garments">
+      
+                                        <select class="garment_selection" onchange="gender(this);">
+<option>Select garment  </option>
+<option>Regular shirts</option>
+<option>Pants</option>
+<option>Formal shirts</option>
+<option>Formal trousers</option>
+<option>Blazers</option>
+<option>Kurta</option>
+<option>Sherwani</option>
+<option>Nehru jacket</option><option>Traditional wear</option>
+<option id="otherrelation">Other(Manual entry)</option>
+</select>
+                            <input type="text" id="realtion" style="display: none;" placeholder="If Other please specify" class="garment_other">
+                        
+                        </div>
+                        <div class="garment_delivery">
+                           
+<p>Expected Delivery Date</p>
+<input name="cart" value="31-05-2018" class="cart_date_pick garment_deldate" type="date">
+                        </div>
+                    </div>
+                <div class="col-xs-12 col-sm-7">
+                <div class="women_tailor_form">
+                   
+                    <div class="tailor_group">
+<input name="pic" accept="image/*" class="post-upload rgst-upload testi-upload" multiple="" type="file">
+  </div>
+                    <p class="mesurment">Measurements Details (inches)</p>
+                      <div class="tailor_group">
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Neck measurement</span>
+                                  <input type="text" class="frnt_neck_men form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/1_Neck Measurement-min.png" alt="" class="mesur_image front_neckimg_men"/>
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Full chest</span>
+                                  <input type="text" class="chest_men form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/2_Full Chest Measurement-min.png" alt="" class="mesur_image chestimg_men"/>
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Full shoulder width</span>
+                                  <input type="text" class="shoulder_neck_men form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/3_Full Shoulder Width Measurement-min.png" alt="" class="mesur_image shoulder_neckimg_men"/>
+                              </div>
+                          </div>
+                        
+  </div> 
+                    <div class="tailor_group">
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Sleeve</span>
+                                  <input type="text" class="Sleeve_men form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/4_Sleeve Measurement-min.png" alt="" class="mesur_image Sleeveimg_men"/>
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Bicep </span>
+                                  <input type="text" class="Bicep_men form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/5_Bicep Measurement-min.png" alt="" class="mesur_image Bicepimg_men"/>
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Wrist</span>
+                                  <input type="text" class="Wrist_men form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/6_Wrist Measurement-min.png" alt="" class="mesur_image Wristimg_men"/>
+                              </div>
+                          </div>
+                        
+  </div> 
+                    <div class="tailor_group">
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Waist/Stomach</span>
+                                  <input type="text" class="waist_abve_men form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/7_Waist_Stomach Measurement-min.png" alt="" class="mesur_image waist_abve_img_men"/>
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Hips/ Seat</span>
+                                  <input type="text" class="Seat form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/8_Hips_Seat Measurement-min.png" alt="" class="mesur_image Seatimg"/>
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Front jacket length</span>
+                                  <input type="text" class="fj form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/9_Front Jacket Length Measurement-min.png" alt="" class="mesur_image fj_img"/>
+                              </div>
+                          </div>
+                        
+  </div> 
+                    
+                    <div class="tailor_group">
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Front chest width</span>
+                                  <input type="text" class="fc form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/10_Front Chest Width Measurement-min.png" alt="" class="mesur_image fc_img"/>
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Back width</span>
+                                  <input type="text" class="bw form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/11_Back Width Measurement-min.png" alt="" class="mesur_image bwimg"/>
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Half shoulder width</span>
+                                  <input type="text" class="hsw form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/12_Half Shoulder Width Measurement-min.png" alt="" class="mesur_image hsw_img"/>
+                              </div>
+                          </div>
+                        
+  </div> 
+                    
+                    <div class="tailor_group">
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Full back length</span>
+                                  <input type="text" class="fbl form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/13_Full Back Length Measurement-min.png" alt="" class="mesur_image fbl_img"/>
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Half back length</span>
+                                  <input type="text" class="hbl form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/14_Half Back Length Measurement-min.png" alt="" class="mesur_image hblimg"/>
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Trouser's waist </span>
+                                  <input type="text" class="tw form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/15_Trouser Waist Measurement-min.png" alt="" class="mesur_image tw_img"/>
+                              </div>
+                          </div>
+                        
+  </div> 
+                    
+                    <div class="tailor_group">
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Trouser's outseam </span>
+                                  <input type="text" class="to form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/16_Trouser's Out seam Measurement-min.png" alt="" class="mesur_image to_img"/>
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Trouser's inseam </span>
+                                  <input type="text" class="ti form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/17_Trouser's Inseam Measurement-min.png" alt="" class="mesur_image tiimg"/>
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Crotch measurement </span>
+                                  <input type="text" class="crm form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/18_Crotch Measurement-min.png" alt="" class="mesur_image crm_img"/>
+                              </div>
+                          </div>
+                        
+  </div>
+                    
+                    <div class="tailor_group">
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Thigh measurement</span>
+                                  <input type="text" class="thm form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/19_Thigh Measurement-min.png" alt="" class="mesur_image thm_img"/>
+                              </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-4 tailor_padding">
+                              <div class="tailor_inche">
+                                  <span>Knee measurement    </span>
+                                  <input type="text" class="km form-control mesuement_wmen">
+                                  <img src="images/enquiry/mens/20_Knee Measurement-min.png" alt="" class="mesur_image kmimg"/>
+                              </div>
+                          </div>
+                          
+  </div>
+ </div> 
+ </div>
                 <div class="tailor_group">
                     <div class="col-xs-12 col-sm-4">
                     <div class="enquiry_contact">
