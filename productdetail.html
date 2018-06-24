@@ -2254,6 +2254,15 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 </div>
 
 <script>
+    var carousel = $("#carousel1").flipster({
+        style: 'carousel',
+        spacing: -0.5,
+        nav: false,
+        buttons:   true,
+          loop: true,
+    });
+</script>
+<script>
             $(document).ready(function() {
               $('.owl-carousel').owlCarousel({
                  //rewindNav : true,
@@ -2300,6 +2309,20 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
               })
             })
           </script>
+		   <script>
+$(document).ready(function () {
+$(".first_tab").champ();
+$('#verticalTab').easyResponsiveTabs({
+type: 'vertical',
+width: 'auto',
+fit: true
+});
+
+
+  var hei_testi=$(".testimonial-tab").outerHeight(true);
+$('.testi-content').css('min-height', hei_testi+'px');
+});
+</script>
 <script type="text/javascript" src="js/Commonscript.js"></script>
 </body>
 </html>
