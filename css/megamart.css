@@ -1069,8 +1069,8 @@ margin-left: -50px;border: 1px solid #e8e8e8;}
 .enquiry_cntnt span{width: 100%; float: left; margin-bottom: 15px;font-size: 13px;
 color: #c0c0c0;}
 .womencloting:hover{ background: linear-gradient(to bottom, #15e490 0%, #006600 100%); }
-.womencloting:hover p{ color: #fff;}
-.mencloting:hover{background:#eeb211}
+.enquiry_area:hover p{ color: #fff;}
+.mencloting:hover{background: linear-gradient(to bottom, #DA4453 0%, #434A54 100%); }
 .automobile:hover{ background: #3369E8}
 .bulkproduct:hover{background:#009925}
 .autorepair:hover{ background: #3369E8}
@@ -1131,6 +1131,37 @@ float: left;font-size: 14px;}
 .knee:focus + .knee_img{display: block;left: 435px;top: -160px;}
 .calf:focus + .calfimg{display: block; left: 290px;top: -160px;}
 .ankle:focus + .ankle_img{display: block; left: 145px;top: -160px;}
+
+/*---men images---*/
+.frnt_neck_men:focus + .front_neckimg_men{display: block;left: 435px;top: 0px;}
+.chest_men:focus + .chestimg_men{display: block; left: 290px;top: 0px;}
+.shoulder_neck_men:focus + .shoulder_neckimg_men{display: block; left: 145px;top:0px;}
+
+.Sleeve_men:focus + .Sleeveimg_men{display: block;left: 435px;top: -40px;}
+.Bicep_men:focus + .Bicepimg_men{display: block; left: 290px;top: -40px;}
+.Wrist_men:focus + .Wristimg_men{display: block; left: 145px;top: -40px;}
+
+.waist_abve_men:focus + .waist_abve_img_men{display: block;left: 435px;top: -90px;}
+.Seat:focus + .Seatimg{display: block; left: 290px;top: -90px;}
+.fj:focus + .fj_img{display: block; left: 145px;top: -90px;}
+
+.fc:focus + .fc_img{display: block;left: 435px;top: -110px;}
+.bw:focus + .bwimg{display: block; left: 290px;top: -110px;}
+.hsw:focus + .hsw_img{display: block; left: 145px;top: -110px;}
+
+.fbl:focus + .fbl_img{display: block;left: 435px;top: -160px;}
+.hbl:focus + .hblimg{display: block; left: 290px;top: -160px;}
+.tw:focus + .tw_img{display: block; left: 145px;top: -160px;}
+
+.to:focus + .to_img{display: block;left: 435px;top: -160px;}
+.ti:focus + .tiimg{display: block; left: 290px;top: -160px;}
+.crm:focus + .crm_img{display: block; left: 145px;top: -160px;}
+
+.thm:focus + .thm_img{display: block;left: 435px;top: -200px;}
+.km:focus + .kmimg{display: block; left: 290px;top: -200px;}
+
+
+
 .formheading{ color: #333;
 font-size: 13px;}
 .tailor_form_button{margin: 0px !important;}
