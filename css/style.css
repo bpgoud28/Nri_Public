@@ -1556,7 +1556,7 @@ top: 25px;}
     position:relative;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to top, #f1f1f1 20%, #737373 100%);float: left;
+    background-image: linear-gradient(to top, #0f1f45 50%,#0E2F7D 100%);float: left;
 }
 .jquery-script-ads {position: absolute; color: #fff; top: 200px; left: 2em; z-index: 9999; }
 .calendarContOuter
