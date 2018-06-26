@@ -1071,10 +1071,10 @@ color: #c0c0c0;}
 .womencloting:hover{ background: linear-gradient(to bottom, #15e490 0%, #006600 100%); }
 .enquiry_area:hover p{ color: #fff;}
 .mencloting:hover{background: linear-gradient(to bottom, #DA4453 0%, #434A54 100%); }
-.automobile:hover{ background: #3369E8}
-.bulkproduct:hover{background:#009925}
-.autorepair:hover{ background: #3369E8}
-.cashforcreation:hover{background:#009925}
+.automobile:hover{ background: linear-gradient(to bottom, #38A2EB 0%, #DA4453 100%);}
+.bulkproduct:hover{background: linear-gradient(to bottom, #2C8BBF 30%, #434A54 100%);}
+.autorepair:hover{background: linear-gradient(to bottom, #E85A4B 30%, #434A54 100%);}
+.cashforcreation:hover{background: linear-gradient(to bottom, #0AA06E 30%, #434A54 100%);}
 .corporatepurchase:hover{ background: #3369E8}
 .customproduct:hover{background:#eeb211}
 .eventmanagement:hover{ background: #3369E8}
@@ -1096,8 +1096,10 @@ color: #c0c0c0;}
 .courierenquiry:hover{ background: #3369E8}
 .airlinernquiry:hover{background:#009925}
 .women_tailor{ width: 100%;}
+.coc_delivery{ width: 100% !important; float: left;}
+.coc_date{width: 75% !important;}
 .women_tailor_form{ width:100%;}
-
+.autorepair_images{ padding: 0px 15px;margin-bottom: -15px;}
 .mesur_image{ width: 375px;float: right;position: absolute;display: none; z-index: 1;}
 .tailor_group{ width: 100%;float: left; margin-bottom: 15px;}
 .garments{ width: 50%; float: left;padding-left: 15px;}
@@ -1105,7 +1107,7 @@ color: #c0c0c0;}
 .garment_delivery{ width:45%; float: right;margin-top: 2px;padding-right: 15px;}
 .garment_delivery p{ color: #737373; width: auto; float: left; font-size: 13px;margin-bottom:0px;margin-top: 5px;
 margin-right: 10px;}
-.garment_deldate{ width: 55%;
+.garment_deldate{ width:57%;
 float: left;}
 .garment_other{ width:45% !important;margin-top: 0px !important;
 padding: 4px !important;float: left;margin-left: 15px;}
