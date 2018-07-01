@@ -50,7 +50,7 @@
                 var image = $('[data-title=' + list[i] + ']').find(".productImg").attr('src');
                 var title = $('[data-title=' + list[i] + ']').attr('data-id');
                 /*appending to div*/
-                $(".contentPop").append('<div class="w3-col s3 m3 compareItemParent relPos">' + '<ul class="product">' + '<li class="compHeader"><img src="' + image + '" class="compareThumb"></li>' + '<li>' + title + '</li>' + '<li>' + $(product).data('size') + '</li>' + '<li>' + $(product).data('weight') + '<li class="cpu">' + $(product).data('processor') + '</li>' + '<li>' + $(product).data('battery') + '<li class="linktocart"><a href="./cart.html" type="button" class="btn hme_btn pro_btn btn_color">Add to Cart</a></li>'+'</ul>' + '</div>');
+                $(".contentPop").append('<div class="w3-col s3 m3 compareItemParent relPos">' + '<ul class="product">' + '<li class="compHeader"><img src="' + image + '" class="compareThumb"></li>' + '<li>' + title + '</li>' + '<li>' + $(product).data('size') + '</li>' + '<li>' + $(product).data('weight') + '<li>' + $(product).data('processor') + '</li>' + '<li>' + $(product).data('battery') + '<li class="linktocart"><a href="./cart.html" type="button" class="btn hme_btn pro_btn btn_color">Add to Cart</a></li>'+'</ul>' + '</div>');
             }
         }
         $(".modPos").show();

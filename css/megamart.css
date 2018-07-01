@@ -403,10 +403,7 @@ margin-left: 15px;position: relative;top: 2px;}
 /*-----Courier Workarea------*/
 .courier_wrkarea{ width: 100%; float: left; background: #fff;}
 .order_deatils{ width: 100%; float: left;padding: 5px 0px;background: #f1f1f1;}
-.collapsed{border: 1px solid #f2f2f2;
-background: #fff;
-margin: 1px 0px;
-float: left;}
+
 .ord_num{width: 100%; float: left;}
 .ord_num p{ margin: 0px; float: left; color: #737373; font-size: 12px;}
 .ord_num p b{ font-weight: normal; font-size: 14px;margin-left: 5px; }
@@ -890,7 +887,7 @@ top: 5px;}
 
 /*----- Cart page----*/
 
-.cart_workarea{ width:100%; float:left; height:auto; background: #f1f1f1;}
+.cart_workarea{ width:100%; float:left; height:auto; background: #f1f1f1; margin-top: 63px;}
 .cart_data{width:100%; float:left;background: #fff;padding: 30px 10px; }
 .cartdata_detail{width:100%; float:left;padding-bottom: 15px;}
 .cart_heading{ background:#737373;width:100%; float:left; margin-bottom: 15px;}
@@ -1304,3 +1301,27 @@ width: 22%;
 .grp_btn{ float: none;}
 .grp_description{width: 100%; float: left; margin: 5px 0px;}
 .group_site_heading{margin: 20px 0px 40px;}
+
+/*-------Addon page CSS----*/
+.addon_car{ width: 100%; float: left; background: #acacac;margin-top: 60px;padding: 30px 0px;}
+.slect_list{ width: 100%; float: left;padding: 0px 40px;}
+.select_product{width: 100%; float: left;}
+.select_product span{ margin-top: 15px;text-align: center; width: 100%; color: #f1f1f1; font-size: 13px;float: left;margin-bottom: 20px;}
+.addon_selec_img{ width: 100%; float: left;}
+.select_addon{width: 100%; float: left;}
+.addon_image_selec{width: 100%; float: left;padding-bottom: 30px;
+height: 150px;}
+.addonproduct_btn{ float: right !important; margin-top: 10px;}
+
+.addon_items{ width: 88% !important;}
+.addon_items a{ text-align: left !important;}
+.addon_items a:hover{ box-shadow: none !important;}
+.addon_pro_details{box-shadow: none !important; border: 1px solid #f1f1f1;}
+.addon_pro_details:hover{ background:#f1f1f1;}
+.addon_button a{ float: right !important; }
+.addon_recent_wrkarea{padding: 25px 0px 30px !important;}
+.megamart_menu{ background: #fff;}
+.megamart_logo{ width: 205px !important;}
+.megamart_menu .logo{ left: 0px !important;}
+
+

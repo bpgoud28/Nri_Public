@@ -65,19 +65,21 @@ z-index: 3;
   background: #737373;
 }
 .contact-button-link.nprofile {
-  background: #009925;
+  background: #712156;
 }
 .contact-button-link.nenquiry{
     background: #eeb211;
 }
-
+.contact-button-link.nblog{
+    background: #009925;
+}
 .contact-button-link.gcart{ background: #d50f25;}
 
 
 .contact-button-link.separated {
   margin-top: 1em;
 }
-
+.ncart_temple{ margin-top: -10px !important;}
 .show-hide-contact-bar,
 .contact-button-link.show-hide-contact-bar:focus,
 .contact-button-link.show-hide-contact-bar:active {

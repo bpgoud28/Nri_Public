@@ -144,8 +144,10 @@
 }
 }
 .compareItemParent {
-    width: calc(100%/4) !important;
+    width: calc(90%/4) !important;
     float: left;
+    margin: 0 1%;
+    background: #fff;
 }
 .linktocart {
     padding: 10px 10px 40px 10px !important;
