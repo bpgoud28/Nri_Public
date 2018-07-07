@@ -189,6 +189,8 @@ $('.modal').on('hidden.bs.modal', function () {
 	}
 });
 
+
+
 //Radio button click in country currency selection
 $('input[name="a"]').change(function () {
 	if ($(this).is(':checked')) {
@@ -220,3 +222,5 @@ $('.as-accordion-head').click(function () {
 	$(this).next('.as-accordion-collapse').slideToggle('fast', () => {	
 	});
 });
+
+$('.input-group.date').datepicker({format: "dd.mm.yyyy"}); 

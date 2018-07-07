@@ -5,16 +5,13 @@
             function() {
                
                 $(this).toggleClass('open');
-                $('.ground').addClass("grundblk");
-                $('body').css('overflow', 'hidden');
-              
+                $('.ground').addClass("grundblk");              
                 $('i', this).addClass("fa-angle-up");   
                 $('i', this).removeClass("fa-angle-down");				
             },
             function() {
               
                 $(this).toggleClass('open');
-              $('body').css('overflow', 'visible');
                  $('.ground').removeClass("grundblk");
           $('i', this).removeClass("fa-angle-up");   
                 $('i', this).addClass("fa-angle-down");						
