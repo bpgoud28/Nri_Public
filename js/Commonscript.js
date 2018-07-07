@@ -108,6 +108,7 @@ $(function(){
 		height: '170px',
 		width: 'auto'
 	});
+	
 });
 var elementCart = $('.cart').offset();
 $(window).scroll(function(){
@@ -188,6 +189,8 @@ $('.modal').on('hidden.bs.modal', function () {
 	}
 });
 
+
+
 //Radio button click in country currency selection
 $('input[name="a"]').change(function () {
 	if ($(this).is(':checked')) {
@@ -200,4 +203,24 @@ $('input[name="a"]').change(function () {
 	}
 });   
 
+//Accordion selection button click in country currency selection
 
+function toggleIcon(e) {
+	$(e.target)
+		.prev('.panel-heading')
+		.find(".more-less")
+		.toggleClass('glyphicon-plus glyphicon-minus');
+		$('#accordion .panel-heading').removeClass('highlight');
+		$(e.target).prev('.panel-heading').addClass('highlight');
+}
+$('.panel-group').on('hidden.bs.collapse', toggleIcon);
+$('.panel-group').on('shown.bs.collapse', toggleIcon);
+
+
+$('.as-accordion-head').click(function () {
+	$(this).find('.as-accordion-close').toggleClass('open');
+	$(this).next('.as-accordion-collapse').slideToggle('fast', () => {	
+	});
+});
+
+$('.input-group.date').datepicker({format: "dd.mm.yyyy"}); 

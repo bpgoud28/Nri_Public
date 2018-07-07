@@ -28,6 +28,8 @@ html, body {
     font-family: 'Lato';
     font-weight: normal;
     padding: 0px !important;
+     text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 .main-body{ width:100%; float:left; height:auto;font-size:13px; background:#fff; font-family: 'Lato';}
 @media (min-width: 1320px) {
@@ -109,7 +111,7 @@ top: -2px !important;}
 .top-menu .cart-container .cart-list li .wishlst{ background:#fecd41; color:#712156;padding: 0px 4px;margin-left: 5px;top: 2px;}
 .ind_day{ font-size: 13px;margin-left: 0px !important;}
 /*-------main menu starts here --------*/
-.main-menu{ width:100%; float:left; height:auto;border-bottom: 1px solid #bfbfbf;padding:2px 0px;position: relative;}
+.main-menu{background:#fff; width:100%; float:left; height:auto;border-bottom: 1px solid #bfbfbf;padding:2px 0px;position: relative;}
 .main-menu .shopmore{ width:auto; float:left; height:auto;}
 .main-menu .shopmore img{ float:left;}
 .main-menu .shopmore a{ text-decoration:none; color:#712156;}
@@ -120,7 +122,7 @@ top: -2px !important;}
 .main-menu .signup li a{ text-decoration:none; color:#737373; float:left;position: relative;top: 5px;font-size: 12px;}
 .main-menu .logo{ float:right; height:auto;position: relative;
 left: -35px;}
-.main-menu .logo img{ float:left;width:170px;}
+.main-menu .logo img{ float:left;width:170px; height: 35px;}
 .main-menu .prime{ float:right;}
 /*------------------Banner---------------*/
 .banner{ width:100%; float:left; position:relative;z-index:1;margin-top: 63px}
@@ -1654,14 +1656,238 @@ color: #fff !important;}
 }
 header {
     background: #fff;
-    height: 63px;
+    height: 64px;
     position: fixed;
     top: 0;
     transition: top 0.2s ease-in-out;
     width: 100%;
     z-index: 1000;
 }
-
 .nav-up {
-    top: -63px;
+    top: -64px;
+}
+.inner-header {
+    text-align: center;
+    margin: 20px;
+}
+.cartaddonlist {
+    padding: 0px !important;
+}
+.cartaddonlist .panel-default .panel-body {
+    height: 300px;
+    overflow-y: scroll;
+}
+.container.demo {
+    padding: 50px 0;
+}
+.demo .panel-default > .panel-heading {
+    background: #712156;
+}
+.demo .panel-default > .panel-heading:hover,
+#accordion .highlight {
+    background: #01395e;
+    transition:background 2s ease;
+} 
+.demo .panel-default > .panel-heading .panel-title { 
+    color: #fff !important;
+}
+.panel-content-image,
+.inner-panel-content {
+    width: 100%;
+    float: left;
+    padding: 15px;
+    height: 100%;
+}
+.panel-content-image img {
+    width: 100%;
+    min-height: 200px;
+    float: left;
+}
+.panel-content-image .title {
+    width: 100%;
+    float: left;
+    font-style: italic;
+}
+
+.animate, .as-accordion-close {
+    transition: -webkit-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+}
+
+.accordion {
+    border-top: 1px solid #cdcdcd;
+}
+.accordion:nth-last-child(1) {
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.as-accordion-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.as-accordion-head:hover {
+    color: #0070c9;
+}
+.as-accordion-title {
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: 200;
+    letter-spacing: 0;
+}
+
+.as-accordion-close {
+    font-size: 20px;
+    font-weight: 100;
+    -webkit-transform: translateY(0px) rotate(45deg) scale(0.8);
+            transform: translateY(0px) rotate(45deg) scale(0.8);
+    line-height: 0;
+}
+.as-accordion-close.open {
+    -webkit-transform: translateX(-3px) translateY(-2px) rotate(0deg) scale(1);
+            transform: translateX(-3px) translateY(-2px) rotate(0deg) scale(1);
+}
+.as-accordion-collapse {
+    display: none;
+    padding-bottom: 40px;
+}
+.alignment a {
+    float: right;
+    margin-right: 25px;
+}
+.addtolist {
+    background: #1077b1;
+    padding: 0px !important;
+}
+.addtolist .fa {
+    font-size: 25px;
+    color: #fff;
+}
+.addtolist .fa:hover {
+    color: #712156;
+}
+.addtolist a {
+    width: calc(100%/4);
+    float: left;
+    cursor: pointer;
+    padding: 5px 5px;
+    text-align: center;
+}
+.freecard {
+    width: 100%;
+    float: left;
+}
+.freecardselection {
+    width: 100%;
+    padding: 10px 10px;
+}
+.freecard .cart-mre {
+    margin: 10px auto;
+    float: none;
+    width: 100%;
+}
+.greetiing_mess .gretting_product {
+    overflow: auto;
+    height: 100px;
+    border: 1px solid #ccc;
+}
+.delivery_address_content {
+    margin: 0px;
+}
+.delivery_address_content + .delivery_addr_detail {
+    width: 100%;
+    margin-top: 5px;
+}
+.cake_quantity ,
+.cake_weights, 
+.Message-content {
+    width: 100%;
+    float: left;
+}
+.cake_weights .quan_num {
+    width: 100%;
+}
+.cake_quantity span,
+.cake_weights span {
+    margin-bottom: 5px;
+    float: left;
+    display: block;
+}
+.commonclass {
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+.Message-content textarea {
+    width: 100%;
+    border: 1px solid #f1f1f1;
+}
+.cake_weights .form-control {
+    padding: 6px 7px;
+    height: 30px;
+}
+.cake_weights .input-group-addon {
+    padding: 6px 7px;
+    border: 0px;
+}
+.myprofiledata {
+    margin-top: 65px;
+}
+
+.flip-container
+{
+    position:relative;
+    -webkit-perspective:1000;
+    padding: 0 20px;
+    perspective:1000;
+}
+.flip-cards
+{
+    width:100%;
+    height:200px;
+    position:relative;
+    float:left;    
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.flip-cards div
+{
+    width:100%;
+    height:200px;
+    position:absolute;
+    border-radius:15px;    
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.flip-cards:hover
+{
+    transform: rotateY( 180deg );
+    -webkit-transform: rotateY(180deg);
+}
+.front-card
+{
+    z-index: 2;
+    background-image: url('../images/frontview.jpeg');
+}
+.reverse-card
+{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY( 180deg );
+}
+#card1
+{
+    background-image: url('../images/backview.jpeg');
+}
+.greeting_message {
+    margin: 20px 0;
+    float: left;
+    width: 100%;
 }
