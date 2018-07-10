@@ -1,4 +1,3 @@
-
 @font-face {
 	font-family: 'Lato';
 	src: url('../fonts/Lato-Regular.eot');
@@ -41,7 +40,7 @@ html, body {
 .inner-logo{ padding: 0px;}
 
 /*--------main menu --------------*/
-.top-menu{ width:100%; float:left; height:auto; background-color:#712156;padding: 0px 10px;font-size: 12px;}
+.top-menu{ width:100%; float:left; height:auto; background-color:#3369e8;padding: 0px 10px;font-size: 12px;}
 .top-menu .grp-site-wdth{width:35%; float:left; height:auto;}
 .top-menu .grp-site-wdth .grp-site{width:100%; float:left; height:auto;margin-left:15px;}
 .top-menu .grp-site-wdth .grp-site .shopmore-lnk{ float:left; }
@@ -1277,12 +1276,10 @@ right:14px; opacity: 1 !important; }
     margin-top: 5px;
     margin-right: -10px;
 }
-
 .dropdown-submenu:hover>a:after {
     border-left-color: red;
 }
 .dropdown-submenu:hover>a{ color: red !important;}
-
 }
 --*/
 .dropdown-submenu.pull-left {
@@ -1376,9 +1373,15 @@ top: 1px;}
 .curr_down{ top:3px;}
 .shop_down{color: #737373;font-size: 13px; position:relative;margin-left: 5px;
 top: 1px;}
-.ncart_img{ width:35px !important;right: 5px;}
-.nblog_img{ width:30px !important;}
-.ncre-img{width:30px !important;right: 5px;}
+.ncart_img{ width: 20px !important;
+    right: 10px !important;
+    top: 5px !important;}
+.nblog_img{ width: 24px !important;
+    top: 4px !important;
+    right: 6px !important;}
+.ncre-img{width: 20px !important;
+    right: 10px;
+    top: 3px !important;}
 .inner-blog_heading{ width: 100%; float: left;}
 .inner-blog_heading .heading_color{ font-size: 24px !important; color: #3369E8 !important;}
 .super-admin{ width: 100%; float: left;}
