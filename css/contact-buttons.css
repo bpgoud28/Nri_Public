@@ -115,3 +115,122 @@ margin-top: -5px;}
 .floter-tggle{ width: 30px;position: relative;
 left: 4px;}
 .fa-icon{position: relative; top: 2px;}
+=======
+/*!
+ * Contact Buttons Plugin Demo 0.1.0
+ * https://github.com/joege/contact-buttons-plugin
+ *
+ * Copyright 2015, José Gonçalves
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+ 
+ #contact-buttons-bar {
+  position: fixed;
+  top: 120px;
+  left: -50px;
+  width: 50px;
+}
+
+
+#contact-buttons-bar.slide-on-scroll {
+  position: fixed;
+z-index: 2;
+top: 112px;
+z-index: 3;
+}
+
+.contact-button-link,.cb-ancor  {
+  display: block;
+  width:180px;
+  height: auto;
+  padding:12px 0px;
+  margin-bottom: 1px;
+  text-align: center;
+ 
+  background: #8e8e93;
+  color: #fff;
+  position: relative;
+  left: 0;
+  
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  
+  -webkit-transition: all 500ms;
+     -moz-transition: all 500ms;
+          transition: all 500ms;
+}
+.cb-ancor{left:-130px;}
+.contact-button-link:hover,
+.contact-button-link:focus,
+.contact-button-link:active {
+  color: #fff;
+
+
+}
+.cb-ancor:hover,
+.cb-ancor:focus,
+.cb-ancor:active{left:0px; text-decoration: none;}
+.contact-button-link.cb-hidden {
+  left: -230px;
+}
+.contact-button-link.nprime {
+  background: #3369E8;
+}
+.contact-button-link.nmart {
+  background: #737373;
+}
+.contact-button-link.nprofile {
+  background: #712156;
+}
+.contact-button-link.nenquiry{
+    background: #eeb211;
+}
+.contact-button-link.nblog{
+    background: #009925;
+}
+.contact-button-link.gcart{ background: #d50f25;}
+
+
+.contact-button-link.separated {
+  margin-top: 1em;
+}
+.ncart_temple{ margin-top: -10px !important;
+    width: 30px !important;
+    top: 6px !important;
+    right: 5px;}
+.show-hide-contact-bar,
+.contact-button-link.show-hide-contact-bar:focus,
+.contact-button-link.show-hide-contact-bar:active {
+  background: transparent;
+  color: #666666;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  width: 50px;font-size: 30px;margin-bottom:5px;
+}
+.contact-button-link.show-hide-contact-bar:hover {
+  color: #000;
+  
+  padding: 0;
+  width: 50px;
+}
+.cb-ancor span{ font-size:14px;}
+.floater{ width:40px;float: right;
+margin-right: 5px;position: relative;
+top: 50%;
+margin-top: -5px;}
+.nmart img,.nprofile img{width: 28px;
+    top: 2px;
+    right: 6px;}
+
+@media screen and (max-width:767px) and (min-width:1px){
+    #contact-buttons-bar{display: none;}
+}
+
+.floter-tggle{ width: 30px;position: relative;
+left: 4px;}
+.fa-icon{position: relative; top: 2px;}
+

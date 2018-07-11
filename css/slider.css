@@ -363,7 +363,6 @@ padding:10px 20px;
   height: 50px;
   font-size: 14px;
   color: #fff;
-  text-transform: lowercase;
   background: transparent;
   border: none;
   outline: none;
@@ -467,7 +466,7 @@ body {
 .demo-cont__credits-close {
 position: absolute;
 
-left: -1px;
+left: 0px;
 
 top: 50%;
 
@@ -479,7 +478,7 @@ cursor: pointer;
 
 background: #f2f2f2;
 
-border-radius: 0px 12px 12px 0px;
+border-radius:15px;
 }
 .demo-cont__credits-close:before, .demo-cont__credits-close:after {
   content: "";
@@ -767,8 +766,16 @@ left: 4px;
 
 .demo-cont__credits ul{ float:left; padding-left:0px; list-style:none; width:100%;margin-top: 20px;}
 .demo-cont__credits ul li{ display:block;width:100%; text-align:right;margin-bottom: 5px;}
-.demo-cont__credits ul li:nth-child(even) { position: relative; padding-right: 75px;}
+.demo-cont__credits ul li:nth-child(even) { position: relative; padding-right: 75px;padding-bottom:10px;}
 .demo-cont__credits ul li a{ color:#f1f1f1; font-size:14px;width:100%;}
-.demo-cont__credits ul li:nth-child(even) a{ color: #3369E8;}
+/*.demo-cont__credits ul li:nth-child(even) a{ color: #3369E8;}*/
 .demo-cont__credits ul li a:hover{ color:#eeb211;}
 .demo-cont__credits p{float:left;width:100%;}
+.advertice_btn { margin:10px;float:right;}
+	.cnt_avert {background:#dedede;}
+	.cnt_avert a:hover{ text-decoration:none !important;}
+	.header_abt { color: #fff !important;
+    margin-top: 50px !important;
+    margin-bottom: -20px !important}
+	.demo_margin {margin-top: 60px;
+}
