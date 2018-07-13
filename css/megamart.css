@@ -1196,7 +1196,9 @@ font-size: 13px;}
 margin-bottom: 10px;
 float: left; width: 100%;}
 .pickup_enquiry_addr{ color: #737373;}
-.enquiry_btn{ margin-top: 20px;}
+.enquiry_btn{ margin-top: 20px;
+    margin-bottom: 20px !important;
+    margin-right: 16px !important;}
 
 .enquiry_srh{ float: right;}
 .pro_more{ float: none; margin-left: 20px;}
@@ -1355,8 +1357,8 @@ height: 146px;}
 .general_inche {float: left;width: 100%;}
 .general_upload {width: 100%;padding: 5px 5px;}
 .general_margin {margin-top:15px;}
-.general_button { margin-bottom:20px !important;}
-.general_button { margin-bottom:20px !important;}
+.general_button { margin-bottom:20px !important;margin-right: -30px !important;}
+.tailor_padding { margin-left:-15px;}
 
 
 
