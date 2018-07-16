@@ -1360,5 +1360,48 @@ height: 146px;}
 .general_button { margin-bottom:20px !important;margin-right: -30px !important;}
 .tailor_padding { margin-left:-15px;}
 
-
-
+/*-------General page CSS----*/       
+.tabcontant { width: 100%;
+    float: left;
+    border: 1px solid #ccc;border-top:1px solid #fff;}
+.scroll_event {overflow-y:scroll;height:150px;float:left;margin-top: -20px;margin-bottom:10px;}
+.subcontant {margin-top:20px;}
+.savebtn {margin-right:30px !important;}
+.fake-input {border-top: 1px solid #f1f1f1;
+    border-right: 4px solid #ccc;
+    float: left;
+    width: 100%;
+    height: 80px;
+}
+.fake-input img {position: absolute;
+    top: 8px;
+    width: 70px;
+    left: 6px;}
+.fake-input .form-control {border-radius: 0px;padding-left: 60px !important;height:60px;font-size:14px !important;border-right:0px;}
+.chk_box { background-color: #fff !important;
+    border-right: 4px solid #ccc!important;
+    border-top: 1px solid #f1f1f1 !important;
+    border-bottom: 1px solid #f1f1f1 !important;
+	}
+.genl_heading {margin-left: 12px !important;
+    margin-top: -30px;}
+.chat_label {    margin-left: 70px;
+    margin-top: 20px;
+    color: #737375c2;
+    font-size: 16px;}
+.test_input {    float: right;
+    margin-top: 25px !important;}
+.background_event {    background-color: #F0F0F0;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    float: left;}
+	.label_event {    margin-left: 28px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    color: #737373;}
+	.imf_flot {float:right;margin-bottom:-20px;}
+	.hidding_div {float: left;
+    width: 100%;
+    background: #f1f1f1;
+    height: 200px;
+    margin-top: 20px;}
