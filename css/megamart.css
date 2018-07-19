@@ -1121,11 +1121,11 @@ color: #c0c0c0;}
 .mesur_image{ width: 375px;float: right;position: absolute;display: none; z-index: 1;}
 .tailor_group{ width: 100%;float: left; margin-bottom: 15px;}
 .garments{ width: 50%; float: left;padding-left: 15px;}
-.garment_selection{ width: 50%;padding: 5px; float: left;}
+.garment_selection{ width: 100%;padding: 5px; float: left;}
 .garment_delivery{ width:45%; float: right;margin-top: 2px;padding-right: 15px;}
 .garment_delivery p{ color: #737373; width: auto; float: left; font-size: 13px;margin-bottom:0px;margin-top: 5px;
 margin-right: 10px;}
-.garment_deldate{ width:57%;
+.garment_deldate{ width:100%;
 float: left;}
 .garment_other{ width:45% !important;margin-top: 0px !important;
 padding: 4px !important;float: left;margin-left: 15px;}
@@ -1183,14 +1183,14 @@ float: left;font-size: 14px;}
 
 
 .formheading{ color: #333;
-font-size: 13px;}
+font-size: 13px;float:left;width:20%;}
 .tailor_form_button{margin: 0px !important;}
 .form_buttons{font-size: 13px !important;margin-right: 15px !important;}
 .enquiry_contact{ width:100%; float: left;}
 .enquiry_phone{width: 100%; float: left;}
 .enquiry_email{width: 100%; float: left;}
 .form-control{box-shadow: none !important;font-size: 13px !important;}
-.tailor_instruction{ width: 100%; float: left; min-height: 110px;}
+.tailor_instruction{ width: 100%; float: left; min-height: 86px;}
 .enquiry_delivery_addr{ width: 100%; float: left;}
 .spec_instruc span{color: #737373;font-size: 13px;
 margin-bottom: 10px;
@@ -1198,7 +1198,7 @@ float: left; width: 100%;}
 .pickup_enquiry_addr{ color: #737373;}
 .enquiry_btn{ margin-top: 20px;
     margin-bottom: 20px !important;
-    margin-right: 16px !important;}
+    margin-right: 12px !important;}
 
 .enquiry_srh{ float: right;}
 .pro_more{ float: none; margin-left: 20px;}
@@ -1247,11 +1247,12 @@ padding-left: 10px;}
 .moreorder_tab{width: 100%; float: left;padding: 0px 5%;margin-top: 30px;}
 .relation_tab{width: 30%; float: left;}
 .product_relation{ width: 80%; float: left;padding: 5px 5px;}
-#realtion{width: 70%;
-float: left;
-border: 1px solid #d1cfcf;
-padding: 5px;
-margin-top: 10px;}
+#realtion{    width: 100% !important;
+    float: left;
+    border: 1px solid #d1cfcf;
+    padding: 5px;
+    margin-top: 15px !important;
+    margin-left: 0px;}
 .specify_instruction{ width: 50%; float: left;}
 .spec_ins{ float: left;min-height:100px;width:90%; border: 1px solid #d1cfcf; padding: 5px;}
 .moreabout_order{ width:20%; float: left;}
@@ -1405,3 +1406,51 @@ height: 146px;}
     background: #f1f1f1;
     height: 200px;
     margin-top: 20px;}
+.upload_image {
+    width: 124px;
+    float: left;
+    height: 110px;
+    margin: 10px;
+}
+.upload_images {
+    width: 124px;
+    float: left;
+    height: 110px;
+    margin: 10px;
+}
+#result {    width: 110%;
+    float: left;margin-left: -23px;}
+input#files {
+	    width:50%;float:left;
+}
+.page_upload {    float: left;
+    margin-left: -15px;
+    width:50%;}
+	.contest_upload {border: 1px solid #ccc;padding:10px;width: 94%;
+    float: left;margin-top: -15px;}
+input#filetype {
+	    width:50%;float:left;
+}
+#results {    width: 110%;
+    float: left;margin-left: -23px;}
+	.margin_auto {
+		margin-top:-15px;
+	}
+input#auto {
+	    width:50%;float:left;
+}
+#mobile {    width: 110%;
+    float: left;margin-left: -23px;}
+	input#bulk {
+	    width:50%;float:left;
+}
+#product {    width: 110%;
+    float: left;margin-left: -23px;}
+input#repair {
+	    width:50%;float:left;
+}
+#enquiry {    width: 110%;
+    float: left;margin-left: -23px;}
+.margin_content {
+	margin-top:0px !important;
+}
