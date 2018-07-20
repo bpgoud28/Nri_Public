@@ -2642,220 +2642,200 @@
             </div>
         </div>
 
-		<!---- Courier enquiry----->
-		
-		       <div class="modal fade" id="courierenquiry" role="dialog">
+		<!---- Courier enquiry----->		
+	    <div class="modal fade" id="courierenquiry" role="dialog">
             <div class="modal-dialog large_mdel">
-
                 <!-- Modal content-->
                 <div class="modal-content large_mdel_cntent">
 				<form action="" method="post" name="courier">
                     <button type="button" class="close popup_close" data-dismiss="modal">
                         <img src="images/close.png">
                     </button>
-
-                    <div class="modal-body large_mdel_body">
 					<p class="popup_heading">Courier Enquiry</p>
+                    <div class="modal-body large_mdel_body">
 					<div class="row">
-						<div class="col-xs-12 col-sm-7">
-							<div class="chk_courier">
-								<div class="checkbox">
-									<label><input type="checkbox" value="">student</label>
+						<div class="col-xs-12 col-sm-8">
+						<div class="tailor_padding">
+						<div class="chk_courier">
+							<div class="checkbox">
+								<label><input type="checkbox" value="">student</label>
+							</div>
+						</div> 
+                        </div>						
+						<div class="tailor_group  tailor_padding">
+						<div class="col-xs-12 col-sm-6">
+							<div class="tailor_inche">
+								<select class="courier_enquiry" onchange="gender(this);">
+									<option>Country</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<div class="tailor_inche">
+								<select class="courier_enquiry" onchange="gender(this);">
+									<option>Address</option>
+									<option>Pick address</option>
+									<option>Add Address</option>
+									<option id="otherrelation">Other(Manual entry)</option>
+								</select>
+							</div>
+							</div>
+						</div>
+						<div class="tailor_group  tailor_padding">
+							<div class="col-xs-12 col-sm-4">
+								<div class="tailor_inche">
+									<input type="text" class="form-control mesuement_wmen">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4">
+								<div class="tailor_inche">
+								<select class="courier_enquiry" onchange="gender(this);">
+										<option>Country</option>
+										<option>Pick address</option>
+										<option>Add Address</option>
+								</select>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4">
+								<div class="tailor_inche">
+								<select class="courier_enquiry" onchange="gender(this);">
+										<option>City</option>
+										<option>Pick address</option>
+										<option>Add Address</option>
+								</select>
+								</div>
+							</div>
+
+						</div>
+						<div class="tailor_group tailor_padding">
+							<div class="col-xs-12 col-sm-4">
+								<div class="tailor_inche">
+								<div class="tailor_inche">
+									<input type="text" class="form-control mesuement_wmen">
+								</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-8">
+								<div class="tailor_inche">
+									<div class="spec_instruc">
+										<span>Package contant and value</span>
+										<textarea class="form-control tailor_instruction"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>									
+						<div class="tailor_group  tailor_padding">
+							<div class="col-xs-12 col-sm-3 ">
+								<div class="courier_enquiry">
+									<p>PickUp Date And Time</p>
+									<input name="cart" value="31-05-2018" class="cart_date_pick" type="date">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 ">
+								<div class="courier_enquiry">
+									<p>Expected Delivery Date</p>
+									<input name="cart" value="31-05-2018" class="cart_date_pick" type="date">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 ">
+								<label for="f-name" class="del-name formheading">Want Free Pickle Packing</label>
+								<div class="tailor_form_button">
+									<input name="a" type="radio">
+									<span class="sign-radio del-radio form_buttons"> Yes</span>
+									<input name="a" type="radio">
+									<span class="sign-radio del-radio form_buttons">No</span>
 								</div>
 							</div>
 						</div>
-                        <!--<img src="images/Currency-icon.png" >	-->                        
-                            <div class="women_tailor">
-							<div class="col-xs-12 col-sm-7">
-                                <div class="tailor_group  tailor_padding">
-								<div class="col-xs-12 col-sm-6">
-                                    <div class="tailor_inche">
-                                        <select class="courier_enquiry" onchange="gender(this);">
-                                            <option>Country</option>
-                                        </select>
-                                    </div>
-							    </div>
-								<div class="col-xs-12 col-sm-6">
-									<div class="tailor_inche">
-                                        <select class="courier_enquiry" onchange="gender(this);">
-                                            <option>Address</option>
-                                            <option>Pick address</option>
-                                            <option>Add Address</option>
-                                            <option id="otherrelation">Other(Manual entry)</option>
-                                        </select>
-                                    </div>
-									</div>
-                                </div>
-							</div>
-                                <div class="col-xs-12 col-sm-7">
-                                    <div class="women_tailor_form">
-                                        <div class="tailor_group  tailor_padding">
-                                            <div class="col-xs-12 col-sm-4">
-                                                <div class="tailor_inche">
-                                                    <input type="text" class="form-control mesuement_wmen">
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-4">
-											    <div class="tailor_inche">
-                                                <select class="courier_enquiry" onchange="gender(this);">
-                                                        <option>Country</option>
-                                                        <option>Pick address</option>
-                                                        <option>Add Address</option>
-                                                </select>
-												</div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-4">
-											    <div class="tailor_inche">
-                                                <select class="courier_enquiry" onchange="gender(this);">
-                                                        <option>City</option>
-                                                        <option>Pick address</option>
-                                                        <option>Add Address</option>
-                                                </select>
-												</div>
-                                            </div>
-
-                                        </div>
-                                        <div class="tailor_group tailor_padding">
-                                            <div class="col-xs-12 col-sm-4">
-                                                <div class="tailor_inche">
-                                                <div class="tailor_inche">
-                                                    <input type="text" class="form-control mesuement_wmen">
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-8">
-                                                <div class="tailor_inche">
-													<div class="spec_instruc">
-														<span>Package contant and value</span>
-														<textarea class="form-control tailor_instruction"></textarea>
-													</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                                </div>	
-                                    <div class="col-xs-12 col-sm-12">								
-                                        <div class="tailor_group  tailor_padding">
-										    <div class="col-xs-12 col-sm-2 ">
-											    <div class="courier_enquiry">
-                                                    <p>PickUp Date And Time</p>
-                                                    <input name="cart" value="31-05-2018" class="cart_date_pick" type="date">
-                                                </div>
-											</div>
-											<div class="col-xs-12 col-sm-2 ">
-											    <div class="courier_enquiry">
-                                                    <p>Expected Delivery Date</p>
-                                                    <input name="cart" value="31-05-2018" class="cart_date_pick" type="date">
-                                                </div>
-											</div>
-											<div class="col-xs-12 col-sm-3 ">
-												<label for="f-name" class="del-name formheading">Want Free Pickle Packing</label>
-												<div class="tailor_form_button">
-													<input name="a" type="radio">
-													<span class="sign-radio del-radio form_buttons"> Yes</span>
-													<input name="a" type="radio">
-													<span class="sign-radio del-radio form_buttons">No</span>
-												</div>
-											</div>
-                                        </div>
-									</div>
-									<div class="col-xs-12 col-sm-7">
-                                    <div class="women_tailor_form">
-                                        <div class="tailor_group  tailor_padding">
-                                            <div class="col-xs-12 col-sm-6 ">
-											    <div class="tailor_inche">
-                                                <select class="courier_enquiry" onchange="gender(this);">
-                                                        <option>City</option>
-                                                        <option>Pick address</option>
-                                                        <option>Add Address</option>
-                                                </select>
-												</div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6">
-											    <div class="tailor_inche">
-                                                <select class="courier_enquiry" onchange="gender(this);">
-                                                        <option>Address</option>
-                                                        <option>Pick address</option>
-                                                        <option>Add Address</option>
-                                                </select>
-												</div>
-                                            </div>
-
-                                        </div>
-                                        <div class="tailor_group  tailor_padding">
-                                            <label for="f-name" class="del-name formheading">Pick Up Adress Is Same As From Adress</label>
-                                            <div class="del-buton tailor_form_button">
-                                                <input name="a" type="radio">
-                                                <span class="sign-radio del-radio form_buttons"> Yes</span>
-                                                <input name="a" type="radio">
-                                                <span class="sign-radio del-radio form_buttons">No</span>
-                                            </div>
-                                        </div>
-										                                        <div class="tailor_group">
-                                            <div class="col-xs-12 col-sm-6 tailor_padding">
-											    <div class="tailor_inche">
-                                                <select class="courier_enquiry" onchange="gender(this);">
-                                                        <option>City</option>
-                                                        <option>Pick address</option>
-                                                        <option>Add Address</option>
-                                                </select>
-												</div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-6 tailor_padding">
-											    <div class="tailor_inche">
-                                                <select class="courier_enquiry" onchange="gender(this);">
-                                                        <option>Adress</option>
-                                                        <option>Pick address</option>
-                                                        <option>Add Address</option>
-                                                </select>
-												</div>
-                                            </div>
-
-                                        </div>
-                                </div>
-                                <div class="tailor_group  tailor_padding">
-                                    <div class="col-xs-12 col-sm-4">
-                                        <div class="enquiry_contact">
-                                            <input class="form-control contact_prsn_name" type="text" placeholder="length">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-4">
-                                        <div class="enquiry_phone">
-                                            <input class="form-control contact_prsn_name" type="text" placeholder="Width">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-4">
-                                        <div class="enquiry_email">
-                                            <input class="form-control contact_prsn_name" type="text" placeholder="Height">
-                                        </div>
-                                    </div>
-                                </div>
-								<div class="tailor_group  tailor_padding">
-                                    <div class="col-xs-12 col-sm-4">
-                                        <div class="enquiry_contact">
-                                            <input class="form-control contact_prsn_name" type="text" placeholder="Contact Person Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-4">
-                                        <div class="enquiry_phone">
-                                            <input class="form-control contact_prsn_name" type="text" placeholder="phone">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-4">
-                                        <div class="enquiry_email">
-                                            <input class="form-control contact_prsn_name" type="text" placeholder="Email">
-                                        </div>
-                                    </div>
-                                </div>
-								</div>                               
-                            </div>
-							<div class="col-xs-12 col-sm-12">
-								<div class="general_button">
-								<button type="button" class="btn cart-mre enquiry_btn">Save &amp; Continue</button>
+						<div class="tailor_group  tailor_padding">
+							<div class="col-xs-12 col-sm-6 ">
+								<div class="tailor_inche">
+								<select class="courier_enquiry" onchange="gender(this);">
+										<option>City</option>
+										<option>Pick address</option>
+										<option>Add Address</option>
+								</select>
 								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="tailor_inche">
+								<select class="courier_enquiry" onchange="gender(this);">
+										<option>Address</option>
+										<option>Pick address</option>
+										<option>Add Address</option>
+								</select>
+								</div>
+							</div>
+						</div>
+						<div class="tailor_group tailor_padding">
+						    <div class="col-xs-12 col-sm-12 ">
+							<label for="f-name" class="del-name formheading">Pick Up Adress Is Same As From Adress</label>
+							<div class="del-buton tailor_form_button">
+								<input name="a" type="radio">
+								<span class="sign-radio del-radio form_buttons"> Yes</span>
+								<input name="a" type="radio">
+								<span class="sign-radio del-radio form_buttons">No</span>
+							</div>
+							</div>
+						</div>
+						<div class="tailor_group tailor_padding">
+							<div class="col-xs-12 col-sm-6">
+								<div class="tailor_inche">
+								<select class="courier_enquiry" onchange="gender(this);">
+										<option>City</option>
+										<option>Pick address</option>
+										<option>Add Address</option>
+								</select>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="tailor_inche">
+								<select class="courier_enquiry" onchange="gender(this);">
+										<option>Adress</option>
+										<option>Pick address</option>
+										<option>Add Address</option>
+								</select>
+								</div>
+							</div>
+						</div>
+						<div class="tailor_group  tailor_padding">
+							<div class="col-xs-12 col-sm-4">
+								<div class="enquiry_contact">
+									<input class="form-control contact_prsn_name" type="text" placeholder="length">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4">
+								<div class="enquiry_phone">
+									<input class="form-control contact_prsn_name" type="text" placeholder="Width">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4">
+								<div class="enquiry_email">
+									<input class="form-control contact_prsn_name" type="text" placeholder="Height">
+								</div>
+							</div>
+						</div>
+						<div class="tailor_group  tailor_padding">
+							<div class="col-xs-12 col-sm-4">
+								<div class="enquiry_contact">
+									<input class="form-control contact_prsn_name" type="text" placeholder="Contact Person Name">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4">
+								<div class="enquiry_phone">
+									<input class="form-control contact_prsn_name" type="text" placeholder="phone">
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-4">
+								<div class="enquiry_email">
+									<input class="form-control contact_prsn_name" type="text" placeholder="Email">
+								</div>
+							</div>
+						</div>
+						<button type="button" class="btn cart-mre enquiry_btn" style="margin-right:28px !important">Save &amp; Continue</button>
+						</div>
                             </div>
                         </div>
-                    </div>
 					<pre id="courier_result"></pre>
 					</form>
                 </div>
@@ -2872,24 +2852,23 @@
                     <button type="button" class="close popup_close" data-dismiss="modal">
                         <img src="images/close.png">
                     </button>
+							<p class="popup_heading general_padding">General Enquiry</p>
                     <div class="modal-body large_mdel_body">					
 					<div class="row">					    
-						<div class="col-xs-12 col-sm-7">
-							<div class="general_inche">
-							<p class="popup_heading general_padding">General Enquiry</p>
-							</div>
-							<div class="general_inche">
+						<div class="col-xs-12 col-sm-8">
+							<div class="tailor_group tailor_padding">
 								<div class="col-xs-12 col-sm-6">
-									<div class="general_inche">
+									<div class="tailor_group ">
+									<p>Priority</p>
 										<select class="courier_enquiry" onchange="gender(this);">
-											<option>Priority</option>
+											<option></option>
 											<option>Regular</option>
 											<option>High Priority</option>
 										</select>
 									</div>
 								</div> 
 								<div class="col-xs-12 col-sm-6">
-									<div class="general_inche">
+									<div class="tailor_group ">
 										<div class="spec_instruc">
 											<span>Types Of Help</span>
 											<textarea class="form-control tailor_instruction"></textarea>
@@ -2897,12 +2876,15 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xs-12 col-sm-12">
-							<div class="general_inche">							
-								<input name="pic" accept="image/*" class="general_upload testi-upload" multiple="" type="file">
+							<div class="women_tailor_form">
+								<div class="tailor_group contest_upload">	                                                											
+									<div class="col-xs-12 col-sm-12 ">
+									<p class="page_upload">Please Select Example Images</p>
+										<input id="auto" type="file" /><output id="mobile" />
+									</div>
+								</div>
 							</div>
-							</div>
-							<div class="general_inche">
+							<div class="tailor_group tailor_padding">
 								<div class="col-xs-12 col-sm-4">
 									<div class="enquiry_contact">
 										<input class="form-control contact_prsn_name" type="text" placeholder="Contact Person Name">
@@ -2919,7 +2901,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="general_inche general_margin">
+							<div class="tailor_group tailor_padding">
 								<div class="col-xs-12 col-sm-6">
 									<div class="enquiry_contact">
 										<div class="spec_instruc">
@@ -2930,19 +2912,16 @@
 								</div>
 								<div class="col-xs-12 col-sm-6">
 									<div class="enquiry_contact">
+									<p>Country</p>
 										<select class="courier_enquiry" onchange="gender(this);">
-											<option>Country</option>
+											<option></option>
 											<option>Regular</option>
 											<option>High Priority</option>
 										</select>
 									</div>
 								</div> 							
 						    </div>                               							
-						</div>				
-					</div>
-					<div class="col-xs-12 col-sm-12">
-                    <div class="general_button">
-					<button type="button" class="btn cart-mre enquiry_btn">Save &amp; Continue</button>
+					<button type="button" class="btn cart-mre enquiry_btn" style="margin-right:28px !important">Save &amp; Continue</button>
                     </div>
                     </div>					
                     </div>
@@ -2960,12 +2939,10 @@
 						<button type="button" class="close popup_close" data-dismiss="modal">
 							<img src="images/close.png">
 						</button>
+							<p class="popup_heading general_padding">Advertisement Enquiry</p>
 						<div class="modal-body large_mdel_body">					
 							<div class="row">					    
 								<div class="col-xs-12 col-sm-7">
-									<div class="tailor_padding">
-									<p class="popup_heading general_padding">Advertisement Enquiry</p>
-									</div>
 									<div class="tailor_group tailor_padding">										
 										<div class="col-xs-12 col-sm-4">
 											<div class="general_inche">
@@ -2985,6 +2962,7 @@
 										</div>
 										<div class="col-xs-12 col-sm-4">
 											<div class="general_inche">
+											<p>Advertise</p>
 												<select class="courier_enquiry" onchange="gender(this);">
 													<option>Advertise at</option>
 													<option>NRI Megamart</option>
@@ -3008,6 +2986,7 @@
 										</div>
 										<div class="col-xs-12 col-sm-4">
 											<div class="general_inche">
+											<p>Design</p>
 												<select class="courier_enquiry" onchange="gender(this);">
 													<option>Design Help</option>
 													<option>Yes</option>
@@ -3044,6 +3023,7 @@
 										</div>
 										<div class="col-xs-12 col-sm-6">
 											<div class="enquiry_contact">
+											<p>Business</p>
 												<select class="courier_enquiry" onchange="gender(this);">
 													<option>Business Local</option>
 													<option>Pick Address</option>
@@ -3052,11 +3032,7 @@
 											</div>
 										</div> 							
 									</div>                               							
-								</div>				
-							</div>
-							<div class="col-xs-12 col-sm-12">
-								<div class="general_button">
-									<button type="button" class="btn cart-mre enquiry_btn">Save &amp; Continue</button>
+									<button type="button" class="btn cart-mre enquiry_btn" style="margin-right:28px !important">Save &amp; Continue</button>
 								</div>
 							</div>					
 						</div>
@@ -3074,15 +3050,14 @@
 						<button type="button" class="close popup_close" data-dismiss="modal">
 							<img src="images/close.png">
 						</button>
+									<p class="popup_heading general_padding">Print VR NRI Enquiry</p>
 						<div class="modal-body large_mdel_body">					
 							<div class="row">					    
-								<div class="col-xs-12 col-sm-7">
-									<div class="tailor_padding">
-									<p class="popup_heading general_padding">Print VR NRI Enquiry</p>
-									</div>
+								<div class="col-xs-12 col-sm-8">
 									<div class="tailor_group tailor_padding">										
 										<div class="col-xs-12 col-sm-6">
 											<div class="general_inche">
+											<p>Enquiry</p>
 												<select class="courier_enquiry" onchange="gender(this);">
 													<option>Enquiry Type</option>
 													<option>One Time Print Order</option>
@@ -3099,13 +3074,14 @@
 											</div>
 										</div>										
 									</div>
-									<div class="tailor_group tailor_padding">
-										<div class="col-xs-12 col-sm-12">
-											<div class="general_inche">							
-												<input name="pic" accept="image/*" class="general_upload testi-upload" multiple="" type="file">
+									<div class="women_tailor_form">
+										<div class="tailor_group contest_upload margin_content">	                                                											
+											<div class="col-xs-12 col-sm-12 ">
+											<p class="page_upload">Please Select Example Images</p>
+												<input id="auto" type="file" /><output id="mobile" />
 											</div>
 										</div>
-									</div>
+								    </div>
 									<div class="tailor_group tailor_padding">
 										<div class="col-xs-12 col-sm-4 ">
 											<div class="general_inche">
@@ -3117,15 +3093,17 @@
 										</div>
 										<div class="col-xs-12 col-sm-4">
 											<div class="general_inche">
+											<p>Country</p>
 												<select class="courier_enquiry" onchange="gender(this);">
-													<option>Country</option>
+													<option></option>
 												</select>
 											</div>
 										</div>
 										<div class="col-xs-12 col-sm-4">
 											<div class="general_inche">
+											<p>City</p>
 												<select class="courier_enquiry" onchange="gender(this);">
-													<option>City</option>
+													<option></option>
 												</select>
 											</div>
 										</div>
@@ -3147,11 +3125,7 @@
 											</div>
 										</div>
 									</div>                               							
-								</div>				
-							</div>
-							<div class="col-xs-12 col-sm-12">
-								<div class="general_button">
-									<button type="button" class="btn cart-mre enquiry_btn">Save &amp; Continue</button>
+									<button type="button" class="btn cart-mre enquiry_btn" style="margin-right:28px !important">Save &amp; Continue</button>
 								</div>
 							</div>					
 						</div>
@@ -3169,12 +3143,10 @@
 						<button type="button" class="close popup_close" data-dismiss="modal">
 							<img src="images/close.png">
 						</button>
+							<p class="popup_heading general_padding">US Taxation Enquiry</p>
 						<div class="modal-body large_mdel_body">					
 							<div class="row">					    
-								<div class="col-xs-12 col-sm-7">
-									<div class="tailor_padding">
-									<p class="popup_heading general_padding">US Taxation Enquiry</p>
-									</div>
+								<div class="col-xs-12 col-sm-8">
 									<div class="tailor_group tailor_padding">
 										<div class="col-xs-12 col-sm-4 ">
 											<div class="general_inche">
@@ -3230,11 +3202,7 @@
 											</div>
 										</div>
 									</div>                               							
-								</div>				
-							</div>
-							<div class="col-xs-12 col-sm-12">
-								<div class="general_button">
-									<button type="button" class="btn cart-mre enquiry_btn">Save &amp; Continue</button>
+									<button type="button" class="btn cart-mre enquiry_btn" style="margin-right:28px !important">Save &amp; Continue</button>
 								</div>
 							</div>					
 						</div>
@@ -3252,12 +3220,10 @@
 						<button type="button" class="close popup_close" data-dismiss="modal">
 							<img src="images/close.png">
 						</button>
+						<p class="popup_heading general_padding">Temple Enquiry</p>
 						<div class="modal-body large_mdel_body">					
 							<div class="row">					    
-								<div class="col-xs-12 col-sm-7">
-									<div class="tailor_padding">
-									<p class="popup_heading general_padding">Temple Enquiry</p>
-									</div>
+								<div class="col-xs-12 col-sm-8">
 									<div class="tailor_group tailor_padding">
 										<div class="col-xs-12 col-sm-6 ">
 											<div class="general_inche">
@@ -3269,8 +3235,9 @@
 										</div>
 										<div class="col-xs-12 col-sm-6">
 											<div class="general_inche">
+											<p>Country</p>
 												<select class="courier_enquiry" onchange="gender(this);">
-													<option>Country</option>
+													<option></option>
 												</select>
 											</div>
 										</div>
@@ -3278,8 +3245,9 @@
 									<div class="tailor_group tailor_padding">										
 										<div class="col-xs-12 col-sm-6">
 											<div class="general_inche">
+											<p>Enquiry Type</p>
 												<select class="courier_enquiry" onchange="gender(this);">
-													<option>Enquiry Type</option>
+													<option></option>
 													<option>Alaya Vastralu</option>
 													<option>Gold Jewellry</option>
 												</select>
@@ -3294,13 +3262,14 @@
 											</div>
 										</div>										
 									</div>
-									<div class="tailor_group tailor_padding">
-										<div class="col-xs-12 col-sm-12">
-											<div class="general_inche">							
-												<input name="pic" accept="image/*" class="general_upload testi-upload" multiple="" type="file">
+									<div class="women_tailor_form">
+										<div class="tailor_group contest_upload margin_content">	                                                											
+											<div class="col-xs-12 col-sm-12 ">
+											<p class="page_upload">Please Select Example Images</p>
+												<input id="auto" type="file" /><output id="mobile" />
 											</div>
 										</div>
-									</div>
+								    </div>
 									<div class="tailor_group tailor_padding">
 										<div class="col-xs-12 col-sm-4">
 											<div class="general_inche">
@@ -3318,11 +3287,7 @@
 											</div>
 										</div>
 									</div>                               							
-								</div>				
-							</div>
-							<div class="col-xs-12 col-sm-12">
-								<div class="general_button">
-									<button type="button" class="btn cart-mre enquiry_btn">Save &amp; Continue</button>
+									<button type="button" class="btn cart-mre enquiry_btn" style="margin-right:28px !important">Save &amp; Continue</button>
 								</div>
 							</div>					
 						</div>
@@ -3340,11 +3305,11 @@
 						<button type="button" class="close popup_close" data-dismiss="modal">
 							<img src="images/close.png">
 						</button>
+						<p class="popup_heading general_padding">Second Opinion Enquiry</p>
 						<div class="modal-body large_mdel_body">					
 							<div class="row">					    
 								<div class="col-xs-12 col-sm-7">
-									<div class="tailor_padding">
-									<p class="popup_heading general_padding">Second Opinion Enquiry</p>
+									<div class="tailor_padding">									
 									</div>
 									<div class="tailor_group tailor_padding">
 										<div class="col-xs-12 col-sm-6 ">
@@ -3380,13 +3345,14 @@
 											</div>
 										</div>										
 									</div>
-									<div class="tailor_group tailor_padding">
-										<div class="col-xs-12 col-sm-12">
-											<div class="general_inche">							
-												<input name="pic" accept="image/*" class="general_upload testi-upload" multiple="" type="file">
+									<div class="women_tailor_form">
+										<div class="tailor_group contest_upload margin_content">	                                                											
+											<div class="col-xs-12 col-sm-12 ">
+											<p class="page_upload">Please Select Example Images</p>
+												<input id="auto" type="file" /><output id="mobile" />
 											</div>
 										</div>
-									</div>
+								    </div>
 									<div class="tailor_group tailor_padding">
 										<div class="col-xs-12 col-sm-4">
 											<div class="general_inche">
@@ -3404,11 +3370,7 @@
 											</div>
 										</div>
 									</div>                               							
-								</div>				
-							</div>
-							<div class="col-xs-12 col-sm-12">
-								<div class="general_button">
-									<button type="button" class="btn cart-mre enquiry_btn">Save &amp; Continue</button>
+									<button type="button" class="btn cart-mre enquiry_btn" style="margin-right:28px !important">Save &amp; Continue</button>
 								</div>
 							</div>					
 						</div>
@@ -3426,15 +3388,14 @@
 						<button type="button" class="close popup_close" data-dismiss="modal">
 							<img src="images/close.png">
 						</button>
+						<p class="popup_heading general_padding">Real Estat Enquiry</p>
 						<div class="modal-body large_mdel_body">					
 							<div class="row">					    
-								<div class="col-xs-12 col-sm-7">
-									<div class="tailor_padding">
-									<p class="popup_heading general_padding">Real Estat Enquiry</p>
-									</div>
+								<div class="col-xs-12 col-sm-8">
 									<div class="tailor_group tailor_padding">
 										<div class="col-xs-12 col-sm-4">
 											<div class="general_inche">
+											<p>Property</p>
 												<select class="courier_enquiry" onchange="gender(this);">
 													<option>Property Type</option>
 													<option>Commercial</option>
@@ -3462,6 +3423,7 @@
 									<div class="tailor_group tailor_padding">
 										<div class="col-xs-12 col-sm-4">
 											<div class="general_inche">
+											<p>Funds</p>
 												<select class="courier_enquiry" onchange="gender(this);">
 													<option>Mode Of Funding</option>
 													<option>Cash</option>
@@ -3512,6 +3474,7 @@
 										</div>
 										<div class="col-xs-12 col-sm-6">
 											<div class="enquiry_contact">
+											    <p>Delivery Location</p>
 												<select class="courier_enquiry" onchange="gender(this);">
 													<option>Location</option>
 													<option>Pick Address</option>
@@ -3520,11 +3483,7 @@
 											</div>
 										</div> 							
 									</div>                               							
-								</div>				
-							</div>
-							<div class="col-xs-12 col-sm-12">
-								<div class="general_button">
-									<button type="button" class="btn cart-mre enquiry_btn">Save &amp; Continue</button>
+									<button type="button" class="btn cart-mre enquiry_btn" style="margin-right:28px !important">Save &amp; Continue</button>
 								</div>
 							</div>					
 						</div>
@@ -3542,17 +3501,16 @@
 						<button type="button" class="close popup_close" data-dismiss="modal">
 							<img src="images/close.png">
 						</button>
+						<p class="popup_heading general_padding">Purchase Enquiry</p>
 						<div class="modal-body large_mdel_body">					
 							<div class="row">					    
-								<div class="col-xs-12 col-sm-7">
-									<div class="tailor_padding">
-									<p class="popup_heading general_padding">Purchase Enquiry</p>
-									</div>
+								<div class="col-xs-12 col-sm-8">
 									<div class="tailor_group tailor_padding">										
 										<div class="col-xs-12 col-sm-6">
 											<div class="general_inche">
+											<p>Category</p>
 												<select class="courier_enquiry" onchange="gender(this);">
-													<option>Category</option>
+													<option></option>
 													<option>List Of All Products</option>
 													<option></option>
 												</select>
@@ -3565,13 +3523,14 @@
 											</div>
 										</div>										
 									</div>
-									<div class="tailor_group tailor_padding">
-										<div class="col-xs-12 col-sm-12">
-											<div class="general_inche">							
-												<input name="pic" accept="image/*" class="general_upload testi-upload" multiple="" type="file">
+									<div class="women_tailor_form">
+										<div class="tailor_group contest_upload margin_content">	                                                											
+											<div class="col-xs-12 col-sm-12 ">
+											<p class="page_upload">Please Select Example Images</p>
+												<input id="auto" type="file" /><output id="mobile" />
 											</div>
 										</div>
-									</div>
+								    </div>
 									<div class="tailor_group tailor_padding">
 										<div class="col-xs-12 col-sm-4">
 											<div class="general_inche">
@@ -3600,6 +3559,7 @@
 										</div>
 	                                    <div class="col-xs-12 col-sm-6">
 											<div class="general_inche">
+											<p>Delivery place</p>
 												<select class="courier_enquiry" onchange="gender(this);">
 													<option>Delivery Location</option>
 													<option>Pick Address</option>
@@ -3608,11 +3568,7 @@
 											</div>
 										</div> 
 									</div>									
-								</div>				
-							</div>
-							<div class="col-xs-12 col-sm-12">
-								<div class="general_button">
-									<button type="button" class="btn cart-mre enquiry_btn">Save &amp; Continue</button>
+									<button type="button" class="btn cart-mre enquiry_btn" style="margin-right:28px !important">Save &amp; Continue</button>
 								</div>
 							</div>					
 						</div>
@@ -3630,15 +3586,14 @@
 						<button type="button" class="close popup_close" data-dismiss="modal">
 							<img src="images/close.png">
 						</button>
+						<p class="popup_heading general_padding">Printing Enquiry</p>
 						<div class="modal-body large_mdel_body">					
 							<div class="row">					    
-								<div class="col-xs-12 col-sm-7">
-									<div class="tailor_padding">
-									<p class="popup_heading general_padding">Printing Enquiry</p>
-									</div>
+								<div class="col-xs-12 col-sm-8">
 									<div class="tailor_group tailor_padding">										
 										<div class="col-xs-12 col-sm-4">
 											<div class="general_inche">
+											<p>Job Type</p>
 												<select class="courier_enquiry" onchange="gender(this);">
 													<option>Nature Of Job</option>
 													<option>One Time</option>
@@ -3648,6 +3603,7 @@
 										</div>
                                         <div class="col-xs-12 col-sm-4">
 											<div class="general_inche">
+											<p>Designing</p>
 												<select class="courier_enquiry" onchange="gender(this);">
 													<option>Designing Help</option>
 													<option>Yes</option>
@@ -3657,7 +3613,7 @@
 										</div>										
 										<div class="col-xs-12 col-sm-4 ">
 											<div class="general_inche">
-												<p>Expected Delivery Date</p>
+												<p>Delivery Date</p>
 												<input name="cart" value="31-05-2018" class="cart_date_pick" type="date">
 											</div>
 										</div>										
@@ -3690,6 +3646,7 @@
 										</div>
 	                                    <div class="col-xs-12 col-sm-6">
 											<div class="general_inche">
+											<p>Delivery</p>
 												<select class="courier_enquiry" onchange="gender(this);">
 													<option>Delivery Location</option>
 													<option>Pick Address</option>
@@ -3698,11 +3655,7 @@
 											</div>
 										</div> 
 									</div>									
-								</div>				
-							</div>
-							<div class="col-xs-12 col-sm-12">
-								<div class="general_button">
-									<button type="button" class="btn cart-mre enquiry_btn">Save &amp; Continue</button>
+									<button type="button" class="btn cart-mre enquiry_btn" style="margin-right:28px !important">Save &amp; Continue</button>
 								</div>
 							</div>					
 						</div>
