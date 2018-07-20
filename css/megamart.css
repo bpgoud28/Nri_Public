@@ -1467,3 +1467,33 @@ input#repair {
 .active_color > li > a:hover, .active_color > li > a:focus {
 	background-color: #ccc !important;color:#000 !important;
 }
+#preview img{
+    margin: 5px;
+    width: 120px;
+    height: 120px;
+}
+#input_files {
+	width: 50%;
+    float: left;
+}
+#preview {
+	width: 100%;
+	float:left;
+}
+.gallery {
+	width: 100%;
+	float:left;
+}
+#gallery-photo-add {
+	width: 50% !important;
+    float: left !important;	
+}
+.gallery img{
+    margin: 5px;
+    width: 120px;
+    height: 120px;
+}
+#file-input {
+	width: 50%;
+    float: left;
+}

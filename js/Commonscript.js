@@ -258,7 +258,7 @@ window.onload = function(){
     //Check File API support
     if(window.File && window.FileList && window.FileReader)
     {
-        var filesInput = document.getElementById("files");
+        var filesInput = document.getElementById("input_files");
         
         filesInput.addEventListener("change", function(event){
             
@@ -281,7 +281,7 @@ window.onload = function(){
                     
                     var div = document.createElement("div");
                     
-                    div.innerHTML = "<img class='thumbnail' src='" + picFile.result + "'" +
+                    div.innerHTML = "<img class='thumbnail upload_images' src='" + picFile.result + "'" +
                             "title='" + picFile.name + "'/>";
                     
                     output.insertBefore(div,null);            
