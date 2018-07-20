@@ -1454,3 +1454,16 @@ input#repair {
 .margin_content {
 	margin-top:0px !important;
 }
+.color_active > a {
+	background-color: #3369e8 !important;
+	color:#fff !important;
+}
+.active_color > li.active > a, .active_color > li.active > a:hover, .active_color > li.active > a:focus {
+	    background-color: #ccc !important;color:#000 !important;
+}
+.active_color > li > a {
+	    border: 1px solid #ccc !important;color:#737373 !important;
+}
+.active_color > li > a:hover, .active_color > li > a:focus {
+	background-color: #ccc !important;color:#000 !important;
+}
