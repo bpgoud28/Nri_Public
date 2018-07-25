@@ -971,10 +971,7 @@
             </div>
         </header>
         <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog large_mdel">
-
-
-                <!-- Modal content-->
+            <div class="modal-dialog large_mdel">                <!-- Modal content-->
                 <div class="modal-content large_mdel_cntent">
                     <button type="button" class="close popup_close" data-dismiss="modal">
                         <img src="images/close.png">
@@ -1404,8 +1401,6 @@
 
             </div>
         </div>
-
-
         <div class="enquiry_form">
             <div class="container product_container">
                 <div class="product_wrkarea enquiry_wrkarea">
@@ -1419,7 +1414,6 @@
                         </div>
                     </div>
                     <div id="list">
-                        <div class="row">
                             <div class="col-xs-12 col-sm-4">
                                 <div class="enquiry_area womencloting" data-toggle="modal" data-target="#womencloting">
                                     <div class="enquiry_img">
@@ -1453,9 +1447,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="row">
                             <div class="col-xs-12 col-sm-4">
                                 <div class="enquiry_area bulkproduct" data-toggle="modal" data-target="#bulkorder">
                                     <div class="enquiry_img">
@@ -1489,9 +1480,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="row">
                             <div class="col-xs-12 col-sm-4">
                                 <div class="enquiry_area corporatepurchase" data-toggle="modal" data-target="#corporateenquiry">
                                     <div class="enquiry_img">
@@ -1525,9 +1513,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="row">
                             <div class="col-xs-12 col-sm-4">
                                 <div class="enquiry_area financialadvice" data-toggle="modal" data-target="#financialenquiry">
                                     <div class="enquiry_img">
@@ -1560,11 +1545,7 @@
                                         <span>NRImegamart.com and VRNRI.com are owned by 'VR NRI Solutions Private Limited'</span>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-
-                        <div class="row">
+                            </div>                        
                             <div class="col-xs-12 col-sm-4">
                                 <div class="enquiry_area htelstay" data-toggle="modal" data-target="#hotelenquiry">
                                     <div class="enquiry_img">
@@ -1597,11 +1578,7 @@
                                         <span>NRImegamart.com and VRNRI.com are owned by 'VR NRI Solutions Private Limited'</span>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-
-
-                        <div class="row">
+                            </div>                      
                             <div class="col-xs-12 col-sm-4">
                                 <div class="enquiry_area printingenq" data-toggle="modal" data-target="#printingenquiry">
                                     <div class="enquiry_img">
@@ -1635,9 +1612,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="row">
                             <div class="col-xs-12 col-sm-4">
                                 <div class="enquiry_area secondopinion" data-toggle="modal" data-target="#secondenquiry">
                                     <div class="enquiry_img">
@@ -1671,9 +1645,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="row">
                             <div class="col-xs-12 col-sm-4">
                                 <div class="enquiry_area printvrnri" data-toggle="modal" data-target="#printenquiry">
                                     <div class="enquiry_img">
@@ -1707,9 +1678,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="row">
                             <div class="col-xs-12 col-sm-4">
                                 <div class="enquiry_area courierenquiry" data-toggle="modal" data-target="#courierenquiry">
                                     <div class="enquiry_img">
@@ -1732,7 +1700,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -5762,11 +5729,10 @@
     <script type="text/javascript">
         $("#myInput").on("keyup", function () {
             var value = $(this).val().toLowerCase();
-            $("#list .enquiry_area").filter(function () {
+            $("#list .col-sm-4").filter(function () {
                 $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
             });
         });
-
     </script>
 
 	<script type="text/javascript">
