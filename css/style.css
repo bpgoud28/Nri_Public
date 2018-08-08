@@ -962,7 +962,7 @@ border-radius: 0px 20px 20px 0px;}
 .rating .rating-starts ul li{ display: inline;}
 .del-fedback{ width: 100%; float: left;}
 .del-fedback .del-name{ width: auto; float: left;font-family: 'Lato';font-weight: normal; color: #000;}
-.del-buton{ float: right;margin-bottom: 10px;width:60%;}
+.del-buton{ float: right;margin-bottom: 10px;width:40%;}
 .del-radio{font-family: 'Lato'; font-size: 14px; color: #333333; }
 .testimonial-clse{z-index: 2;
 top:12px;
@@ -1518,10 +1518,10 @@ color: #737373;}
 .large_mdel{ background: #fff;width: 850px;padding: 40px;}
 .small_popup{ background: #fff;width: 550px;padding: 40px;border-radius: 5px;}
 .small_mdel_cntent{box-shadow: none;border: none;}
-.large_mdel_body{ background:#3369e80d;padding: 20px;margin-top:-5px;}
+.large_mdel_body{ background:#3369e80d;padding: 20px;margin-top:-5px;box-shadow:1px -1px 5px rgba(0,0,0,0.2);}
 .small_mdel_body{background: #fff;padding: 0px;}
 .large_mdel_cntent{ box-shadow: none;border: none;}
-.popup_close{top: -4px;
+.popup_close{top: -33px;
     right: -38px;
     position: relative;
     opacity: 1;}
@@ -1894,4 +1894,7 @@ header {
     margin: 20px 0;
     float: left;
     width: 100%;
+}
+.form-control {
+	border: 1px solid rgba(0,0,0,0.2) !important;
 }

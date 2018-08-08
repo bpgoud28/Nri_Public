@@ -213,8 +213,11 @@ padding: 5px 10px;width:100%;border-radius: 5px;font-size: 13px;}
 font-size: 14px !important;}
 .abt_wrkarea{ width:25%; margin: 0px auto;}
 .right_advr{ position: relative;left:35px;}
-.popup_heading{ color: #3369e8;
+.popup_heading{ 
+    color: #3369e8;
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-align: center;
-    font-weight: bold;margin-top:-24px;}
+    font-weight: bold;
+    margin-top: -15px;
+}
