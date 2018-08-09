@@ -1210,9 +1210,9 @@ font-size: 13px;float:left;width:60%;}
 }
 .pickup_enquiry_addr{ color: #737373;}
 .enquiry_btn{ 
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 10px !important;
-    margin-right: 28px !important;
+    margin-right: 15px !important;
 }
 
 .enquiry_srh{ float: right;}
@@ -1489,8 +1489,8 @@ input#repair {
 }
 .link_direction {
     position: relative;
-    left: 10px;
-    top: 15px;	
+    left: -10px;
+    top: 0px;	
 }
 .arrow_icon {
     top: 0px !important;
@@ -1541,4 +1541,45 @@ input#repair {
 }
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+.optional {
+	position: relative;
+    left: 15px;
+    top: 0px;
+    color: #333;
+    font-size: 16px;
+    font-family: arial;
+    font-weight: 600;
+}
+.courier_enquirys {
+    width: 46.5%;
+    padding: 5px;
+    float: left;
+}
+.hidden_box {
+	margin-left: 31px;
+    width: 46.5%;
+    height: 31px;
+}
+.input_table {
+    width:100%;
+	float:left;
+	}
+.input_field_hidden {
+    width: 208px;
+    border: 1px solid rgba(0,0,0,0.2) !important;
+    border-radius: 4px;
+    height: 30px;	
+}
+.hover_me {
+	padding: 5px;
+    background: #231f20;
+    color: #737373;
+    cursor: pointer;
+}
+.hover_me ul {
+	margin-top: 10px;
+}
+.hover_me li:hover {
+	color: #fecd41;
 }
