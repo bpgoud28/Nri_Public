@@ -1561,6 +1561,32 @@ input#repair {
     width: 46.5%;
     height: 31px;
 }
+.hidden_boxs {
+    width: 100% !important;
+    float: left;
+    position: relative;
+    bottom: -5px;
+}
+#frmfeed {
+	float: left;
+    width: 46.5%;
+}
+#plus {
+	margin-left: 20px;
+    margin-top: 8px;
+    background: #737373a1 !important;
+    color: #ffffff !important;
+    border: 1px solid #eee !important;
+}
+#minus {
+    margin-top: 8px;
+    background: #737373a1 !important;
+    color: #ffffff !important;
+    border: 1px solid #eee !important;
+}
+.click_input {
+	margin-top:10px !important;
+}
 .input_table {
     width:100%;
 	float:left;
@@ -1571,15 +1597,36 @@ input#repair {
     border-radius: 4px;
     height: 30px;	
 }
+.input_fields {
+	float:left;
+	width:100%;
+	}
 .hover_me {
 	padding: 5px;
-    background: #231f20;
     color: #737373;
     cursor: pointer;
+	margin-left: -40px;
+	background: rgba(0, 0, 0, .075);
+	    margin-top: -80px;
+}
+.down-arrow {
+    position: relative;
+    top: -68px;
+    font-size: 30px;
+    left: 80px;
+    color: #33333378;
+}
+.hover_me:hover {
+	background: #231f20;
 }
 .hover_me ul {
 	margin-top: 10px;
 }
 .hover_me li:hover {
 	color: #fecd41;
+}
+.hover_heading {
+    font-size: 20px;
+    top: -54px;
+    position: relative;	
 }
