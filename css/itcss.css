@@ -21,7 +21,10 @@
 	font-weight: bold;
 	font-style: normal;
 }
-.it-logo{ width:290px;margin:0px auto;}
+.it-logo{    margin-left: auto;
+    margin-right: auto;
+    width: 292px;
+    text-align: center;}
 .it-logo img{ width:120px; float:left;}
 .it-logo span{ float:left;font-size: 20px;color: #fff;position: relative;top: 40px;left: -45px;}
 
@@ -31,7 +34,7 @@
     z-index: 1; }
 .menu_workarea{ position:relative;}
 .slider_video{ position:relative; float:left; width:100%; }
-.it_wrkarea{ float:left; width:100%;position:relative;}
+.it_wrkarea{ float:left; width:100%;position:relative; margin-bottom: 0px;}
 .text-js {
   opacity: 0.1;
 }
@@ -57,8 +60,8 @@
 
 
 .info {
-	margin: 0px auto 0 auto;
-	width: 70%;
+    float: left;
+    width: 100%;
 
 }
 
@@ -79,7 +82,7 @@ text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.9);text-align: center;
     font-weight: normal;
     width: 100%;
     float: left;
-    margin: 55px 0px;min-height: 45px;
+    margin: 30px 0px;min-height: 45px;
 }
 
 /* Header Style */
@@ -200,7 +203,6 @@ text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.9);text-align: center;
 	background-repeat: no-repeat;
 	margin: 70px auto 0px;
 	position: relative;
-	z-index: 50;
 }
 
 
@@ -287,7 +289,7 @@ text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.9);text-align: center;
 }
 
 .co-info-back a:first-child {
-	margin-top: 40px;
+	margin-top: 65px;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 	box-shadow: 0 1px 0 rgba(255,255,255,0.3);
 }
@@ -482,8 +484,40 @@ background-color: #3369E8;
   animation-name: bounce;
   -moz-animation-name: bounce;
 }
-.dropdown_sec{ font-size: 30px; color: #fff;}
 
+.bounce_buttons {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    bottom: 40px;
+    left:48.5%;
+    background-color: #3369E8;
+    border-radius: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    color: white;
+    padding: 6px;
+}
+.bounce_buttons:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+}
+.dropdown_sec{ font-size: 30px; color: #fff;}
+.dropdown_secs{ 
+	font-size: 30px; 
+	color: #fff;
+	position: relative;
+	top: 5px;
+}
 .itsec_wrkarea{ float: left; width: 100%;  background-image: url("../images/buried.png"); }
 
 .nice-select {
@@ -626,7 +660,7 @@ background-color: #3369E8;
   display: block; }
 
 .contact_frm{ width: 100%; float: left;}
-.cntact_wrkarea{width: 100%; float: left;}
+.cntact_wrkarea{width: 100%; float: left;    margin-bottom: 40px;}
 .cntact_wrkarea p{ font-size: 30px;
 text-align: center;
 color: #fff;
@@ -639,3 +673,103 @@ text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);}
 .ncart_img{ width:35px !important;right: 5px;}
 .nblog_img{ width:30px !important;}
 .ncre-img{width:30px !important;right: 5px;}
+.circle_para {
+    font-size: 15px;
+    font-weight: 100;	
+}
+@media screen and (max-width: 1350px){ 
+.info h2 {
+	font-size: 30px;
+	margin: 10px 0px;
+}
+.it_desc p {
+	padding: 0px 16%;
+	font-size:16px;
+}
+.it_desc {
+	margin-bottom:0px;
+}
+.bounce_button {
+	bottom:10px;
+}
+}
+@media screen and (max-width: 991px){
+.info h2 {
+    font-size: 20px;
+    margin: 0px 0px;
+}
+.it_desc p {
+	padding: 0px 16%;
+	font-size:12px;
+}
+.mad-select ul.mad-select-drop li {
+    display: block;
+    transition: background 0.24s;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 0px);
+    overflow: hidden;
+}
+.ccc {
+    width: 100% !important;	
+}
+.mad-select { 
+    width: 100% !important;
+	margin-left: 0px !important;
+}
+}
+@media screen and (max-width: 920px){
+	.it-logo span {
+		font-size:14px;
+		top: 26px;
+        left: -30px;
+	}
+	.it-logo { 
+	    width: 210px;
+	}
+	.it-logo img {
+        width: 80px;
+
+    }
+	.info h2 {
+		font-size: 16px;
+		min-height:23px;
+	}
+	.co-date {
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 767px){
+	.it_desc {
+		display:none;
+	}
+	.info h2 { 
+	    margin-top: 20px;
+	}
+	.bounce_button { 
+	    left:48%;
+	}
+}
+@media screen and (max-width: 473px){ 
+	.info h2 { 
+	    margin-top: 0px;
+		font-size:12px;
+	}
+	.it-logo img {
+        width: 50px;
+    }
+	.it-logo span {
+		font-size: 11px;
+		top: 10px;
+		left: -17px;
+	}
+	.bounce_button {
+		display:none;
+	}
+	.bounce_buttons {
+		display:none;
+	}
+	.it-logo {
+		width: 150px;
+	}
+}
