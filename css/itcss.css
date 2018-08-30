@@ -35,7 +35,7 @@
 .menu_workarea{    
     position: relative;
     width: 100%;
-    height:100%;
+    height:400px;
     float: left;
 }
 .slider_video{ position:relative; float:left; width:100%; }
@@ -43,7 +43,7 @@
 .text-js {
   opacity: 0.1;
 }
-.it_desc{ float:left; width:100%;    margin-bottom: 35px; }
+.it_desc{ float:left; width:100%;}
 .clr{
 	clear: both;
 	padding: 0;
@@ -67,7 +67,6 @@
 .info {
     float: left;
     width: 100%;
-
 }
 
 .it_desc p {
@@ -339,10 +338,11 @@ text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.9);text-align: center;
 	text-transform: uppercase;
 	font-size: 22px;
 	letter-spacing: 1px;
-	width: 320px;
+	width: 100%;
 	padding: 50px 10px 20px;
 	margin: 0 auto;
 	text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	text-align:center;
 }
 a.co-link {
 	background: rgba(255,255,255,0.1);
@@ -688,19 +688,27 @@ text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);}
 	margin: 10px 0px;
 }
 .it_desc p {
-	padding: 0px 16%;
-	font-size:16px;
+    padding: 0px 13%;
+    font-size: 15px;
 }
 .it_desc {
-	margin-bottom:0px;
-}
-.it_descs {
-	margin-bottom:40px;
+    position: relative;
+    top: -30px;
 }
 .bounce_button {
 	bottom:10px;
 }
-
+.menu_workarea{ 
+    height:100%;
+}
+.txt-rotate {
+	font-size: 26px !important;
+	position: relative;
+    top: -18px;
+}
+.menu_banner {
+	margin-bottom: 50px !important;
+}
 }
 @media screen and (max-width: 991px){
 .info h2 {
@@ -708,8 +716,8 @@ text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);}
     margin: 0px 0px;
 }
 .it_desc p {
-	padding: 0px 0%;
-	font-size:12px;
+    padding: 0px 10%;
+    font-size: 15px;
 }
 .mad-select ul.mad-select-drop li {
     display: block;
@@ -725,6 +733,18 @@ text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);}
 .mad-select { 
     width: 100% !important;
 	margin-left: 0px !important;
+}
+.menu_workarea{ 
+    height:100%;
+}
+.it_desc {
+    position: relative;
+    top: 0px;
+}
+.txt-rotate {
+    font-size: 26px !important;
+    position: relative;
+    top: -5px;
 }
 }
 @media screen and (max-width: 920px){
@@ -749,6 +769,18 @@ text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);}
 	.co-date {
 		font-size: 30px;
 	}
+	.menu_workarea{ 
+    height:100%;
+    }
+	.txt-rotate {
+		font-size: 26px !important;
+		position: relative;
+		top: 5px;
+    }
+	.it_desc p {
+		padding: 0px 0%;
+		font-size: 15px;
+    }
 }
 @media screen and (max-width: 767px){
 	.it_desc {
@@ -760,6 +792,9 @@ text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);}
 	.bounce_button { 
 	    left:48%;
 	}
+	.menu_workarea{ 
+    height:100%;
+    }
 }
 @media screen and (max-width: 515px){ 
 	.info h2 { 
@@ -793,6 +828,47 @@ text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);}
 	}
 	.bounce_buttons {
 		bottom:25px;
+	}
+	.menu_workarea{ 
+    height:100%;
+    }
+}
+@media screen and (max-width: 337px){
+	.co-circle {
+		width:250px;
+		height:250px;
+	}
+	.co-info-wrap {
+		top: 25px;
+        left: 25px;
+	}
+	.co-slider nav {
+		top: 380px;
+	}
+	.co-shadow {
+		left: -10px !important;
+		width: 266px;
+	}
+	.co-title {
+        height: 110px;
+    }
+	.bounce_buttons {
+        bottom: 10px;
+		left: 44.5%;
+    }
+}
+@media screen and (max-width: 303px){
+	.mad-select {
+		width: 118% !important;
+		margin-left:-22px !important;
+    }
+	.ccc { 
+	    margin-left: -20px;
+        margin-bottom: 10px;
+	}
+	.md-form { 
+		margin-left: -20px;
+		width: 118%;
 	}
 }
 /* fade slider */
