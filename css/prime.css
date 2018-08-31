@@ -1,6 +1,6 @@
 .prime-workarea{  width: 100%; float: left; height: auto;}
 .prime-banner{  width: 100%; float: left; height: auto; position: relative;}
-.prime-banner img{ width: 100%; float: left;}
+.prime-banner img{ width: 100%; float: left;height:100%;}
 .banner-txt{ position: absolute;z-index: 1; width:auto; bottom: 45px; right:-7%;}
 .banner-txt p{ color: #fff;font-family: 'Lato Bold'; font-size: 32px; width: 100%; float: left;margin:0px 0px;}
 .banner-txt span{ color: #712156; font-size:22px; width:auto; float: left;margin: 10px 0px;}
