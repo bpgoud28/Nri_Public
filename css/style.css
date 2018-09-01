@@ -30,7 +30,7 @@ html, body {
      text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
-.main-body{ width:100%; float:left; height:auto;font-size:13px; background:#fff; font-family: 'Lato';}
+.main-body{ width:100%; float:left; height:auto;font-size:13px; background:#fff; font-family: 'Lato';overflow-x:hidden;}
 @media (min-width: 1320px) {
 	.container { width: 1280px; }
 }
@@ -731,6 +731,24 @@ margin-left: 10px;}
     .tab-logo{width: 160px !important;top: -55px;}
     .main-menu .signup {width: 100%;}
     .prime-container {padding: 0px 15px;}
+	.submenu {    width: 468px !important;min-height: 575px !important; }
+	.abt_wrkarea {
+        width: 90% !important;
+    margin-left: 44px !important;}
+	.advertise {
+		width: 97.1% !important;
+		margin-left: 54px !important;
+    }
+	.advertise-areas {
+		position: relative;
+        left: -35px
+	}
+	.prime-grupsites .grup-area-dwn {
+    margin-top: 10px !important;
+    }
+	.arrow-grup-sites {
+		margin-top: 10px;
+	}
 }
 @media screen and (max-width:480px) and (min-width:1px){
 .top-menu .grp-site-wdth{ width:45%;position: relative;
@@ -752,6 +770,8 @@ margin-left: 10px;}
    .membership-body .mem-content .mem-btn{ bottom: 0px;}
     .membership-header .close img{ display: block !important;}
     .membership-header .close{ right:-15px;}
+	.abt_wrkarea {
+    width: 50% !important;}
 }
 
 /*----------model popup Tab and mobile view -------*/
@@ -1052,6 +1072,7 @@ margin-right: 20px;}
     .deli-img{width: 75px;}
     .delivery-detail{padding-left: 80px;}
     .delivery-detail .deli-status li{    margin: 0px 5px;}
+	.dropdown-menu {    left: -20px; } 
 }
 @media screen and (max-width:767px) and (min-width:1px){
   .deli-img{ display: none;}  
