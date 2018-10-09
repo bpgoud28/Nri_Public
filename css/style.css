@@ -110,19 +110,29 @@ top: -2px !important;}
 .top-menu .cart-container .cart-list li .wishlst{ background:#fecd41; color:#712156;padding: 0px 4px;margin-left: 5px;top: 2px;}
 .ind_day{ font-size: 13px;margin-left: 0px !important;}
 /*-------main menu starts here --------*/
-.main-menu{background:#fff; width:100%; float:left; height:auto;border-bottom: 1px solid #bfbfbf;padding:2px 0px;position: relative;}
-.main-menu .shopmore{ width:auto; float:left; height:auto;}
-.main-menu .shopmore img{ float:left;}
-.main-menu .shopmore a{ text-decoration:none; color:#712156;}
-.main-menu .signup{ width:auto; float:left; height:auto; padding-left:0px;margin: 0px;position: relative;top:8px;}
-.main-menu .signup li{ list-style:none; display:inline;float:left;margin-right:20px;}
-.main-menu .signup li img{ float:left;opacity: 0.8;}
-.main-menu .signup li .sign-line{margin-top: 10px;}
-.main-menu .signup li a{ text-decoration:none; color:#737373; float:left;position: relative;top: 5px;font-size: 12px;}
+.main-menu,.single-menu{background:#fff; width:100%; float:left; height:auto;border-bottom: 1px solid #bfbfbf;padding:2px 0px;position: relative;}{background:#fff; width:100%; float:left; height:auto;border-bottom: 1px solid #bfbfbf;padding:2px 0px;position: relative;}
+.main-menu .shopmore,.single-menu .shopmore{ width:auto; float:left; height:auto;}
+.main-menu .shopmore img,.single-menu .shopmore img{ float:left;}
+.main-menu .shopmore a,.single-menu .shopmore a{ text-decoration:none; color:#712156;}
+.main-menu .signup,.single-menu .signup{ width:auto; float:left; height:auto; padding-left:0px;margin: 0px;position: relative;top:8px;}
+.single-menu .signup {top: 0}
+.main-menu .signup li,.single-menu .signup li{ list-style:none; display:inline;float:left;margin-right:20px;}
+.main-menu .signup li img,.single-menu .signup li img{ float:left;opacity: 0.8;}
+.main-menu .signup li .sign-line,.single-menu .signup li .sign-line{margin-top: 10px;}
+.main-menu .signup li a,.single-menu .signup li a{ text-decoration:none; color:#737373; float:left;position: relative;top: 5px;font-size: 12px;}
+.single-menu .signup li a {top: 0}
+.signup.sign-lnk {padding-bottom:0}
 .main-menu .logo{ float:right; height:auto;position: relative;
 left: -35px;}
 .main-menu .logo img{ float:left;width:170px; height: 35px;}
-.main-menu .prime{ float:right;}
+.main-menu .prime, .single-menu .prime{ float:right;}
+
+.single-menu .logo{height:auto;position: relative;}
+.single-menu .logo img{float: none;
+    width: 170px;
+    height: 35px;
+    display: block;
+    margin: 0px auto 15px;}
 /*------------------Banner---------------*/
 .banner{ width:100%; float:left; position:relative;z-index:1;margin-top: 63px}
 .banner .updates{ width:92%; float:left; position:absolute; background:#712156; z-index:2;bottom:3px;}
@@ -722,7 +732,6 @@ margin-left: 10px;}
 .tab-logo{ display: block !important;position: absolute;z-index: 1;top: -63px;width: 170px !important;}
 
 .calender,.blog-arrow{display: none !important;}
-.prime-container{ padding: 0px;}
 .top-menu .cart-container .cart-list{top: 5px;}
 }
 @media screen and (max-width:767px) and (min-width:481px){
@@ -730,19 +739,10 @@ margin-left: 10px;}
     .curr-carret{display: block !important;}
     .tab-logo{width: 160px !important;top: -55px;}
     .main-menu .signup {width: 100%;}
-    .prime-container {padding: 0px 15px;}
 	.submenu {    width: 468px !important;min-height: 575px !important; }
-	.abt_wrkarea {
-        width: 90% !important;
-    margin-left: 44px !important;}
-	.advertise {
-		width: 97.1% !important;
-		margin-left: 54px !important;
-    }
-	.advertise-areas {
-		position: relative;
-        left: -35px
-	}
+	
+	
+	
 	.prime-grupsites .grup-area-dwn {
     margin-top: 10px !important;
     }
@@ -761,7 +761,6 @@ margin-left: 10px;}
     .top-menu {min-height: 95px;}
     .tab-logo{width: 160px !important;top: -95px;left: 50%;margin-left: -75px;}
     .main-menu .signup {width: 100%;top: 0px;}
-    .prime-container {padding: 0px 15px;}
     .main-menu .prime li img{ display: none;}
     .main-menu .prime li a{margin: 0px 7px;margin-bottom: 10px;}
    .membership-body img{ display: block !important;}
@@ -770,8 +769,7 @@ margin-left: 10px;}
    .membership-body .mem-content .mem-btn{ bottom: 0px;}
     .membership-header .close img{ display: block !important;}
     .membership-header .close{ right:-15px;}
-	.abt_wrkarea {
-    width: 50% !important;}
+
 }
 
 /*----------model popup Tab and mobile view -------*/
@@ -1479,11 +1477,9 @@ cursor: pointer;}
 -moz-box-shadow: 0 0 2px rgba(0,0,0,0.2);
 -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.2);
 -o-box-shadow:0 0 2px rgba(0,0,0,0.2);}
-.prime_img{ width:400px; position: absolute; z-index: 3;right: 0px;height: 100%;}
+.prime_img{ height: 100%;}
 .prime_image{width: 100%; height: 100%;}
-.prime_pop_content{ padding-right: 420px; min-height: 270px; padding-top: 25px;
-padding-left: 25px;padding-bottom: 25px;
-float: left;}
+.prime_pop_content{float: left;}
 .prime_mem{ padding-bottom: 40px;}
 .pri_btn{ margin-right: 10px;bottom: 10px !important;}
 
@@ -1605,7 +1601,7 @@ top: 25px;}
     position:relative;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to top, #0f1f45 50%,#0E2F7D 100%);float: left;
+   float: left; background: #fff;
 }
 .jquery-script-ads {position: absolute; color: #fff; top: 200px; left: 2em; z-index: 9999; }
 .calendarContOuter

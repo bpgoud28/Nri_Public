@@ -22,14 +22,14 @@
 .anchorLink span{position: relative;
 top: -3px;}
 .workarea{  width: 100%; float: left; height: auto;}
-.workarea .prime-currency{width: 100%; float: left; height: auto; position: relative; z-index: 2;}
-.workarea .prime-currency .cur-wrkarea{  width: 100%;float:left; background: #fff;padding: 35px; margin-top:50px;background: rgba(255,255,255,0.7);}
+.workarea .prime-currency{width: 100%; float: left; height: auto; position: relative; z-index: 2;padding:70px 0px 70px;}
+.workarea .prime-currency .cur-wrkarea{  width: 40%;float:left; padding: 0px 40px;}
 .workarea .prime-currency .cur-wrkarea .prm-wrkarea{background: #fecd41;width: 100%; height: auto; float: left;border-radius: 7px;padding: 50px 40px;
 background-image: url("../images/img/backdrop_03.png");background-size: 102%;
 background-repeat: no-repeat;
 background-position: 23% 126%;
 }
-.workarea .prime-currency h2{ text-align: center; text-align: center; float: left; width: 100%; color: #712156; font-size: 20px;margin:0px;font-family: 'Lato Bold';margin-bottom: 15px;}
+.workarea .prime-currency h2{ text-align: center; text-align: center; float: left; width: 100%; color: #712156; font-size: 20px;margin:0px;font-family: 'Lato Bold';margin-bottom:30px;}
 .workarea .prime-currency p{ color: #282828; margin: 0px;font-size: 15px;float: left; width: 100%;text-align: center; padding-bottom: 20px;}
 .workarea .prime-currency .cur-wrkarea .prm-wrkarea .prm-currency{ width: 100%; float: left; height: auto;margin:20px 0px;}
 
@@ -41,15 +41,13 @@ margin-top: 5px;}
 margin-top: -35px;}
 .curr-backdrp img{ width: 100%; float:left;}
 .advertise-workarea{ width: 100%; float: left; position: relative;
-z-index: 2;margin-bottom: 55px;}
-.advertise{  width:80%; height: auto; margin: 0px auto;}
-.advertise .advertise-area{float: left; width: 90%;background: rgba(255,255,255,0.7);padding-top: 30px;}
+z-index: 2;margin-bottom:70px;}
+.advertise{ float: left;width: 100%; }
+.advertise .advertise-area{float: left;width: 100%; }
 .advertise .advertise-area:hover{ background: #fff;
 -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 box-shadow: 0 6px 12px rgba(0, 0, 0, .175);}
-.advertise .advertise-area img{ width: auto; float: left;position: relative;
-left: 50%;
-margin-left: -75px;height: 150px;}
+.advertise .advertise-area img{ width: 100%; float: left;position: relative;height: 280px;}
 
 .advertse-banner{width: 100%; float: left; height: auto; position: relative;z-index: 1;}
 .advertse-banner img{width: 100%; float: left;}
@@ -72,58 +70,9 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, .175);}
 .prime-grupsites .grup-area img{ width: 100%; float: left;height: 260px; }
 .prime-grupsites .grup-area span{ text-align: center;float: left; width: 100%; font-size: 13px; background: rgba(255,255,255,0.7);
 padding: 15px;}
-@media screen and (max-width:1199px) and (min-width:992px){
-    .workarea .prime-currency .cur-wrkarea{ width: 100%;}
-    .workarea .prime-currency .cur-wrkarea .prm-wrkarea{padding:25px 12px;}
-    .banner-txt span{ margin: 7px 0px;}
-}
 
-@media screen and (max-width:1199px) and (min-width:992px){
-    .workarea .prime-currency .cur-wrkarea{ width: 100%;}
-    .workarea .prime-currency .cur-wrkarea .prm-wrkarea{padding:25px 12px;}
-    .curency-cntainer{ padding: 0px 7px;}
-    .workarea .prime-currency .cur-wrkarea .prm-wrkarea .prm-currency {
-   
-    padding-left: 20px;
-    position: relative;
-    left: 5px;
-}
-.advertise{ width: 85%;}
-.prime-grupsites .grup-area{ padding: 0px;}
-}
 
-@media screen and (max-width:991px) and (min-width:768px){
-    .banner-txt{ bottom: 13px;}
-   .workarea .prime-currency .cur-wrkarea .prm-wrkarea .prm-currency{padding: 0px 20px;} 
-   .banner-txt span{ font-size: 14px; margin: 10px 0px;}
-    .banner-txt p{ font-size: 20px;}
-    .anchorLink{ font-size: 20px;padding: 2px 9px;}
-    .advertise{ width: 95%;}
-    .advertise .advertise-area{ width: 200px;}
-    .advertise .advertise-area img{ height: 200px;}
-    .grup-cntainer{ width: 100%;}
-    .prime-grupsites .grup-area{ padding: 0px;}
-}
-@media screen and (max-width:767px) and (min-width:1px){
-    .banner-txt{    width: auto;
-    bottom: 10px;
-    right: 10px;}
-    .banner-txt p,.banner-txt span{ display: none;}
-    .anchorLink{ display: none;}
-    .banner-txt .prime-btn {
-    float: left;
-    font-weight: bold;
-    padding: 5px 20px;
-    border-radius: 15px;
-}
-   .advertise .advertise-area{ margin: 0px;margin-bottom: 10px;} 
-   .advertise{ margin-top: 10px;}
-    .advertise{ width: 50%;}
-}
-@media screen and (max-width:480px) and (min-width:1px){
-    
-    .advertise{ width: 65%;}
-}
+
 
 .car-arrow{ width: 30px !important;margin: 0px 20px;}
 .carousel-control{ width: auto; bottom: auto;top: 45%;
@@ -131,16 +80,15 @@ margin-top: -35px;}
 
 .adver-cnt{ width: 100%; float: left;}
 .adver-cnt h6{font-family: 'Lato Bold'; float: left; text-align: center; font-size: 17px; width: 100%;}
-.adver-cnt p{ background: #dedede;
+.adver-cnt p{ 
 width: 100%;
 float: left;
-font-size: 13px;
+font-size: 14px;
 text-align: center;
 padding: 25px;
  margin: 0px;}
 .adver-cnt-dwn p{background: #afb4ba;}
-.adver-cntainer{ padding:0px 5px; }
-.adver-area-dwn{ margin-top: 380px;margin-left: 18px;}
+
 
 
 .carousel-fade .carousel-inner .item {
@@ -207,10 +155,10 @@ padding: 5px 10px;width:100%;border-radius: 5px;font-size: 13px;}
 .advertse-banner .advertse-txt a:hover{ background: #eeb211; color: #fff;border: 1px solid #eeb211;}
 
 
-.abtus_content{ width: 100%; float: left; margin: 5px 0px !important; padding: 0px !important;color: #737373 !important;
+.abtus_content{text-align: center; width: 100%; float: left; margin: 15px 0px !important; padding: 0px !important;color: #737373 !important;
 
 font-size: 14px !important;}
-.abt_wrkarea{ width:25%; margin: 0px auto;}
+.abt_wrkarea{ width:100%; float: left;}
 .right_advr{ position: relative;left:35px;}
 .popup_heading{ 
     color: #3369e8;
@@ -219,4 +167,166 @@ font-size: 14px !important;}
     font-weight: bold;
     margin-top: -5px;
 	margin-left: 0px !important;
+}
+.abut_image{ width: 60%; float: left;}
+.abut_image .abt_img{ width: 100%; float: left;height: 400px;}
+.header_abt{ font-weight: normal;
+font-size:18px !important;
+line-height: 35px;
+padding: 0px !important;}
+
+.buy_sell_model{ padding: 0px !important;}
+
+.grp_owl .owl-stage-outer{ width: 100% !important;}
+.grp_item{ position: relative; }
+.grp_more{ position: absolute;
+top: 0px;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.4);   opacity: 0; visibility: hidden;    -webkit-transition: opacity 600ms, visibility 600ms;
+  transition: opacity 600ms, visibility 600ms;}
+.grp_item:hover .grp_more{ visibility: visible;
+  opacity: 1;}
+.grp_more a{
+text-decoration: none;
+color: #fff;
+border: 1px solid #f1f1f1;
+padding: 5px 45px;
+border-radius: 5px;
+font-size: 13px;
+position: absolute;
+left: 50%;
+top: 50%;
+margin-left: -75px;
+}
+.grp_more p{position: relative;
+top: 50%;
+color: #fff;
+font-size: 20px;
+margin-top: -55px;
+text-align: center;}
+.grp_more a:hover{ background: #eeb211;border: 1px solid #eeb211; }
+.group-head{ width: 100%; float: left;padding: 0px 100px 50px;}
+.grup_heading{
+font-size: 18px !important;color: #282828;
+margin: 0px;
+float: left;
+width: 100%;
+text-align: center;}
+.grp_block{float: left;background: #fcfcfc;
+width: 100%;padding: 50px 0px;}
+.group_content{
+text-align: center;
+width: 100%;
+float: left;
+margin: 15px 0px !important;
+padding: 0px !important;
+color: #737373 !important;
+font-size: 14px !important;}
+.grp_owl{ float: left; }
+.grp_owl .owl-nav .owl-prev {
+  left: initial !important;right: 50px !important;top: -20px !important; background: #f1f1f1; font-size: 30px !important;
+}
+.grp_owl .owl-nav .owl-next{
+    left: initial !important;right: 10px !important;top: -20px !important;background: #f1f1f1;font-size:  30px !important;
+}
+.grp_owl .owl-nav .fa{ float: left;padding: 1px 9px;}
+
+.enquiry_blck{ float: left; width: 100%; padding: 50px 0px;}
+.enquiry_blk_cntnt{float: left; width: 100%;}
+.enqury_blk_wrkarea{ width: 100%; float: left;}
+.enq_img{float: left;
+width: 100%;
+height: 75px;}
+.enq_img img{position: absolute;
+left: 50%;
+margin-left: -35px;
+width: 70px;
+height: 70px;}
+
+.enq_heading{
+text-align: center;
+float: left;
+width: 100%;
+font-size: 14px;
+color: #282828; 
+}
+.enqury_blk_wrkarea:hover .enq_heading{color: #3369E8; text-decoration: underline;}
+.enq_nav{text-decoration: none;
+color: #194059;
+border: 1px solid #3369E8;
+padding: 5px 10px;
+float: left;
+border-radius: 5px;font-size: 13px; position: relative; left: 50%; margin-top: 35px; margin-left: -45px;}
+.enq_nav:hover{background: #eeb211;
+color: #fff;
+border: 1px solid #eeb211;text-decoration: none;}
+
+@media screen and (min-width:1200px){
+.container_home{ width: 1200px;}
+}
+
+
+@media screen and (max-width:1199px) and (min-width:992px){
+   
+    .workarea .prime-currency .cur-wrkarea .prm-wrkarea{padding:25px 12px;}
+    .banner-txt span{ margin: 7px 0px;}
+    .curency-cntainer{ padding: 0px 7px;}
+    .workarea .prime-currency .cur-wrkarea .prm-wrkarea .prm-currency {
+   
+    padding-left: 20px;
+    position: relative;
+    left: 5px;
+}
+
+.prime-grupsites .grup-area{ padding: 0px;}
+}
+
+@media screen and (max-width:991px) and (min-width:768px){
+    .banner-txt{ bottom: 13px;}
+   .workarea .prime-currency .cur-wrkarea .prm-wrkarea .prm-currency{padding: 0px 20px;} 
+   .banner-txt span{ font-size: 14px; margin: 10px 0px;}
+    .banner-txt p{ font-size: 20px;}
+    .anchorLink{ font-size: 20px;padding: 2px 9px;}
+.collabrate_with_us{ margin-top: 30px;}
+  .full_image_mdel{ width: 740px !important;}
+    .grup-cntainer{ width: 100%;}
+    .prime-grupsites .grup-area{ padding: 0px;}
+    .abut_image{ width: 55%;}
+    .abut_image .abt_img{ height: 350px;}
+    .workarea .prime-currency .cur-wrkarea{padding: 0px 0px 0px 30px;}
+    .header_abt{ line-height: 30px;}
+}
+@media screen and (max-width:767px) and (min-width:1px){
+    .banner-txt{    width: auto;
+    bottom: 10px;
+    right: 10px;}
+    .banner-txt p,.banner-txt span{ display: none;}
+    .anchorLink{ display: none;}
+    .banner-txt .prime-btn {
+    float: left;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 15px;
+}
+   .advertise .advertise-area{ margin: 0px;margin-bottom: 20px;} 
+   .advertise-workarea{ margin-bottom: 30px;}
+.full_image_mdel{ width:auto !important;}
+    .abut_image{ display: none;}
+    .workarea .prime-currency .cur-wrkarea{width: 100%;padding: 0px;}
+    .workarea .prime-currency{ padding: 40px 0px; }
+    .seq .seq-nav{ background: transparent !important;}
+    .seq .seq-swipe{ display: none !important;}
+    .group-head{padding: 0px 0px 50px;}
+    .grp_block{padding: 30px 0px;}
+    .enquiry_blck{padding: 30px 0px;}
+    .enq_head{padding: 0px 0px 20px;}
+    .advertse-banner .advertse-txt{right: 4%;top: 0px; padding-top: 10px;width: 90%;}
+    .carousel-indicators{display: none;}
+    .advertse-banner .advertse-txt h4{font-size: 14px;margin-bottom: 15px;font-family: Lato !important; display: none;}
+    .advertse-banner .advertse-txt h2{font-size: 16px; margin-bottom: 10px;}
+}
+@media screen and (max-width:480px) and (min-width:1px){
+    
+
 }
